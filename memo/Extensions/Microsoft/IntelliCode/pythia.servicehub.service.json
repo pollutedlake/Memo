@@ -1,0 +1,11 @@
+{
+  "host": "desktopClr.x86",
+  "hostId": "RoslynCodeAnalysisService32",
+  "hostGroupAllowed": true,
+  "entryPoint": {
+    "assemblyPath": "Microsoft.VisualStudio.Completion.Tests.dll",
+    "fullClassName": "Pythia.RemotePythiaExtractionService",
+    "appBasePath": "%VSAPPIDDIR%",
+    "configPath": "%PkgDefApplicationConfigFile%"
+  }
+}

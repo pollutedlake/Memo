@@ -1,0 +1,93 @@
+[$RootKey$\Editors\{59B0B277-7DDF-4e36-A3ED-02DAC5B9E2FA}]
+@="Class Designer"
+"CommonPhysicalViewAttributes"=dword:00000003
+"DisplayName"="#102"
+"EditorTrustLevel"=dword:00000001
+"ExcludeDefTextEditor"=dword:00000001
+"DeferUntilIntellisenseIsReady"=dword:00000001
+"CmdUI"="{59B0B277-7DDF-4e36-A3ED-02DAC5B9E2FA}"
+"Package"="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+
+[$RootKey$\Editors\{59B0B277-7DDF-4e36-A3ED-02DAC5B9E2FA}\Extensions]
+"cd"=dword:00000032
+
+[$RootKey$\Menus]
+"{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"=", 1000, 1"
+
+[$RootKey$\Packages\{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}]
+@="Visual Studio Class Designer Package"
+"Assembly"="Microsoft.VisualStudio.EnterpriseTools.ClassDesigner, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"Class"="Microsoft.VisualStudio.EnterpriseTools.ClassDesigner.ClassDesignerPackage"
+"InprocServer32"="$System$\mscoree.dll"
+
+[$RootKey$\Packages\{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}\SatelliteDll]
+"DllName"="Microsoft.VisualStudio.EnterpriseTools.ClassDesignerUI.dll"
+"Path"="$ShellFolder$\Common7\IDE\PrivateAssemblies"
+
+[$RootKey$\Packages\{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}\ToolBox]
+"Default Items"=dword:00000001
+
+[$RootKey$\Projects\{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}\Filters\ClassDiagram]
+@="#108"
+"CommonFindFilesFilter"=dword:00000000
+"CommonOpenFilesFilter"=dword:00000000
+"FindInFilesFilter"=dword:00000000
+"NotAddExistingItemFilter"=dword:00000000
+"NotOpenFileFilter"=dword:00000000
+"Package"="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\ClassDiagram.vstemplate]
+"Extension"=".cd"
+"ItemName"="#3500"
+"PrimaryFolder"="App_Code"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\Filters\ClassDiagram]
+@="#108"
+"CommonFindFilesFilter"=dword:00000000
+"CommonOpenFilesFilter"=dword:00000000
+"FindInFilesFilter"=dword:00000000
+"NotAddExistingItemFilter"=dword:00000000
+"NotOpenFileFilter"=dword:00000000
+"Package"="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+
+[$RootKey$\Projects\{E6FDF86B-F3D1-11D4-8576-0002A516ECE8}\Filters\ClassDiagram]
+@="#108"
+"CommonFindFilesFilter"=dword:00000000
+"CommonOpenFilesFilter"=dword:00000000
+"FindInFilesFilter"=dword:00000000
+"NotAddExistingItemFilter"=dword:00000000
+"NotOpenFileFilter"=dword:00000000
+"Package"="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+
+[$RootKey$\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}\Filters\ClassDiagram]
+@="#108"
+"CommonFindFilesFilter"=dword:00000000
+"CommonOpenFilesFilter"=dword:00000000
+"FindInFilesFilter"=dword:00000000
+"NotAddExistingItemFilter"=dword:00000000
+"NotOpenFileFilter"=dword:00000000
+"Package"="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+
+[$RootKey$\Projects\{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\Filters\ClassDiagram]
+@="#108"
+"CommonFindFilesFilter"=dword:00000000
+"CommonOpenFilesFilter"=dword:00000000
+"FindInFilesFilter"=dword:00000000
+"NotAddExistingItemFilter"=dword:00000000
+"NotOpenFileFilter"=dword:00000000
+"Package"="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+
+[$RootKey$\Services\{47B02E6C-FB7B-4274-B6D2-2D8CED2904F5}]
+@="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+"Name"="Class Designer Service"
+
+[$RootKey$\ToolWindows\{778B5376-AD77-4751-ACDC-F3D18343F8DD}]
+@="{DD1683A7-5A4C-4234-81B3-A4CC91DBEAC9}"
+"Float"="200, 200, 700, 450"
+"Name"="Class Details"
+"Orientation"="Right"
+"Style"="Tabbed"
+"Window"="{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+
+[$RootKey$\ToolWindows\{778B5376-AD77-4751-ACDC-F3D18343F8DD}\Visibility]
+"{59B0B277-7DDF-4e36-A3ED-02DAC5B9E2FA}"=dword:00000000

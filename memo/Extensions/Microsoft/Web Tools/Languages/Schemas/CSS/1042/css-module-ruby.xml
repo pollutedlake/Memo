@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium, 
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University), 
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Ruby" standard-reference="http://www.w3.org/TR/css3-ruby/" status="WD" pub-date="2011-06-30">
+
+  <CssProperty _locID="ruby-position" _locAttrData="description" version="3.0" browsers="FF10,IE5" restriction="enum" description="이 속성을 display: ruby-text와 함께 요소의 부모에 사용하여 기준에 따라 Ruby 텍스트를 제어합니다." syntax="before | after | right" standard-reference="http://www.w3.org/TR/css3-ruby/#ruby-position">
+
+    <entry _locID="ruby-position_before" _locAttrData="description" value="before" description="Ruby 텍스트가 기준 앞에 나타납니다. 이는 동아시아 표의 문자에 사용되는 가장 일반적인 설정입니다."/>
+    <entry _locID="ruby-position_after" _locAttrData="description" value="after" description="Ruby 텍스트가 기준 뒤에 나타납니다. 이는 동아시아 표의 문자에서 드물게 사용되며 교육 텍스트에서 쉽게 볼 수 있습니다."/>
+    <entry _locID="ruby-position_right" _locAttrData="description" value="right" description="Ruby 텍스트가 기준 오른쪽에 나타납니다. 'before' 및 'after'와 달리 이 값은 텍스트 텍스트 진행 방향과 관계가 없습니다."/>
+    <entry value="inline"/>
+  </CssProperty>
+
+  <CssProperty _locID="ruby-align" _locAttrData="description" version="3.0" browsers="FF10,IE5" restriction="enum" description="아무 요소에나 이 속성을 사용하여 Ruby 텍스트의 텍스트 맞춤과 서로에 대한 Ruby 기준 콘텐츠를 제어할 수 있습니다." syntax="auto | start | left | center | end | right | distribute-letter | distribute-space | line-edge" standard-reference="http://www.w3.org/TR/css3-ruby/#rubyalign">
+
+    <entry _locID="ruby-align_auto" _locAttrData="description" value="auto" description="사용자 에이전트에서 Ruby 콘텐츠가 정렬되는 방법을 결정하며 이 설정이 초기 값입니다."/>
+    <entry _locID="ruby-align_start" _locAttrData="description" value="start" description="Ruby 텍스트 콘텐츠가 시작 가장자리에 맞게 정렬됩니다."/>
+    <entry _locID="ruby-align_left" _locAttrData="description" value="left" description="Ruby 텍스트 콘텐츠가 시작 가장자리에 맞게 정렬됩니다."/>
+    <entry _locID="ruby-align_center" _locAttrData="description" value="center" description="Ruby 텍스트 콘텐츠가 기준의 너비 가운데에 정렬됩니다. 기준의 길이가 Ruby 텍스트 길이보다 짧으면 기준이 Ruby 텍스트 너비 가운데에 정렬됩니다."/>
+    <entry _locID="ruby-align_end" _locAttrData="description" value="end" description="Ruby 텍스트 콘텐츠가 기준의 끝 가장자리에 맞게 정렬됩니다."/>
+    <entry _locID="ruby-align_right" _locAttrData="description" value="right" description="Ruby 텍스트 콘텐츠가 기준의 끝 가장자리에 맞게 정렬됩니다."/>
+    <entry _locID="ruby-align_distribute-letter" _locAttrData="description" value="distribute-letter" description="Ruby 텍스트 너비가 기준의 너비보다 작으면 Ruby 텍스트 콘텐츠가 기준의 너비를 따라 균등하게 분포됩니다. 이때 첫 번째와 마지막 Ruby 텍스트는 Ruby 텍스트 문자 모양이 해당하는 첫 번째와 마지막 기준 문자 모양에 맞게 정렬됩니다. Ruby 텍스트 너비가 적어도 기준의 너비 이상이면 기준의 문자가 Ruby 텍스트의 너비를 따라 균등하게 분포됩니다."/>
+    <entry _locID="ruby-align_distribute-space" _locAttrData="description" value="distribute-space" description="Ruby 텍스트 너비가 기준의 너비보다 작으면 Ruby 텍스트 콘텐츠가 기준의 너비를 따라 균등하게 분포됩니다. 이때 Ruby 텍스트의 첫 문자 앞과 마지막 문자 다음에 어느 정도 공백이 생깁니다. 이 공백 수는 대개 Ruby 텍스트의 문자 간 공백 수와 같습니다."/>
+    <entry _locID="ruby-align_line-edge" _locAttrData="description" value="line-edge" description="Ruby 텍스트가 줄 끝에 인접하지 않은 경우 'auto'에서와 같이 정렬됩니다. 줄 끝에 인접한 경우에는 auto에서처럼 정렬되지만 줄 끝에 닿는 Ruby 텍스트 면이 기준의 해당 가장자리에 따라 정렬됩니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="ruby-overhang" _locAttrData="description" version="3.0" browsers="FF10,IE5" restriction="enum" description="Ruby 텍스트가 Ruby 기준보다 넓을 경우 Ruby 텍스트가 인접한 텍스트를 부분적으로 돌출시켜 기준에 추가할 수 있는지 여부와 이때 돌출시킬 면을 결정합니다." syntax="auto | start | end | none" standard-reference="http://www.w3.org/TR/css3-ruby/#rubyover">
+
+    <entry _locID="ruby-overhang_auto" _locAttrData="description" value="auto" description="Ruby 텍스트가 양쪽의 기준에 인접한 텍스트를 돌출시킬 수 있습니다. 이 설정이 초기 값입니다."/>
+    <entry _locID="ruby-overhang_start" _locAttrData="description" value="start" description="Ruby 텍스트가 앞에 오는 텍스트를 돌출시킬 수 있습니다."/>
+    <entry _locID="ruby-overhang_end" _locAttrData="description" value="end" description="Ruby 텍스트가 뒤에 오는 텍스트를 돌출시킬 수 있습니다."/>
+    <entry _locID="ruby-overhang_none" _locAttrData="description" value="none" description="Ruby 텍스트가 기준에 인접한 텍스트를 돌출시킬 수 없으며 기준 자체만 돌출시킬 수 있습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="ruby-span" _locAttrData="description" version="3.0" browsers="FF10" restriction="enum" description="Ruby 텍스트가 Ruby 기준보다 넓을 경우 Ruby 텍스트가 인접한 텍스트를 부분적으로 돌출시켜 기준에 추가할 수 있는지 여부와 이때 돌출시킬 면을 결정합니다." syntax="attr(x) | none" standard-reference="http://www.w3.org/TR/css3-ruby/#rubyspan">
+
+    <entry _locID="ruby-span_none" _locAttrData="description" value="none" description="확장되지 않습니다. 계산 값은 '1'입니다."/>
+    <entry _locID="ruby-span_attr" _locAttrData="description" value="attr(x)" description="특성 'x'의 값이 문자열 값입니다. 문자열 값은 주석 요소에 포함될 Ruby 기준 요소 수를 결정하기 위해 &lt;number&gt;로 계산됩니다."/>
+  </CssProperty>
+
+</CssModule>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium, 
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University), 
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Shapes" standard-reference="http://www.w3.org/TR/css-shapes-1/" status="CR" pub-date="2014-03-20">
+
+  <CssPropertyValue type="basic-shape">
+    <entry value="inset()"/>
+    <entry value="circle()"/>
+    <entry value="ellipse()"/>
+    <entry value="polygon()"/>
+  </CssPropertyValue>
+  
+  <CssProperty _locID="shape-outside" _locAttrData="description" version="3.0" browsers="none" type="box, basic-shape" syntax="div { $(name): margin-box; }" description="이 속성은 이미지를 배치하기 전 이 이미지에 적용할 수직 회전을 지정합니다." standard-reference="http://www.w3.org/TR/css-shapes-1/#shape-outside-property">
+
+    <entry value="none"/>
+    <entry value="margin-box"/>
+    <entry value="image()"/>
+    <entry value="url()"/>
+  </CssProperty>
+
+  <CssProperty _locID="shape-image-threshold" _locAttrData="description" version="3.0" browsers="none" restriction="number" syntax="div { $(name): 0.5; }" description="이미지를 사용하여 도형을 추출하는 데 사용되는 알파 채널 임계값을 정의합니다. 값이 0.5이면 불투명도가 50%를 넘는 모든 픽셀이 도형에 포함됩니다." standard-reference="http://www.w3.org/TR/css-shapes-1/#propdef-shape-image-threshold"/>
+
+  <CssProperty _locID="shape-margin" _locAttrData="description" version="3.0" browsers="none" restriction="length, percentage" syntax="div { $(name): 10px; }" description="'shape-outside'에 여백을 추가합니다. 이는 기본 도형의 점에서 수직 방향으로 'shape-margin' 거리 외부에 있는 모든 점을 포함하는 가장 작은 곡선인 새 도형을 정의합니다." standard-reference="http://www.w3.org/TR/css-shapes-1/#propdef-shape-margin"/>
+
+</CssModule>

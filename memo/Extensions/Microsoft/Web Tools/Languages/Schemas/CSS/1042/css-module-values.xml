@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Values" standard-reference="http://www.w3.org/TR/css3-values/" status="WD" pub-date="2011-09-06">
+
+  <CssPropertyValue type="all">
+    <entry _locID="all-val_inherit" _locAttrData="description" value="inherit" version="2.1" description="이 설정을 사용하면 요소가 속성에 대한 부모의 계산 값을 가져옵니다."/>
+    <entry _locID="all-val_initial" _locAttrData="description" value="initial" version="3.0" browsers="none" description="모든 속성의 기본값입니다."/>
+    <entry _locID="all-val_unset" _locAttrData="description" value="unset" version="3.0" browsers="none" description="연속된 속성 값이 'unset' 키워드인 경우, 이 속성이 상속된 속성이면 'inherit'로 처리되고 상속된 속성이 아니면 'initial'로 처리됩니다."/>
+  </CssPropertyValue>
+
+  <CssProperty _locID="all" _locAttrData="description" version="3.0" restriction="enum" description="'all' 속성은 'direction' 및 'unicode-bidi'를 제외한 모든 CSS 속성을 다시 설정하는 줄임 속성입니다." syntax="div { $(name): initial; }" standard-reference="http://www.w3.org/TR/css-cascade-3/#all-shorthand"/>
+
+</CssModule>

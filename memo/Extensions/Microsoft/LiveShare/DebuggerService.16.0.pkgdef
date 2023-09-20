@@ -1,0 +1,25 @@
+; This file registers the VSCodeDebuggerHost adapter launcher with Visual Studio.
+
+[$RootKey$\CLSID\{9CACCB2B-0AF0-4A78-B714-64033CC30982}]
+"Assembly"="Microsoft.VisualStudio.LiveShare.DebuggerService.16.0"
+"Class"="Microsoft.VisualStudio.DebuggerService.AdapterLauncher"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.LiveShare.DebuggerService.16.0.dll"
+
+;
+; Registration for a cascade debug adapter host
+;
+
+; Engine registration
+[$RootKey$\AD7Metrics\Engine\{E984443C-10E9-44FD-8CB6-707275F9D991}]
+"CLSID"="{DAB324E9-7B35-454C-ACA8-F6BB0D5C8673}"
+"AdapterLauncher"="{9CACCB2B-0AF0-4A78-B714-64033CC30982}"
+"AlwaysLoadLocal"=dword:00000001
+"Attach"=dword:00000001
+"AddressBP"=dword:00000000
+"AutoSelectPriority"=dword:00000004
+"CallstackBP"=dword:00000000
+"Exceptions"=dword:00000001
+"ExceptionConditions"=dword:00000001
+"Name"="VS Code Debug Adapter Host"
+"SuppressModulesRequestOnAttach"=dword:00000001
+@="VS Code Debug Adapter Host"

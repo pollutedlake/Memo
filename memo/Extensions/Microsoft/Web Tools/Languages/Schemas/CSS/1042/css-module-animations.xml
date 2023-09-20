@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Animations" standard-reference="http://www.w3.org/TR/css3-animations/" status="WD" pub-date="2013-02-19">
+
+    <CssAtDirective name="keyframes" _locID="keyframes-rule" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" syntax="@keyframes animation-name" description="애니메이션 키 프레임 집합을 정의합니다." standard-reference="http://www.w3.org/TR/css3-animations/#keyframes"/>
+
+    <CssProperty _locID="animation-name" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" restriction="identifier" type="animation-name" syntax="div { $(name): movearound; }" description="적용되는 애니메이션 목록을 정의합니다. 각 이름은 애니메이션의 속성 값을 제공하는 키 프레임 @ 규칙을 선택하는 데 사용됩니다." standard-reference="http://www.w3.org/TR/css3-animations/#the-animation-name-property-"/>
+
+
+    <CssPropertyValue type="animation-name">
+        <entry _locID="animation-name_none" _locAttrData="description" value="none" description="애니메이션이 수행되지 않았습니다."/>
+    </CssPropertyValue>
+
+    <CssProperty _locID="animation-duration" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" restriction="time" syntax="div { $(name): 4s; }" description="애니메이션이 주기 하나를 완료하는 데 소요되는 시간을 정의합니다." standard-reference="http://www.w3.org/TR/css3-animations/#animation-duration"/>
+
+    <CssProperty _locID="animation-timing-function" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" type="timing-functions" restriction="enum" syntax="div { $(name): ease; }" description="애니메이션이 해당 기간에 속하는 한 주기 동안 진행되는 방법을 설명합니다. 'transition-timing-function'을 참조하십시오." standard-reference="http://www.w3.org/TR/css3-animations/#animation-timing-function"/>
+
+    <CssProperty _locID="animation-iteration-count" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" restriction="number" type="animation-iteration-count" syntax="div { $(name): 3; }" description="애니메이션 주기가 재생되는 횟수를 정의합니다. 기본값은 애니메이션이 처음부터 끝까지 한 번 재생됨을 의미하는 1입니다." standard-reference="http://www.w3.org/TR/css3-animations/#animation-iteration-count"/>
+
+    <CssPropertyValue type="animation-iteration-count">
+        <entry _locID="animation-iteration-count_infinite" _locAttrData="description" value="infinite" description="애니메이션이 계속 반복되게 합니다."/>
+    </CssPropertyValue>
+
+    <CssProperty _locID="animation-direction" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" type="animation-directions" restriction="enum" syntax="div { $(name): normal; }" description="대체 주기에서 애니메이션을 역순으로 재생할지 여부를 정의합니다." standard-reference="http://www.w3.org/TR/css3-animations/#animation-direction"/>
+
+    <CssPropertyValue type="animation-directions">
+        <entry _locID="animation-direction_normal" _locAttrData="description" value="normal" description="표준 재생입니다."/>
+        <entry _locID="animation-direction_alternate" _locAttrData="description" value="alternate" description="애니메이션 주기 반복 횟수가 홀수이면 표준 방향으로 재생되고 애니메이션 주기 반복 횟수가 짝수이면 역방향으로 재생됩니다."/>
+        <entry _locID="animation-direction_reverse" _locAttrData="description" value="reverse" description="모든 애니메이션 반복은 지정된 방향의 역방향으로 재생됩니다."/>
+        <entry _locID="animation-direction_alternate-reverse" _locAttrData="description" value="alternate-reverse" description="애니메이션 주기 반복 횟수가 홀수이면 역방향으로 재생되고 애니메이션 주기 반복 횟수가 짝수이면 표준 방향으로 재생됩니다."/>
+    </CssPropertyValue>
+
+    <CssProperty _locID="animation-play-state" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" type="animation-play-states" restriction="enum" syntax="div { $(name): running; }" description="애니메이션이 실행 중인지, 아니면 일시 중지되었는지를 정의합니다." standard-reference="http://www.w3.org/TR/css3-animations/#animation-play-state"/>
+
+    <CssPropertyValue type="animation-play-states">
+        <entry _locID="animation-play-state_running" _locAttrData="description" value="running" description="일시 중지된 애니메이션의 재생을 재개합니다."/>
+        <entry _locID="animation-play-state_paused" _locAttrData="description" value="paused" description="실행 중인 애니메이션이 일시 중지됩니다."/>
+    </CssPropertyValue>
+
+    <CssProperty _locID="animation-delay" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" restriction="time" syntax="div { $(name): 4s; }" description="애니메이션이 시작될 시기를 정의합니다. 'animation-delay' 값이 '0'이면 애니메이션이 적용되자마자 실행됩니다. 그렇지 않으면 값이 애니메이션이 적용된 시점으로부터의 오프셋을 지정하며 애니메이션의 실행이 해당 오프셋만큼 지연됩니다." standard-reference="http://www.w3.org/TR/css3-animations/#animation-delay"/>
+
+    <CssPropertyValue type="animation-fill-modes">
+        <entry _locID="animation-fill-mode_none" _locAttrData="description" value="none" description="애니메이션이 적용되는 시간과 애니메이션 재생이 시작되는 시간 또는 애니메이션이 완료된 후 사이의 속성 값은 변경되지 않습니다."/>
+        <entry _locID="animation-fill-mode_forwards" _locAttrData="description" value="forwards" description="애니메이션이 완료된 후 마지막 @keyframes @ 규칙에 정의된 대로 최종 속성 값이 유지됩니다."/>
+        <entry _locID="animation-fill-mode_backwards" _locAttrData="description" value="backwards" description="'animation-delay'에 정의된 기간 동안 애니메이션이 표시되기 전에 첫 번째 @keyframes @ 규칙에 정의된 대로 시작 속성 값이 적용됩니다."/>
+        <entry _locID="animation-fill-mode_both" _locAttrData="description" value="both" description="앞으로 및 뒤로 채우기 모드가 둘 다 적용됩니다."/>
+    </CssPropertyValue>
+
+    <CssProperty _locID="animation-fill-mode" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" type="animation-fill-modes" restriction="enum" syntax="div { $(name): forwards; }" description="실행 시간이 초과되었을 때 애니메이션에 적용되는 값을 정의합니다." standard-reference="http://www.w3.org/TR/css3-animations/#animation-fill-mode-property"/>
+
+    <CssProperty _locID="animation" _locAttrData="description" version="3.0" browsers="C,FF16,IE10,O12.5" restriction="time, enum, identifier, number" type="animation-fill-modes, timing-functions, animation-directions, animation-iteration-count, animation-name" syntax="div { $(name): movearound 4s ease 3 normal; }" description="줄임 속성이 애니메이션 속성 중 여섯 개를 단일 속성으로 결합합니다." standard-reference="http://www.w3.org/TR/css3-animations/#animation"/>
+</CssModule>

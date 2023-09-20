@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>테스트 클래스</Title>
+      <Shortcut>testc</Shortcut>
+      <Description>테스트 클래스의 코드 조각</Description>
+      <Author>Microsoft Corporation</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>unittest</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>테스트 클래스의 이름으로 바꾸기</ToolTip>
+          <Default>MyTestClass</Default>
+        </Literal>
+        <Literal>
+          <ID>testname</ID>
+          <ToolTip>테스트 메서드의 이름으로 바꾸기</ToolTip>
+          <Default>name</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="Python"><![CDATA[
+class $name$(unittest.TestCase):
+    def test_$testname$(self):
+        self.fail("Not implemented")
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

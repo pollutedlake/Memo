@@ -1,0 +1,101 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.LiveShare" Version="1.0.1349.1" Language="en-US" Publisher="Microsoft" />
+    <PackageId>Microsoft.VisualStudio.LiveShare</PackageId>
+    <DisplayName>Live Share</DisplayName>
+    <Description xml:space="preserve">Real-time collaborative development from the comfort of your favorite tools.</Description>
+    <MoreInfo>https://visualstudio.microsoft.com/services/live-share/</MoreInfo>
+    <License>eula.rtf</License>
+    <ReleaseNotes>http://github.com/MicrosoftDocs/live-share/releases</ReleaseNotes>
+    <Icon>Resources\Market_Cascade_128x.png</Icon>
+    <PreviewImage>Resources\Market_Cascade_128x.png</PreviewImage>
+    <Tags>Collaboration;Co-Edit;Collaborative Editing;Co-Debug;Collaborative Debugging;Debug;Remote;Sharing</Tags>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.27220, )" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Core.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Coauthoring.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.FeedbackDiagnostics.dll" />
+    <!--
+    15.0.27718.1 is the version of VS 15.8 Preview 2 that I was using when I made this change. There are a range of versions (those from when Roslyn made breaking changes - some version of 15.8 Preview 2 - to when we got internals
+    access for our 15.8 DLLs - some other version of 15.8 Preview 2) for which Live Share will forever be broken (these versions should be inaccessible to external users). Any version in this range would be approrpiate to use here; I just picked the most convenient one.
+    -->
+    <Asset TargetVersion="[,16.3.29123.89]" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.CSharp.dll" />
+    <Asset TargetVersion="(16.3.29123.89,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.CSharpLanguageServiceFactories.dll" />
+    <Asset TargetVersion="[,15.0.27718.1)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.TypeScript.dll" />
+    <Asset TargetVersion="[15.0.27718.1,16.0)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.TypeScript.15.8.dll" />
+    <Asset TargetVersion="[16.0,16.0.28711.38)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.TypeScript.16.0.dll" />
+    <Asset TargetVersion="[16.0.28711.38,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.TypeScriptCollabService.dll" />
+    <Asset TargetVersion="[,15.0.27718.1)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.dll" />
+    <Asset TargetVersion="[15.0.27718.1,16.0.28315.86)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.15.8.dll" />
+    <Asset TargetVersion="[16.0.28315.86,16.0.28823.43)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.16.0.dll" />
+    <Asset TargetVersion="[16.0.28823.43,16.3.29123.89]" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.16.1.dll" />
+    <Asset TargetVersion="(16.3.29123.89,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.16.3.dll" />
+    <Asset TargetVersion="[15.0.27718.1,16.0.28315.86)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.CSharp.15.8.dll" />
+    <Asset TargetVersion="[16.0.28315.86,16.0.28823.43)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.CSharp.16.0.dll" />
+    <Asset TargetVersion="[16.0.28823.43,16.3.29123.89]" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.Remote.CSharp.16.1.dll" />
+    <Asset TargetVersion="[16.0.28608.199,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Search.16.0.dll" />
+    <Asset TargetVersion="[,16.0.28608.199)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Search.dll" />
+    <!--
+    15.0.27722.4001 is the version of VS 15.8 Preview 3 that I was using when I made this change. This version has LSP in the box.
+    -->
+    <Asset TargetVersion="[,15.0.27730.3000)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.LanguageExtension.dll" />
+    <Asset TargetVersion="[15.0.27730.3000,16.0)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.LanguageExtension.15.8.dll" />
+    <Asset TargetVersion="[16.0.28105.3000,16.0.28823.43)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.LanguageExtension.16.0.dll" />
+    <Asset TargetVersion="[16.0.28823.43,16.3.29123.89]" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.LanguageExtension.16.1.dll" />
+    <Asset TargetVersion="(16.3.29123.89,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServices.LanguageExtension.16.3.dll" />
+    <Asset TargetVersion="[15.0.27220,16.0.28605)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Workspace.15.8.dll" />
+    <Asset TargetVersion="[16.0.28605,16.2.29006.178)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Workspace.16.0.dll" />
+    <Asset TargetVersion="[16.2.29006.178,16.3.29123.89]" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Workspace.16.2.dll" />
+    <Asset TargetVersion="(16.3.29123.89,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Workspace.16.3.dll" />
+    <Asset TargetVersion="(,16.3.29111.127)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Tasks.dll" />
+    <Asset TargetVersion="[16.3.29111.127,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Tasks.16.3.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.UI.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.ToolWindow.UI.dll" />
+    <Asset TargetVersion="[,15.0.27612)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.DebuggerService.15.6.dll" />
+    <Asset TargetVersion="[15.0.27612,16.0.28329.73)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.DebuggerService.15.7.dll" />
+    <Asset TargetVersion="[16.0.28329.73,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.DebuggerService.16.0.dll" />
+    <Asset TargetVersion="(16.3.29123.89,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.DebuggerService.Server.dll" />
+    <Asset TargetVersion="[16.0.28105.3000,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.ExceptionHelper.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.ContactServiceModel.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LiveShare.ContactServiceModel.dll" />
+    <Asset TargetVersion="[15.0.27730.3000,16.0)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.GitProvider.dll" />
+    <Asset TargetVersion="[16.0.28105.3000,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.GitProvider.16.0.dll" />
+    <!-- LSP support is built-in to the C++ workload for Dev16. A thin wrapper to handle MEF imports ships in this VSIX. -->
+    <Asset TargetVersion="[16.0.28208.3001,16.0.28405.3001)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.VC.LanguageServer.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Client.dll" AssemblyName="Microsoft.VisualStudio.LiveShare.Client, Version=0.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset TargetVersion="[,15.0.27730.3000)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LanguageServer.Client.LiveShare.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LanguageServices.Remote.CSharp.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="DebuggerService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LiveShare.Core.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LiveShare.UI.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LiveShare.ToolWindow.UI.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LiveShare.Daytona.pkgdef" />
+    <Asset TargetVersion="[,16.3.29123.89]" Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.VisualStudio.LanguageServices.Remote.CSharp.dll" />
+    <Asset TargetVersion="[,15.0.27718.1)" Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.VisualStudio.LanguageServices.Remote.dll" />
+    <Asset TargetVersion="[15.0.27718.1,16.0.28315.86)" Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.VisualStudio.LanguageServices.Remote.15.8.dll" />
+    <Asset TargetVersion="[16.0.28315.86,16.0.28823.43)" Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.VisualStudio.LanguageServices.Remote.16.0.dll" />
+    <Asset TargetVersion="[16.0.28823.43,16.3.29123.89]" Type="Microsoft.VisualStudio.Analyzer" Path="Microsoft.VisualStudio.LanguageServices.Remote.16.1.dll" />
+    <!-- Razor for LiveShare requires 15.9 Preview 5 -->
+    <Asset TargetVersion="[15.0.28223.51,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.RazorExtension.dll" />
+    <Asset TargetVersion="[15.0.28223.51,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.Razor.dll" />
+    <Asset TargetVersion="[15.0.28223.51,16.0.28405.3001)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.WebEditors.dll" />
+    <!-- CPS -->
+    <Asset TargetVersion="[15.0.27220,16.0)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.CPS.15.0.dll" />
+    <Asset TargetVersion="[16.0,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.CPS.16.0.dll" />
+    <!-- Service Broker Integration -->
+    <Asset TargetVersion="[16.4.29407.46,)" Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.LiveShare.ServiceBrokerIntegration.16.4.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Microsoft.VisualStudio.LiveShare.ServiceBrokerIntegration.16.4.pkgdef" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
+    <Prerequisite Id="Microsoft.VisualStudio.Component.JavaScript.TypeScript" Version="[15.0,)" DisplayName="JavaScript and TypeScript language support" />
+    <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0,)" DisplayName="C# and Visual Basic" />
+    <Prerequisite Id="Microsoft.VisualStudio.Component.Debugger.JustInTime" Version="[15.0,)" DisplayName="Just-In-Time debugger" />
+  </Prerequisites>
+</PackageManifest>

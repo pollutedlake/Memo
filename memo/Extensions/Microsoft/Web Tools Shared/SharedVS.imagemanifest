@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageManifest
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+  
+  <Symbols>
+    <String Name="Resources" Value="/Microsoft.WebTools.Shared.VS;Component/Resources" />
+    <Guid Name="SharedImagesGuid" Value="{ACFE44B5-B1C2-4033-A1A3-5BF20E80F77B}" />
+    <ID Name="EncryptionKeyId" Value="1" />
+    <ID Name="AzureId" Value="2" />
+    <ID Name="AzureContainerAppServiceId" Value="4" />
+    <ID Name="DockerContainerRegistryId" Value="8" />
+    <ID Name="FolderId" Value="9" />
+    <ID Name="LocalIISSiteId" Value="10" />
+    <ID Name="FTPSiteId" Value="11" />
+    <ID Name="PublishId" Value="12" />
+    <ID Name="StatusCriticalErrorId" Value="13" />
+    <ID Name="StatusOkId" Value="14" />
+    <ID Name="BrandgRPCGrey" Value="15" />
+    <ID Name="BigAddId" Value="16" />
+  </Symbols>
+  
+  <Images>
+    <Image Guid="$(SharedImagesGuid)" ID="$(EncryptionKeyId)">
+      <Source Uri="$(Resources)/EncryptionKey_16x.xaml" />
+      <Source Uri="$(Resources)/EncryptionKey_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(AzureId)">
+      <Source Uri="$(Resources)/Azure_16x.xaml" />
+      <Source Uri="$(Resources)/Azure_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(AzureContainerAppServiceId)">
+      <Source Uri="$(Resources)/AzureContainerAppService_16x.xaml" />
+      <Source Uri="$(Resources)/AzureContainerAppService_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(DockerContainerRegistryId)">
+      <Source Uri="$(Resources)/DockerContainerRegistry_16x.xaml" />
+      <Source Uri="$(Resources)/DockerContainerRegistry_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(FolderId)">
+      <Source Uri="$(Resources)/Folder_16x.xaml" />
+      <Source Uri="$(Resources)/Folder_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(LocalIISSiteId)">
+      <Source Uri="$(Resources)/LocalIISSite_16x.xaml" />
+      <Source Uri="$(Resources)/LocalIISSite_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(FTPSiteId)">
+      <Source Uri="$(Resources)/FTPSite_16x.xaml" />
+      <Source Uri="$(Resources)/FTPSite_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(PublishId)">
+      <Source Uri="$(Resources)/Publish_16x.xaml" />
+      <Source Uri="$(Resources)/Publish_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(StatusCriticalErrorId)">
+      <Source Uri="$(Resources)/StatusCriticalError_16x.xaml" />
+      <Source Uri="$(Resources)/StatusCriticalError_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(StatusOkId)">
+      <Source Uri="$(Resources)/StatusOk_16x.xaml" />
+      <Source Uri="$(Resources)/StatusOk_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(BrandgRPCGrey)">
+      <Source Uri="$(Resources)/BrandgRPC_grey_16x.xaml" />
+      <Source Uri="$(Resources)/BrandgRPC_grey_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+    <Image Guid="$(SharedImagesGuid)" ID="$(BigAddId)">
+      <Source Uri="$(Resources)/Add_16x.xaml" />
+      <Source Uri="$(Resources)/Add_16x.png" >
+        <Size Value="16" />
+      </Source>
+    </Image>
+  </Images>
+  <ImageLists />
+</ImageManifest>

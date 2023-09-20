@@ -1,0 +1,83 @@
+﻿;
+; Registration for vsdbg over SSH (attach)
+;
+
+; Engine registration
+[$RootKey$\AD7Metrics\Engine\{EF9CD3BB-2C0E-41AD-B54C-63006BC09D19}]
+"CLSID"="{DAB324E9-7B35-454C-ACA8-F6BB0D5C8673}"
+@="VSCode Debugger Host - vsdbg + ssh"
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6078"
+"AlwaysLoadLocal"=dword:00000001
+"Attach"=dword:00000001
+"AddressBP"=dword:00000000
+"AutoSelectPriority"=dword:00000004
+"CallStackBP"=dword:00000000
+"Exceptions"=dword:00000001
+"ExceptionConditions"=dword:00000001
+"Language"="C#"
+"LanguageId"="{3F5162F8-07C6-11D3-9053-00C04FA302A1}"
+"AdapterLauncher"="{662B8986-5732-4021-80B7-179F0A73C29B}"
+"SuppressModulesRequestOnAttach"=dword:00000001
+"ExcludeLocalSymbols"=dword:00000001
+"SetNextStatement"=dword:00000001
+
+; Remote deployment settings
+"RemoteInstallationDirectory"=".vs-debugger"
+"RemoteInstallationSubDirectory"="vs2019"
+"VsDbgVersion"="vs2019"
+"GetVsDbgUrl"="https://aka.ms/getvsdbgsh"
+
+; Do not allow CoreCLR and GDB attach at the same time
+[$RootKey$\AD7Metrics\Engine\{EF9CD3BB-2C0E-41AD-B54C-63006BC09D19}\IncompatibleList]
+"gdb"="{91744D97-430F-42C1-9779-A5813EBD6AB2}"
+
+; Exception category mappings
+[$RootKey$\AD7Metrics\Engine\{EF9CD3BB-2C0E-41AD-B54C-63006BC09D19}\ExceptionCategoryMappings]
+"CLR"="{449EC4CC-30D2-4032-9256-EE18EB41B62B}"
+"MDA"="{6ECE07A9-0EDE-45C4-8296-818D8FC401D4}"
+
+[$RootKey$\AD7Metrics\Engine\{EF9CD3BB-2C0E-41AD-B54C-63006BC09D19}\PortSupplier]
+; SSH Port Supplier
+"0"="{3FDDF14E-E758-4695-BE0C-7509920432C9}"
+; Docker Port Supplier
+"1"="{A2BBC114-47E4-473F-A49C-69EE89711243}"
+
+;
+; Registration for vsdbg (launch)
+;
+
+; Engine registration
+[$RootKey$\AD7Metrics\Engine\{541B8A8A-6081-4506-9F0A-1CE771DEBC04}]
+"CLSID"="{DAB324E9-7B35-454C-ACA8-F6BB0D5C8673}"
+@="VSCode Debugger Host - vsdbg"
+"Name"="resource=$BaseInstallDir$\Common7\Packages\Debugger\*\vsdebugui.dll#6078"
+"AlwaysLoadLocal"=dword:00000001
+"AddressBP"=dword:00000000
+"AutoSelectPriority"=dword:00000004
+"CallStackBP"=dword:00000000
+"Exceptions"=dword:00000001
+"ExceptionConditions"=dword:00000001
+"Language"="C#"
+"LanguageId"="{3F5162F8-07C6-11D3-9053-00C04FA302A1}"
+"SuppressModulesRequestOnAttach"=dword:00000001
+"ExcludeLocalSymbols"=dword:00000001
+"SetNextStatement"=dword:00000001
+
+; Do not allow CoreCLR and GDB attach at the same time
+[$RootKey$\AD7Metrics\Engine\{541B8A8A-6081-4506-9F0A-1CE771DEBC04}\IncompatibleList]
+"gdb"="{91744D97-430F-42C1-9779-A5813EBD6AB2}"
+
+; Exception category mappings
+[$RootKey$\AD7Metrics\Engine\{541B8A8A-6081-4506-9F0A-1CE771DEBC04}\ExceptionCategoryMappings]
+"CLR"="{449EC4CC-30D2-4032-9256-EE18EB41B62B}"
+"MDA"="{6ECE07A9-0EDE-45C4-8296-818D8FC401D4}"
+
+;
+; Type Registrations
+;
+
+; Adapter launcher registration
+[$RootKey$\CLSID\{662B8986-5732-4021-80B7-179F0A73C29B}]
+"Assembly"="Microsoft.VisualStudio.Debugger.VsDbg.Integration"
+"Class"="Microsoft.VisualStudio.Debugger.VsDbg.Integration.AdapterLauncher.VsDbgRemoteUnixLauncher"
+"CodeBase"="$PackageFolder$\Microsoft.VisualStudio.Debugger.VsDbg.Integration.dll"

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Multi-column" standard-reference="http://www.w3.org/TR/css3-multicol/" status="CR" pub-date="2011-04-12">
+
+  <CssProperty _locID="column-width" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" restriction="length, enum" syntax="div { $(name): 100px; }" description="이 속성은 multicol 요소의 너비를 설명합니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-width">
+
+    <entry _locID="column-width_auto" _locAttrData="description" value="auto" description="너비는 다른 속성의 값에 따라 달라집니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="column-count" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" restriction="integer, enum" syntax="div { $(name): 3; }" description="요소의 콘텐츠가 표시되는 최적의 열 개수를 설명합니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-count">
+
+    <entry _locID="column-count_auto" _locAttrData="description" value="auto" description="'column-width' 속성과 요소 너비로 열 수를 결정합니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="columns" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" restriction="length, integer, enum" syntax="div { $(name): 100px 3; }" description="'column-width'와 'column-count'를 둘 다 설정하는 줄임 속성입니다." standard-reference="http://www.w3.org/TR/css3-multicol/#columns0">
+
+    <entry _locID="columns_auto" _locAttrData="description" value="auto" description="너비는 다른 속성의 값에 따라 달라집니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="column-gap" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" restriction="length, enum" syntax="div { $(name): 10px; }" description="열 사이의 간격을 설정합니다. 열 사이에 열 규칙이 있을 경우 간격 중간에 나타납니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-gap0">
+
+    <entry _locID="column-gap_normal" _locAttrData="description" value="normal" description="사용자 에이전트와 관련되어 있으며 일반적으로 1em에 해당합니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="column-rule-color" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" type="color" restriction="color" syntax="div { $(name): #ff0; }" description="열 규칙의 색상을 설정합니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-rule-color"/>
+
+  <CssProperty _locID="column-rule-style" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" type="border-style" restriction="enum" syntax="div { $(name): solid; }" description="요소의 열 사이 규칙 스타일을 설정합니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-rule-style"/>
+
+  <CssProperty _locID="column-rule-width" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" type="border-width" restriction="length, enum" syntax="div { $(name): 3px; }" description="열 사이 규칙의 너비를 설정합니다. 음수 값은 사용할 수 없습니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-rule-width"/>
+
+  <CssProperty _locID="column-rule" _locAttrData="description" ref="border" version="3.0" browsers="IE10,O11.6" description="이 속성은 'column-rule-width', 'column-rule-style' 및 'column-rule-color'를 스타일시트의 같은 위치에서 설정하기 위한 줄임 속성입니다. 생략된 값은 초기 값으로 설정됩니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-rule0"/>
+
+  <CssProperty _locID="break-inside" _locAttrData="description" version="3.0" browsers="IE10,O11.6" restriction="enum" syntax="h2 { $(name): avoid-column; }" description="생성된 상자 안의 페이지/열 나누기 동작을 설명합니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-breaks">
+
+    <entry _locID="break-inside_auto" _locAttrData="description" value="auto" description="생성된 상자 안의 페이지/열 나누기를 강제하지도 금지하지도 않습니다."/>
+    <entry _locID="break-inside_avoid" _locAttrData="description" value="avoid" description="생성된 상자 안에 페이지/열 나누기를 적용하지 않습니다."/>
+    <entry _locID="break-inside_avoid-page" _locAttrData="description" value="avoid-page" description="생성된 상자 안에 페이지 나누기를 적용하지 않습니다."/>
+    <entry _locID="break-inside_avoid-column" _locAttrData="description" value="avoid-column" description="생성된 상자 안에 열 나누기를 적용하지 않습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="break-before" _locAttrData="description" version="3.0" browsers="IE10,O11.6" restriction="enum" syntax="h2 { $(name): column; }" description="생성된 상자 앞의 페이지/열 나누기 동작을 설명합니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-breaks">
+
+    <entry _locID="break-before_auto" _locAttrData="description" value="auto" description="생성된 상자 앞/뒤에 페이지/열 나누기를 강제하지도 금지하지도 않습니다."/>
+    <entry _locID="break-before_always" _locAttrData="description" value="always" description="생성된 상자 앞/뒤에 페이지 나누기를 항상 강제로 적용합니다."/>
+    <entry _locID="break-before_avoid" _locAttrData="description" value="avoid" description="생성된 상자 앞/뒤에 페이지/열 나누기를 적용하지 않습니다."/>
+    <entry _locID="break-before_left" _locAttrData="description" value="left" description="다음 페이지에 왼쪽 페이지 서식이 적용되도록 생성된 상자 앞/뒤에 한 개나 두 개의 페이지 나누기를 강제로 적용합니다."/>
+    <entry _locID="break-before_right" _locAttrData="description" value="right" description="다음 페이지에 오른쪽 페이지 서식이 적용되도록 생성된 상자 앞/뒤에 한 개나 두 개의 페이지 나누기를 강제 적용합니다."/>
+    <entry _locID="break-before_page" _locAttrData="description" value="page" description="생성된 상자 앞/뒤에 페이지 나누기를 항상 강제로 적용합니다."/>
+    <entry _locID="break-before_column" _locAttrData="description" value="column" description="생성된 상자 앞/뒤에 열 나누기를 항상 강제로 적용합니다."/>
+    <entry _locID="break-before_avoid-page" _locAttrData="description" value="avoid-page" description="생성된 상자 앞/뒤에 페이지 나누기를 적용하지 않습니다."/>
+    <entry _locID="break-before_avoid-column" _locAttrData="description" value="avoid-column" description="생성된 상자 앞/뒤에 열 나누기를 적용하지 않습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="break-after" browsers="IE10,O11.5" ref="break-before"/>
+
+  <CssProperty _locID="column-span" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" restriction="enum" syntax="article { $(name): all; }" description="생성된 상자 뒤의 페이지/열 나누기 동작을 설명합니다." standard-reference="http://www.w3.org/TR/css3-multicol/#column-span0">
+
+    <entry _locID="column-span_none" _locAttrData="description" value="none" description="여러 열에 요소가 포함되지 않습니다."/>
+    <entry _locID="column-span_all" _locAttrData="description" value="all" description="모든 열에 요소가 포함됩니다. 요소 앞에 나타나는 정상적인 흐름의 콘텐츠는 요소가 나타나기 전 모든 열에서 자동으로 균형이 조정됩니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="column-fill" _locAttrData="description" version="3.0" browsers="IE10,O11.5,S9" restriction="enum" syntax="article { $(name): balance; }" description="연속 미디어에서 열 길이가 제한되면 이 속성이 참조되기만 하고 그렇지 않으면 자동으로 열의 균형이 조정됩니다." standard-reference="http://www.w3.org/TR/css3-multicol/#filling-columns">
+
+    <entry _locID="column-fill_auto" _locAttrData="description" value="auto" description="순서대로 열을 채웁니다."/>
+    <entry _locID="column-fill_balance" _locAttrData="description" value="balance" description="가능하면 열 사이의 콘텐츠를 균등하게 조정합니다."/>
+  </CssProperty>
+
+</CssModule>

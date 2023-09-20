@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium, 
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University), 
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Basic Box" standard-reference="http://www.w3.org/TR/css3-box/" status="WD" pub-date="2007-08-09">
+
+  <CssProperty _locID="display" _locAttrData="description" version="1.0" restriction="enum" syntax="p { $(name): inline; }" description="이 속성을 'float' 및 'position'과 함께 사용하면 요소에 대해 생성되는 상자의 형식이 결정됩니다." standard-reference="http://www.w3.org/TR/css3-box/#display">
+
+    <entry _locID="display_block" _locAttrData="description" value="block" version="2.0" description="블록 상자입니다."/>
+    <entry _locID="display_compact" _locAttrData="description" value="compact" version="3.0" browsers="none" description="컨텍스트에 따라 블록 상자 또는 마커 상자입니다. 속성은 최종 상태에 따라 압축 상자에 적용됩니다."/>
+    <entry _locID="display_inline" _locAttrData="description" value="inline" version="2.0" description="인라인 상자입니다."/>
+    <entry _locID="display_inline-block" _locAttrData="description" value="inline-block" version="2.0" description="대체 요소와 유사하게 자체가 단일 인라인 상자로 이동되는 블록 상자입니다. 인라인 블록 내부는 블록 상자로 형식이 지정되고 상자 자체는 인라인 상자로 형식이 지정됩니다."/>
+    <entry value="inline-table" version="2.0"/>
+    <entry _locID="display_" _locAttrData="description" value="list-item" version="2.0" description="하나 이상의 블록 상자 및 하나의 마커 상자입니다."/>
+    <entry value="ruby" version="3.0"/>
+    <entry value="ruby-base" version="3.0"/>
+    <entry value="ruby-text" version="3.0"/>
+    <entry value="ruby-base-group" version="3.0" browsers="none"/>
+    <entry value="ruby-text-group" version="3.0" browsers="none"/>
+    <entry value="ruby-base-container" version="3.0"/>
+    <entry value="ruby-text-container" version="3.0"/>
+    <entry _locID="display_run-in" _locAttrData="description" value="run-in" version="2.0" description="컨텍스트에 따라 블록 상자 또는 인라인 상자입니다. 속성은 최종 상태에 따라 런인 상자에 적용됩니다(인라인 수준 또는 블록 수준)."/>
+    <entry value="table" version="2.0"/>
+    <entry value="table-row-group" version="2.0"/>
+    <entry value="table-header-group" version="2.0"/>
+    <entry value="table-footer-group" version="2.0"/>
+    <entry value="table-row" version="2.0"/>
+    <entry value="table-column" version="2.0"/>
+    <entry value="table-column-group" version="2.0"/>
+    <entry value="table-cell" version="2.0"/>
+    <entry value="table-caption" version="2.0"/>
+    <entry _locID="display_none" _locAttrData="description" value="none" version="1.0" description="이 값은 요소가 상자를 생성하지 않게 합니다. 즉, 요소가 레이아웃에서 아무런 영향도 주지 않습니다. 하위 요소도 상자를 생성하지 않습니다. 이 동작은 하위 요소에 대한 'display' 속성을 설정하여 재정의할 수 없습니다."/>
+    <entry value="contents" version="3.0" browsers="FF37"/>
+  </CssProperty>
+
+  <CssProperty _locID="padding" _locAttrData="description, syntax" version="1.0" restriction="length, percentage" description="안쪽 여백 영역의 두께 값을 설정하기 위한 줄임 속성입니다. 왼쪽을 생략하면 오른쪽과 같습니다. 아래쪽을 생략하면 위쪽과 같습니다. 오른쪽을 생략하면 위쪽과 같습니다. 값은 음수일 수 없습니다." syntax="div { $(name): 4px 7px 2px 4px; }
+                 div { $(name): top right bottom left; }" standard-reference="http://www.w3.org/TR/css3-box/#padding1"/>
+
+  <CssProperty _locID="padding-top" ref="padding" syntax="ul { $(name): 2em; }"/>
+  <CssProperty _locID="padding-right" ref="padding-top"/>
+  <CssProperty _locID="padding-left" ref="padding-top"/>
+  <CssProperty _locID="padding-bottom" ref="padding-top"/>
+
+  <CssProperty _locID="margin" _locAttrData="description, syntax" version="1.0" restriction="length, percentage" description="여백 영역의 두께 값을 설정하기 위한 줄임 속성입니다. 왼쪽을 생략하면 오른쪽과 같습니다. 아래쪽을 생략하면 위쪽과 같습니다. 오른쪽을 생략하면 위쪽과 같습니다. 값은 음수일 수 없습니다." syntax="div { $(name): 4px 7px 2px 4px; }
+               div { $(name): top right bottom left; }" standard-reference="http://www.w3.org/TR/css3-box/#margin1">
+
+    <entry value="auto"/>
+  </CssProperty>
+
+  <CssProperty _locID="margin-top" ref="margin" syntax="div { $(name): 4px; }"/>
+  <CssProperty _locID="margin-left" ref="margin-top"/>
+  <CssProperty _locID="margin-right" ref="margin-top"/>
+  <CssProperty _locID="margin-bottom" ref="margin-top"/>
+
+  <CssProperty _locID="width" _locAttrData="description" version="1.0" restriction="length, percentage" description="'box-sizing'에 따라 특정 상자에 대한 콘텐츠 영역, 안쪽 여백 영역 또는 테두리 영역의 너비를 지정합니다." syntax="header { $(name): 200px; }" standard-reference="http://www.w3.org/TR/css3-box/#width">
+
+    <entry _locID="width_auto" _locAttrData="description" value="auto" description="너비는 다른 속성의 값에 따라 달라집니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="height" _locAttrData="description" version="1.0" restriction="length, percentage" description="'box-sizing'에 따라 특정 상자에 대한 콘텐츠 영역, 안쪽 여백 영역 또는 테두리 영역의 높이를 지정합니다." syntax="footer { $(name): 100px; }" standard-reference="http://www.w3.org/TR/css3-box/#height">
+
+    <entry _locID="height_auto" _locAttrData="description" value="auto" description="높이는 다른 속성의 값에 따라 달라집니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="min-width" _locAttrData="description" version="2.0" browsers="C,FF1,IE7,O7,S1" restriction="length, percentage" description="작성자가 콘텐츠 너비를 특정 범위로 제한할 수 있게 합니다." syntax="footer { $(name): 300px; }" standard-reference="http://www.w3.org/TR/css3-box/#min-width"/>
+
+  <CssProperty _locID="max-width" _locAttrData="description" version="2.0" browsers="C,FF1,IE7,O7,S1" restriction="length, percentage" description="작성자가 콘텐츠 너비를 특정 범위로 제한할 수 있게 합니다." syntax="footer { $(name): 300px; }" standard-reference="http://www.w3.org/TR/css3-box/#max-width">
+
+    <entry _locID="max-width_none" _locAttrData="description" value="none" description="상자 너비에 제한이 없습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="min-height" _locAttrData="description" version="2.0" browsers="C,FF1,IE7,O7,S1" restriction="length, percentage" description="작성자가 콘텐츠 높이를 특정 범위로 제한할 수 있게 합니다." syntax="footer { $(name): 300px; }" standard-reference="http://www.w3.org/TR/css3-box/#min-height"/>
+
+  <CssProperty _locID="max-height" _locAttrData="description" version="2.0" browsers="C,FF1,IE7,O7,S1" restriction="length, percentage" description="작성자가 콘텐츠 높이를 특정 범위로 제한할 수 있게 합니다." syntax="footer { $(name): 300px; }" standard-reference="http://www.w3.org/TR/css3-box/#max-height">
+
+    <entry _locID="max-height_none" _locAttrData="description" value="none" description="상자 높이에 제한이 없습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="float" _locAttrData="description" version="1.0" restriction="enum" syntax="img { $(name): right; }" description="상자가 움직이는 방법을 지정합니다. 임의 요소에 대해 설정할 수 있지만 절대 위치로 지정되지 않는 상자를 생성하는 요소에만 적용됩니다." standard-reference="http://www.w3.org/TR/2006/WD-CSS21-20060411/visuren.html#propdef-float">
+
+    <entry _locID="float_left" _locAttrData="description" value="left" description="이 요소는 왼쪽으로 움직이는 블록 상자를 생성합니다. 콘텐츠는 위쪽('clear' 속성의 영향을 받음)부터 시작하여 상자의 오른쪽에서 이동합니다."/>
+    <entry _locID="float_right" _locAttrData="description" value="right" description="상자가 오른쪽으로 움직이고 콘텐츠가 위쪽부터 시작하여 상자의 왼쪽에서 이동한다는 점을 제외하고 'left'와 유사합니다."/>
+    <entry _locID="float_none" _locAttrData="description" value="none" description="상자가 움직이지 않습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="clear" _locAttrData="description" version="1.0" restriction="enum" description="움직이는 이전 요소에 인접하면 안 되는 요소 상자의 측면을 나타냅니다. 'clear' 속성은 요소 자체나 다른 블록 형식 컨텍스트에 있는 float을 고려하지 않습니다." syntax="footer { $(name): both; }" standard-reference="http://www.w3.org/TR/2006/WD-CSS21-20060411/visuren.html#propdef-clear">
+
+    <entry _locID="clear_none" _locAttrData="description" value="none" description="float을 고려하여 상자의 위치에 대한 제약 조건이 없습니다."/>
+    <entry _locID="clear_left" _locAttrData="description" value="left" description="생성된 상자의 여유 공간이 위쪽 테두리 가장자리를 소스 문서의 이전 요소에서 발생한 왼쪽으로 움직이는 모든 상자의 아래쪽 바깥 가장자리 아래에 배치하는 데 필요한 양으로 설정됩니다."/>
+    <entry _locID="clear_right" _locAttrData="description" value="right" description="생성된 상자의 여유 공간이 위쪽 테두리 가장자리를 소스 문서의 이전 요소에서 발생한 오른쪽으로 움직이는 모든 상자의 아래쪽 바깥 가장자리 아래에 배치하는 데 필요한 양으로 설정됩니다."/>
+    <entry _locID="clear_both" _locAttrData="description" value="both" description="생성된 상자의 여유 공간이 위쪽 테두리 가장자리를 소스 문서의 이전 요소에서 발생한 오른쪽 및 왼쪽으로 움직이는 모든 상자의 아래쪽 바깥 가장자리 아래에 배치하는 데 필요한 양으로 설정됩니다."/>
+  </CssProperty>
+
+  <CssPropertyValue type="overflow">
+    <entry _locID="overflow_visible" _locAttrData="description" value="visible" version="2.0" description="콘텐츠가 잘리지 않습니다. 즉, 콘텐츠가 콘텐츠 상자 밖에 렌더링될 수 있습니다."/>
+    <entry _locID="overflow_hidden" _locAttrData="description" value="hidden" version="2.0" description="콘텐츠가 잘리며 잘림 영역 밖에 있는 콘텐츠를 보기 위한 스크롤 메커니즘을 제공하지 않아야 합니다."/>
+    <entry _locID="overflow_scroll" _locAttrData="description" value="scroll" version="2.0" description="콘텐츠가 잘리며 사용자 에이전트가 화면에 표시되는 스크롤 메커니즘(예: 스크롤 막대 또는 패너)을 사용하는 경우 콘텐츠가 잘리는지 여부와 관계없이 상자에 대해 해당 메커니즘을 표시해야 합니다."/>
+    <entry _locID="overflow_auto" _locAttrData="description" value="auto" version="2.0" description="'auto' 값의 동작은 UA에 따라 달라지지만 범위를 벗어나는 상자에 대해 스크롤 메커니즘이 제공되게 만들어야 합니다."/>
+    <entry _locID="overflow_no-display" _locAttrData="description" value="no-display" version="3.0" browsers="none" description="콘텐츠가 콘텐츠 상자에 맞지 않으면 'display: none'이 지정된 것처럼 상자 전체가 제거됩니다."/>
+    <entry _locID="overflow_no-content" _locAttrData="description" value="no-content" version="3.0" browsers="none" description="콘텐츠가 콘텐츠 상자에 맞지 않으면 'visibility: hidden'이 지정된 것처럼 콘텐츠 전체가 숨겨집니다."/>
+  </CssPropertyValue>
+
+  <CssProperty _locID="overflow-x" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE5,O9.5,S3" type="overflow" restriction="enum" description="요소의 콘텐츠 영역 범위를 벗어나는 콘텐츠를 자를지 여부를 지정합니다." syntax="div { $(name): hidden; }" standard-reference="http://www.w3.org/TR/css3-box/#overflow-x"/>
+
+  <CssProperty _locID="overflow-y" browsers="C,FF1.5,IE5,O9.5,S3" ref="overflow-x"/>
+
+  <CssProperty _locID="overflow" _locAttrData="description" version="2.0" type="overflow" restriction="enum" description="'overflow-x' 및 'overflow-y'를 설정하기 위한 줄임 속성입니다." syntax="div { overflow: hidden auto; }" standard-reference="http://www.w3.org/TR/css3-box/#overflow"/>
+
+  <CssProperty _locID="visibility" _locAttrData="description" version="2.0" browsers="all" restriction="enum" syntax="img { $(name): hidden; }" description="요소에 의해 생성되는 상자가 렌더링되는지 여부를 지정합니다. 표시되지 않는 상자가 계속 레이아웃에 영향을 줍니다. 상자가 아예 생성되지 않게 만들려면 'display' 속성을 'none'으로 설정하십시오." standard-reference="http://www.w3.org/TR/css3-box/#visibility">
+
+    <entry _locID="visibility_visible" _locAttrData="description" value="visible" description="생성된 상자가 표시됩니다."/>
+    <entry _locID="visibility_hidden" _locAttrData="description" value="hidden" description="생성된 상자가 표시되지 않지만(완전히 투명하며 아무 것도 그려지지 않음) 계속 레이아웃에 영향을 줍니다."/>
+    <entry _locID="visibility_collapse" _locAttrData="description" value="collapse" description="테이블과 관련되어 있습니다. 행, 행 그룹, 열 또는 열 그룹 이외의 요소에 사용하면 'collapse'의 의미가 'hidden'과 같아집니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="rotation" _locAttrData="description" version="3.0" browsers="none" restriction="angle" description="블록 수준 요소를 'rotation-point'로 지정한 점을 기준으로 시계 반대 방향으로 회전합니다." syntax="img { $(name): 90deg; }" standard-reference="http://www.w3.org/TR/css3-box/#rotation"/>
+
+  <CssProperty _locID="rotation-point" _locAttrData="description" version="3.0" browsers="none" restriction="percentage, length" description="점을 왼쪽 위 테두리 가장자리로부터의 오프셋으로 정의하는 값 쌍입니다. 초기 값은 50% 50%입니다." syntax="img { $(name): 10% 25%; }" standard-reference="http://www.w3.org/TR/css3-box/#rotation-point">
+    
+    <entry value="left"/>
+    <entry value="center"/>
+    <entry value="right"/>
+    <entry value="top"/>
+    <entry value="bottom"/>
+  </CssProperty>
+
+  <CssProperty _locID="clip" _locAttrData="description, syntax" version="2.0" browsers="all" restriction="enum" description="요소의 상자에서 표시되는 부분을 정의합니다." syntax="span { $(name): rect(0px, 60px, 200px, 0px); }
+        span { $(name): rect(top, right, bottom, left); }" standard-reference="http://www.w3.org/TR/CSS2/visufx.html#propdef-clip">
+    
+    <entry value="auto"/>
+    <entry value="rect()"/>
+  </CssProperty>
+
+</CssModule>

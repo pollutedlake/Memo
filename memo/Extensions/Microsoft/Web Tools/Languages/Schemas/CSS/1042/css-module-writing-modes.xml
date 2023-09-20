@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium, 
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University), 
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Writing Modes" standard-reference="http://www.w3.org/TR/css-writing-modes-3/" status="CR" pub-date="2014-03-20">
+
+  <CssProperty _locID="direction" _locAttrData="description" restriction="enum" version="2.0" syntax="div { $(name): rtl; }" description="줄에서 텍스트와 요소의 기본 방향 및 포함의 방향을 지정하고 유니코드 양방향 알고리즘을 재정의합니다." standard-reference="http://www.w3.org/TR/css-writing-modes-3/#direction">
+
+    <entry _locID="direction_rtl" _locAttrData="description" value="rtl" description="오른쪽에서 왼쪽 방향입니다."/>
+    <entry _locID="direction_ltr" _locAttrData="description" value="ltr" description="왼쪽에서 오른쪽 방향입니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="unicode-bidi" _locAttrData="description" restriction="enum" version="2.0" syntax="p { $(name): embed; }" description="양방향 알고리즘에 대한 포함 수준입니다." standard-reference="http://www.w3.org/TR/css-writing-modes-3/#unicode-bidi">
+
+    <entry _locID="unicode-bidi_normal" _locAttrData="description" value="normal" description="요소가 양방향 알고리즘에 대한 추가 포함 수준을 열지 않습니다. 인라인 수준 요소의 경우 암시적 재정렬이 요소 경계를 넘어 적용됩니다."/>
+    <entry _locID="unicode-bidi_embed" _locAttrData="description" value="embed" description="요소가 인라인 수준일 경우 이 값이 양방향 알고리즘에 대해 추가 포함 수준을 엽니다. 'direction' 속성으로 이 포함 수준의 방향을 제공합니다."/>
+    <entry _locID="unicode-bidi_isolate" _locAttrData="description" value="isolate" version="3.0" browsers="none" description="요소 콘텐츠가 별도의 독립적 단락에 있다고 간주됩니다."/>
+    <entry _locID="unicode-bidi_isolate-override" _locAttrData="description" value="isolate-override" description="'isolate' 격리 동작과 'bidi-override'의 방향 재정의 동작을 결합합니다."/>
+    <entry _locID="unicode-bidi_plaintext" _locAttrData="description" value="plaintext" version="3.0" browsers="none" description="유니코드 양방향 알고리즘 용도로, 요소가 포함 블록을 구성하는 각 양방향 단락의 기본 방향은 요소의 계산된 'direction'으로 결정되지 않습니다."/>
+    <entry _locID="unicode-bidi_bidi-override" _locAttrData="description" value="bidi-override" description="요소 안에서 'direction' 속성에 따라 엄격하게 순서가 다시 지정됩니다. 양방향 알고리즘의 암시적인 부분은 무시됩니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="writing-mode" _locAttrData="description" version="3.0" restriction="enum" syntax="span { $(name): lr-tb; }" description="'direction' 및 'block-progression'에 대한 줄임 속성입니다." standard-reference="http://www.w3.org/TR/css-writing-modes-3/#writing-mode">
+
+    <entry _locID="writing-mode_horizontal-tb" _locAttrData="description" value="horizontal-tb" description="블록 흐름 방향이 위쪽에서 아래쪽입니다. 쓰기 모드는 가로입니다."/>
+    <entry _locID="writing-mode_vertical-rl" _locAttrData="description" value="vertical-rl" description="블록 흐름 방향이 오른쪽에서 왼쪽입니다. 쓰기 모드는 세로입니다."/>
+    <entry _locID="writing-mode_vertical-lr" _locAttrData="description" value="vertical-lr" description="블록 흐름 방향이 왼쪽에서 오른쪽입니다. 쓰기 모드는 세로입니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="text-orientation" _locAttrData="description" version="3.0" restriction="enum" syntax="span { $(name): mixed; }" description="이 속성은 줄에서 텍스트의 방향을 지정합니다." standard-reference="http://www.w3.org/TR/css-writing-modes-3/#text-orientation">
+
+    <entry _locID="text-orientation_mixed" _locAttrData="description" value="mixed" description="세로 쓰기 모드에서는 가로 전용 스크립트의 문자가 가로 텍스트의 표준 방향에서 시계 방향으로 90° 위치인 옆으로 배치됩니다."/>
+    <entry _locID="text-orientation_upright" _locAttrData="description" value="upright" description="세로 쓰기 모드에서는 가로 전용 스크립트의 문자가 표준 가로 방향에서 수직으로 렌더링됩니다."/>
+    <entry _locID="text-orientation_sideways-right" _locAttrData="description" value="sideways-right" description="이로 인해 세로 쓰기 모드에서는 가로 레이아웃이지만 시계 방향으로 90° 회전된 것처럼 텍스트가 배치됩니다."/>
+    <entry _locID="text-orientation_sideways-left" _locAttrData="description" value="sideways-left" description="이로 인해 세로 쓰기 모드에서는 가로 레이아웃이지만 시계 반대 방향으로 90° 회전된 것처럼 텍스트가 배치됩니다."/>
+    <entry _locID="text-orientation_sideways" _locAttrData="description" value="sideways" description="이 값은 'vertical-rl' 쓰기 모드의 'sideways-right'와 같으며 'vertical-lr' 쓰기 모드의 'sideways-left'와 같습니다."/>
+    <entry _locID="text-orientation_use-glyph-orientation" _locAttrData="description" value="use-glyph-orientation" description="이 값은 사용되지 않으며 SVG에만 적용됩니다."/>
+  </CssProperty>
+
+  <CssProperty name="caption-side">
+    <entry value="block-start"/>
+    <entry value="block-end"/>
+  </CssProperty>
+
+  <CssProperty _locID="text-combine-upright" _locAttrData="description" version="3.0" restriction="enum, integer" syntax="span { $(name): all; }" description="이 속성은 여러 문자 조합을 단일 문자 공간으로 지정합니다." standard-reference="http://www.w3.org/TR/css-writing-modes-3/#text-combine-upright">
+
+    <entry _locID="text-orientation_none" _locAttrData="description" value="none" description="특수 처리가 없습니다."/>
+    <entry _locID="text-orientation_all" _locAttrData="description" value="all" description="세로 라인 상자에서 단일 문자 공간을 차지하도록 상자 내부의 연속된 모든 문자를 가로로 조판하려고 합니다."/>
+    <entry _locID="text-orientation_digits" _locAttrData="description" value="digits" description="세로 라인 상자에서 단일 문자 공간을 차지하도록 지정된 정수보다 문자 수가 적거나 같은 연속된 ASCII 숫자(U+0030–U+0039)의 각 최대 시퀀스를 가로로 조판하려고 합니다."/>
+  </CssProperty>
+
+</CssModule>

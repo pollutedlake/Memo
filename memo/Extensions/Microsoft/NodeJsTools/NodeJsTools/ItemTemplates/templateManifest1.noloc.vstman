@@ -1,0 +1,415 @@
+﻿<VSTemplateManifest Version="1.0" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\JestUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4017" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4018" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="403" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.js</DefaultName>
+        <SortOrder>320</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyCss</RelativePathOnDisk>
+    <TemplateFileName>EmptyCss.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3029" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3030" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="414" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>StyleSheet.css</DefaultName>
+        <SortOrder>410</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyHtml</RelativePathOnDisk>
+    <TemplateFileName>EmptyHtml.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3032" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3033" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="415" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>Page.html</DefaultName>
+        <SortOrder>400</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyJson</RelativePathOnDisk>
+    <TemplateFileName>EmptyJson.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3023" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3024" />
+        <Icon Package="{AAB75614-2F8F-4DA6-B0A6-763C6DBB2969}" ID="2200" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>Json.json</DefaultName>
+        <SortOrder>420</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyJs</RelativePathOnDisk>
+    <TemplateFileName>EmptyJs.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3007" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3011" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="403" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>JavaScript.js</DefaultName>
+        <SortOrder>100</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyJsx</RelativePathOnDisk>
+    <TemplateFileName>EmptyJsx.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="1036" />
+        <Description Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="1037" />
+        <!-- pulled from the asp.net v5 package -->
+        <Icon Package="{AAB75614-2F8F-4DA6-B0A6-763C6DBB2969}" ID="2300" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>file.jsx</DefaultName>
+        <SortOrder>120</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyLess</RelativePathOnDisk>
+    <TemplateFileName>EmptyLess.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3038" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3039" />
+        <Icon Package="{AAB75614-2F8F-4DA6-B0A6-763C6DBB2969}" ID="2100" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>StyleSheet.less</DefaultName>
+        <SortOrder>450</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyPug</RelativePathOnDisk>
+    <TemplateFileName>EmptyPug.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3020" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3021" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="417" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>Page.pug</DefaultName>
+        <SortOrder>430</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyTs</RelativePathOnDisk>
+    <TemplateFileName>EmptyTs.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3017" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3018" />
+        <Icon Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="3">
+        </Icon>
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>TypeScript.ts</DefaultName>
+        <SortOrder>200</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\EmptyXml</RelativePathOnDisk>
+    <TemplateFileName>EmptyXml.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3035" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3036" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="416" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>Document.xml</DefaultName>
+        <SortOrder>490</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptJSX</RelativePathOnDisk>
+    <TemplateFileName>EmptyTsx.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="1027" />
+        <Description Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="1028" />
+        <Icon Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="3">
+        </Icon>
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>file.tsx</DefaultName>
+        <SortOrder>230</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TapeUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3055" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3056" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="403" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.js</DefaultName>
+        <SortOrder>340</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptTapeUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3057" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3058" />
+        <Icon Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="3" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.ts</DefaultName>
+        <SortOrder>350</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptTsConfig</RelativePathOnDisk>
+    <TemplateFileName>tsconfig.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="1024" />
+        <Description Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="1025" />
+        <!-- pulled from the asp.net v5 package -->
+        <Icon Package="{AAB75614-2F8F-4DA6-B0A6-763C6DBB2969}" ID="2200" />
+        <DefaultName>tsconfig.json</DefaultName>
+        <TemplateID>Node.tsconfig</TemplateID>
+        <ProjectType>Node.js</ProjectType>
+        <SortOrder>370</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptJsConfig</RelativePathOnDisk>
+    <TemplateFileName>jsconfig.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4009" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4010" />
+        <!-- pulled from the asp.net v5 package -->
+        <Icon Package="{AAB75614-2F8F-4DA6-B0A6-763C6DBB2969}" ID="2200" />
+        <DefaultName>jsconfig.json</DefaultName>
+        <TemplateID>Node.jsconfig</TemplateID>
+        <ProjectType>Node.js</ProjectType>
+        <SortOrder>371</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\JavaScriptVueComponent</RelativePathOnDisk>
+    <TemplateFileName>JavaScriptVueComponent.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4013" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4014" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="415" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>component.vue</DefaultName>
+        <SortOrder>200</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptVueComponent</RelativePathOnDisk>
+    <TemplateFileName>TypeScriptVueComponent.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4011" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4012" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="415" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>component.vue</DefaultName>
+        <SortOrder>200</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\MochaUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3049" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3050" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="403" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.js</DefaultName>
+        <SortOrder>320</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptMochaUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3052" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3051" />
+        <Icon Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="3" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.ts</DefaultName>
+        <SortOrder>330</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\UnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3009" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3015" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="403" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.js</DefaultName>
+        <SortOrder>300</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3047" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3046" />
+        <Icon Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="3" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.ts</DefaultName>
+        <SortOrder>310</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\JasmineUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4005" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4006" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="403" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.js</DefaultName>
+        <SortOrder>320</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>JavaScript\TypeScriptJasmineUnitTest</RelativePathOnDisk>
+    <TemplateFileName>UnitTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4007" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4008" />
+        <Icon Package="{2ffe45c4-5c73-493c-b187-f2e955ff875e}" ID="3" />
+        <ProjectType>Node.js</ProjectType>
+        <DefaultName>UnitTest.ts</DefaultName>
+        <SortOrder>330</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CloudService\NETFramework4\Web Role\Node.js\CloudServiceWebRole</RelativePathOnDisk>
+    <TemplateFileName>WebRole.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4001" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4002" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="404" />
+        <ProjectType>CloudServiceProject</ProjectType>
+        <DefaultName>WebRole</DefaultName>
+        <SortOrder>21</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CloudService\NETFramework4\Web Role\Node.js\CloudServiceTypeScriptWebRole</RelativePathOnDisk>
+    <TemplateFileName>TypeScriptWebRole.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3097" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3098" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="410" />
+        <ProjectType>CloudServiceProject</ProjectType>
+        <DefaultName>WebRole</DefaultName>
+        <SortOrder>31</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CloudService\NETFramework4\Web Role\Node.js\CloudServiceExpressWebRole</RelativePathOnDisk>
+    <TemplateFileName>ExpressWebRole.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3093" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3094" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="404" />
+        <ProjectType>CloudServiceProject</ProjectType>
+        <DefaultName>WebRole</DefaultName>
+        <SortOrder>22</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CloudService\NETFramework4\Web Role\Node.js\CloudServiceTypeScriptExpressWebRole</RelativePathOnDisk>
+    <TemplateFileName>TypeScriptExpressWebRole.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3095" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3096" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="410" />
+        <ProjectType>CloudServiceProject</ProjectType>
+        <DefaultName>WebRole</DefaultName>
+        <SortOrder>32</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CloudService\NETFramework4\Worker Role\Node.js\CloudServiceTypeScriptWorkerRole</RelativePathOnDisk>
+    <TemplateFileName>TypeScriptWorkerRole.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="3099" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4000" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="413" />
+        <ProjectType>CloudServiceProject</ProjectType>
+        <DefaultName>WorkerRole</DefaultName>
+        <SortOrder>30</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CloudService\NETFramework4\Worker Role\Node.js\CloudServiceWorkerRole</RelativePathOnDisk>
+    <TemplateFileName>WorkerRole.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4003" />
+        <Description Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="4004" />
+        <Icon Package="{FE8A8C3D-328A-476D-99F9-2A24B75F8C7F}" ID="407" />
+        <ProjectType>CloudServiceProject</ProjectType>
+        <DefaultName>WorkerRole</DefaultName>
+        <SortOrder>20</SortOrder>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

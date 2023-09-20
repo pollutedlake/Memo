@@ -1,0 +1,78 @@
+[$RootKey$\Languages\CodeExpansions\HTML\Paths]
+"ASP.NET Web Stack 5"="$PackageFolder$\Mvc\Snippets\HTML\%LCID%\ASP.NET Web Stack 5"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\WebApiControllerItemTemplateWeb.cs.vstemplate]
+"PrimaryFolder"="App_Code"
+"ItemName"="Web API Controller"
+"Extension"=".cs"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\WebApiControllerItemTemplateWeb.vb.vstemplate]
+"PrimaryFolder"="App_Code"
+"ItemName"="Web API Controller"
+"Extension"=".vb"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\SignalRHubItemTemplateWeb.cs.vstemplate]
+"PrimaryFolder"="App_Code" 
+"ItemName"="SignalR Hub" 
+"Extension"=".cs" 
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\SignalRPersistentConnectionItemTemplateWeb.cs.vstemplate]
+"PrimaryFolder"="App_Code" 
+"ItemName"="SignalR Persistent Connection" 
+"Extension"=".cs" 
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\SignalRHubItemTemplateWeb.vb.vstemplate]
+"PrimaryFolder"="App_Code" 
+"ItemName"="SignalR Hub" 
+"Extension"=".vb" 
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\SignalRPersistentConnectionItemTemplateWeb.vb.vstemplate]
+"PrimaryFolder"="App_Code" 
+"ItemName"="SignalR Persistent Connection" 
+"Extension"=".vb" 
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\OwinStartupItemTemplateWeb.cs.vstemplate]
+"PrimaryFolder"="App_Code" 
+"ItemName"="OWIN Startup" 
+"Extension"=".cs" 
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemFilters\App_Data]
+"WebApiControllerItemTemplateWeb.cs.vstemplate"=dword:00000000
+"WebApiControllerItemTemplateWeb.vb.vstemplate"=dword:00000000
+"SignalRHubItemTemplateWeb.cs.vstemplate"=dword:00000000
+"SignalRPersistentConnectionItemTemplateWeb.cs.vstemplate"=dword:00000000
+"SignalRHubItemTemplateWeb.vb.vstemplate"=dword:00000000
+"SignalRPersistentConnectionItemTemplateWeb.vb.vstemplate"=dword:00000000
+"OwinStartupItemTemplateWeb.cs.vstemplate"=dword:00000000
+ 
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\Razor3HelperItemTemplate.cshtml.vstemplate]
+"PrimaryFolder"="App_Code"
+"ItemName"="Helper (Razor v3)"
+"Extension"=".cshtml"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemWizardInfo\Razor3HelperItemTemplate.vbhtml.vstemplate]
+"PrimaryFolder"="App_Code"
+"ItemName"="Helper (Razor v3)"
+"Extension"=".vbhtml"
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemFilters\App_Code]
+"Razor3WebPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3WebPageItemTemplate.cshtml.vstemplate"=dword:00000000
+"Razor3LayoutPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3LayoutPageItemTemplate.cshtml.vstemplate"=dword:00000000
+"Razor3EmptyPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3EmptyPageItemTemplate.cshtml.vstemplate"=dword:00000000
+"Razor3ContentPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3ContentPageItemTemplate.cshtml.vstemplate"=dword:00000000
+
+[$RootKey$\Projects\{E24C65DC-7377-472b-9ABA-BC803B73C61A}\AddNewItemFilters\App_Data]
+"Razor3WebPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3WebPageItemTemplate.cshtml.vstemplate"=dword:00000000
+"Razor3LayoutPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3LayoutPageItemTemplate.cshtml.vstemplate"=dword:00000000
+"Razor3HelperItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3HelperItemTemplate.cshtml.vstemplate"=dword:00000000
+"Razor3EmptyPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3EmptyPageItemTemplate.cshtml.vstemplate"=dword:00000000
+"Razor3ContentPageItemTemplate.vbhtml.vstemplate"=dword:00000000
+"Razor3ContentPageItemTemplate.cshtml.vstemplate"=dword:00000000

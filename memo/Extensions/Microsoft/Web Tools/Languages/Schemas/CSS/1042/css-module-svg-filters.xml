@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium, 
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University), 
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="SVG Filters" standard-reference="http://www.w3.org/TR/SVG11/filters.html" status="REC" pub-date="2011-08-16">
+
+  <CssProperty _locID="enable-background" _locAttrData="description" version="3.0" restriction="integer, length, percentage, enum" description="컨테이너 내의 모든 그래픽 요소에 공유 배경 이미지를 할당합니다." standard-reference="http://www.w3.org/TR/SVG11/filters.html#EnableBackgroundProperty">
+
+    <entry _locID="enable-background_new" _locAttrData="description" value="new" description="새 배경 이미지 캔버스를 만듭니다. 현재 컨테이너 요소의 모든 자식 항목이 배경에 액세스할 수 있으므로 대상 장치와 함께 부모의 배경 이미지 캔버스에 렌더링됩니다."/>
+    <entry _locID="enable-background_accumulate" _locAttrData="description" value="accumulate" description="상위 컨테이너 요소에 새 속성이 있으면 현재 컨테이너 내의 모든 그래픽 요소가 부모의 배경 이미지 및 대상 모두에 렌더링됩니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="lighting-color" _locAttrData="description" version="3.0" type="color" restriction="color" description="필터 기본 형식인 'feDiffuseLighting' 및 'feSpecularLighting'의 광원 색을 정의합니다." standard-reference="http://www.w3.org/TR/SVG11/filters.html#LightingColorProperty"/>
+
+  <CssProperty _locID="flood-color" _locAttrData="description" version="3.0" type="color" restriction="color" description="현재 필터의 기본 부분 영역을 퍼지게 하는 데 사용할 색을 나타냅니다." standard-reference="http://www.w3.org/TR/SVG11/filters.html#FloodColorProperty"/>
+
+  <CssProperty _locID="flood-opacity" _locAttrData="description" version="3.0" restriction="number(0-1)" description="현재 필터의 기본 부분 영역을 퍼지게 하는 데 사용할 불투명도를 나타냅니다." standard-reference="http://www.w3.org/TR/SVG11/filters.html#FloodOpacityProperty"/>
+
+</CssModule>

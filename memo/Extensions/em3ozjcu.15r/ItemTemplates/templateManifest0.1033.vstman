@@ -1,0 +1,18 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VC\Test\1033\BoostTest</RelativePathOnDisk>
+    <TemplateFileName>BoostTest.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <Name>Boost.Test</Name>
+        <Description>A Boost.Test based unit test.</Description>
+        <ProjectType>VC</ProjectType>
+        <TemplateID>Microsoft.VisualC.Item.BoostTest</TemplateID>
+        <SortOrder>10</SortOrder>
+        <DefaultName>Test.cpp</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <Icon>Icon.ico</Icon>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

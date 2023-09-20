@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium, 
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University), 
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Generated and Replaced Content" standard-reference="http://www.w3.org/TR/css3-content/" status="WD" pub-date="2003-05-14">
+
+  <CssPseudo name="::before(2)" _locID="before-pseudo-function" _locAttrData="description" version="3.0" browsers="none" syntax="span::before(2) { content: 'B'; }" description="의사(pseudo) 요소가 요소나 다른 의사 요소의 콘텐츠 바로 앞에 콘텐츠를 삽입하는 데 사용됩니다. 여러 '::before()' 함수가 함께 사용되면 숫자 매개 변수가 사용됩니다. 'content' 속성은 삽입할 콘텐츠를 지정하는 데 사용됩니다." standard-reference="http://www.w3.org/TR/css3-content/#inserting"/>
+
+  <CssPseudo name="::after(2)" _locID="after-pseudo-function" _locAttrData="description" version="3.0" browsers="none" syntax="span::after(2) { content: 'B'; }" description="의사(pseudo) 요소가 요소나 다른 의사 요소의 콘텐츠 바로 뒤에 콘텐츠를 삽입하는 데 사용됩니다. 여러 '::after()' 함수가 함께 사용되면 숫자 매개 변수가 사용됩니다. 'content' 속성은 삽입할 콘텐츠를 지정하는 데 사용됩니다." standard-reference="http://www.w3.org/TR/css3-content/#inserting"/>
+
+  <CssPseudo name="::outside" _locID="outside-pseudo-element" _locAttrData="description" version="3.0" browsers="none" syntax="span::outside::before { content: 'A'; }" description="'::outside' 의사(pseudo) 요소는 의사 요소의 상위 요소 바로 밖에 생성되는 요소입니다." standard-reference="http://www.w3.org/TR/css3-content/#wrapping"/>
+
+  <CssPseudo name="::outside(2)" _locID="outside-pseudo-function" _locAttrData="description" version="3.0" browsers="none" syntax="span::outside(1)::before { content: 'A'; }" description="'::outside' 의사(pseudo) 요소는 의사 요소의 상위 요소 바로 밖에 생성되는 요소입니다. 매개 변수를 제공하면 '::outside(n)'이 n-1번째 의사 요소 바로 밖에 생성되는 n번째 의사 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-content/#wrapping"/>
+
+  <CssPseudo name="::alternate" _locID="alternate-pseudo-element" _locAttrData="description" version="3.0" browsers="none" description="이 의사(pseudo) 요소는 해당 'move-to' 속성을 식별자로 설정하여 생성됩니다. 이 요소는 'content' 속성에서 다음에 'pending()'이 발생할 때 렌더링됩니다." syntax="span::after::alternate { content: 'alternate2'; move-to: example; }" standard-reference="http://www.w3.org/TR/css3-content/#inserting1"/>
+
+  <CssPseudo name="::marker" _locID="marker-selector" _locAttrData="description" version="3.0" browsers="none" syntax="li::marker { content: counter(item, decimal) '.'; }" description="'::marker' 의사(pseudo) 요소가 생성되게 하려면 해당 상위 부모 항목의 계산된 'display' 값이 'list-item'이어야 합니다." standard-reference="http://www.w3.org/TR/css3-content/#block"/>
+
+  <CssPseudo name="::line-marker" _locID="line-marker-selector" _locAttrData="description" version="3.0" browsers="none" syntax="pre::line-marker { width: 2em; }" description="'::line-marker' 의사(pseudo) 요소는 '::marker' 의사 요소와 완전히 같은 방법으로 배치되지만 첫 번째 줄뿐 아니라 모든 줄에 나타납니다." standard-reference="http://www.w3.org/TR/css3-content/#block"/>
+
+  <CssProperty _locID="crop" _locAttrData="description" version="3.0" browsers="none" restriction="enum" description="대체된 요소가 개체 전체가 아니라 단순히 개체의 사각형 영역이 될 수 있게 합니다." syntax="&lt;shape&gt; | auto" standard-reference="http://www.w3.org/TR/css3-content/#the-crop">
+
+    <entry _locID="crop_auto" _locAttrData="description" value="auto" description="요소의 계산된 내장 너비 및 높이가 해당 실제 내장 너비 및 높이와 같습니다."/>
+    <entry _locID="crop_rect" _locAttrData="description" value="rect(top, right, bottom, left)" description="각 네 인수는 &lt;length&gt; 또는 &lt;percentage&gt;일 수 있습니다. 모든 백분율 값은 요소의 내장 크기(있는 경우)에 상대적으로 계산됩니다. 값은 요소의 왼쪽 위에 상대적인 오프셋입니다."/>
+    <entry _locID="crop_insert-rect" _locAttrData="description" value="insert-rect(top, right, bottom, left)" description="각 네 인수는 &lt;length&gt; 또는 &lt;percentage&gt;일 수 있습니다. 모든 백분율 값은 요소의 내장 크기(있는 경우)에 상대적으로 계산됩니다. 값은 요소의 각 가장자리에 상대적인 오프셋입니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="move-to" _locAttrData="description" version="3.0" browsers="none" restriction="identifier" description="속성으로 인해 요소 또는 의사(pseudo) 요소가 흐름에서 제거되어 문서의 뒷부분에 다시 삽입됩니다." syntax="normal | here | &lt;identifier&gt;" standard-reference="http://www.w3.org/TR/css3-content/#moving">
+
+    <entry _locID="move-to_normal" _locAttrData="description" value="normal" description="'::alternate' 의사(pseudo) 요소의 경우 상위 부모 항목의 'content' 속성에 'footnote' 카운터가 사용되면 'move-to'의 계산 값이 'footnotes'입니다."/>
+    <entry _locID="move-to_here" _locAttrData="description" value="here" description="요소 또는 의사(pseudo) 요소가 이동되지 않았습니다. 이 값을 사용하면 '::alternate' 의사 요소와 이러한 의사 요소를 상위 항목으로 가지는 모든 의사 요소를 만들 수 없게 됩니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="quotes" _locAttrData="description" version="2.0" browsers="C,FF1.5,IE8,O8,S5.1" restriction="string" description="포함된 여러 인용구에 적용할 따옴표를 지정합니다." syntax="none | [ &lt;string&gt; &lt;string&gt; ]+" standard-reference="http://www.w3.org/TR/css3-content/#quotes">
+
+    <entry _locID="quotes_none" _locAttrData="description" value="none" description="'content' 속성의 'open-quote' 및 'close-quote' 값이 각각 'no-open-quote' 및 'no-close-quote'인 것처럼 따옴표를 생성하지 않습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="counter-increment" _locAttrData="description" version="2.0" browsers="C,FF1.5,IE8,O10.5,S3" restriction="identifier, integer" description="카운터가 'content' 속성의 'counter()' 및 'counters()' 함수와 함께 사용되었습니다." syntax="h1:before { $(name): section; }" standard-reference="http://www.w3.org/TR/css3-content/#counters">
+
+    <entry _locID="counter-increment_none" _locAttrData="description" value="none" description="카운터가 수정되지 않았습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="counter-reset" _locAttrData="description" version="2.0" browsers="C,FF1.5,IE8,O10.5,S3" restriction="identifier, integer" syntax="h1 { $(name): section; }" description="속성이 하나 이상의 카운터 이름(식별자)을 허용합니다. 각 이름 뒤에는 정수를 붙일 수도 있습니다. 이 정수는 요소가 발생할 때마다 카운터에 설정되는 값을 제공합니다." standard-reference="http://www.w3.org/TR/css3-content/#counters">
+
+    <entry _locID="counter-increment_none" _locAttrData="description" value="none" description="카운터가 수정되지 않았습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="page-policy" _locAttrData="description" version="3.0" browsers="none" restriction="enum" syntax="@string chapter { $(name): last; }" description="카운터 또는 문자열 값에 적용되는 특정 요소의 페이지 기반 발생을 결정합니다." standard-reference="http://www.w3.org/TR/css3-content/#page-policy">
+
+    <entry _locID="page-policy_start" _locAttrData="description" value="start" description="스타일을 페이지 요소에는 아직 적용하지 않았지만 @page 컨텍스트 자체에는 적용한 후에 페이지 시작 부분에 카운터 또는 문자열의 값을 사용합니다."/>
+    <entry _locID="page-policy_first" _locAttrData="description" value="first" description="페이지를 처리하는 동안 카운터 또는 문자열에서 상태가 처음으로 변경된 후에 값을 사용합니다."/>
+    <entry _locID="page-policy_last" _locAttrData="description" value="last" description="페이지에서 상태가 마지막으로 변경된 후에 값을 사용합니다."/>
+  </CssProperty>
+
+  <CssAtDirective name="counter" _locID="counter-rule" _locAttrData="description" version="3.0" browsers="none" include-root-properties="false" include-root-directives="false" syntax="@counter footnote { list-style-type: super-decimal; }" description="작성자가 @counter 선언 블록 및 'page-policy' 속성(문자열과 카운터에만 적용됨)을 사용할 수 있습니다." standard-reference="http://www.w3.org/TR/css3-content/#counter0">
+
+    <CssProperty ref="list-style-type"/>
+  </CssAtDirective>
+
+  <CssAtDirective name="string" _locID="string-rule" _locAttrData="description" version="3.0" syntax="@string chapter { page-policy: last; }" browsers="none" description="작성자가 @string 선언 블록 및 'page-policy' 속성(문자열과 카운터에만 적용됨)을 사용할 수 있습니다." standard-reference="http://www.w3.org/TR/css3-content/#string"/>
+
+  <CssProperty _locID="content" _locAttrData="description" version="2.0" browsers="C,FF1,IE8,O4,S1" restriction="string, url" description="카운터 또는 문자열 값에 적용되는 특정 요소의 페이지 기반 발생을 결정합니다." syntax="a:after { $(name): ' ( attr(href))';}" standard-reference="http://www.w3.org/TR/css3-content/#content">
+
+    <entry _locID="content_normal" _locAttrData="description" value="normal" description="계산 규칙은 http://www.w3.org/TR/css3-content/#content를 참조하십시오."/>
+    <entry _locID="content_none" _locAttrData="description" value="none" description="요소에서는 이로 인해 요소가 비어 있는 것처럼 요소의 자식 항목이 이 요소의 자식 항목으로 렌더링될 수 없습니다. 의사(pseudo) 요소에서는 이로 인해 의사 요소에 아무런 콘텐츠도 포함되지 않습니다."/>
+    <entry _locID="content_inhibit" _locAttrData="description" value="inhibit" version="3.0" browsers="none" description="요소에서는 이로 인해 요소가 비어 있는 것처럼 요소의 자식 항목이 이 요소의 자식 항목으로 렌더링될 수 없습니다. 의사(pseudo) 요소에서는 'display'가 'none'으로 계산된 것처럼 의사 요소를 만들 수 없습니다."/>
+    <entry _locID="content_contents" _locAttrData="description" value="contents" version="3.0" browsers="none" description="요소의 하위 항목을 표시합니다."/>
+    <entry _locID="content_footnote" _locAttrData="description" value="footnote" version="3.0" browsers="none" description="'counter(footnote, normal)'의 줄임 표기입니다. 이는 각주의 선형 부분에 사용하기 위해 제공됩니다."/>
+    <entry _locID="content_endnote" _locAttrData="description" value="endnote" version="3.0" browsers="none" description="'counter(endnote, normal)'의 줄임 표기입니다. 이는 미주의 선형 부분에 사용하기 위해 제공됩니다."/>
+    <entry _locID="content_section-note" _locAttrData="description" value="section-note" version="3.0" browsers="none" description="'counter(section-note, normal)'의 줄임 표기입니다. 이는 섹션 메모의 선형 부분에 사용하기 위해 제공됩니다."/>
+    <entry _locID="content_list-item" _locAttrData="description" value="list-item" version="3.0" browsers="none" description="'counter(list-item, normal)'의 줄임 표기입니다. 이는 'display'가 'list-item'으로 설정된 상위 항목을 가지는 '::marker' 의사(pseudo) 요소에 설정된 경우 'normal'과 같지 않습니다('list-style' 속성을 무시함)."/>
+    <entry _locID="content_open-quote" _locAttrData="description" value="open-quote" browsers="none" description="'quotes' 속성의 적절한 문자열로 값이 바뀝니다."/>
+    <entry _locID="content_close-quote" _locAttrData="description" value="close-quote" browsers="none" description="'quotes' 속성의 적절한 문자열로 값이 바뀝니다."/>
+    <entry _locID="content_no-open-quote" _locAttrData="description" value="no-open-quote" browsers="none" description="'none'에서와 같이 아무 것도 삽입하지 않지만 따옴표의 중첩 수준을 증가(감소)시킵니다."/>
+    <entry _locID="content_no-close-quote" _locAttrData="description" value="no-close-quote" browsers="none" description="'none'에서와 같이 아무 것도 삽입하지 않지만 따옴표의 중첩 수준을 증가(감소)시킵니다."/>
+    <entry _locID="content_box" _locAttrData="description" value="box" version="3.0" browsers="none" description="속이 빈 사각형입니다."/>
+    <entry _locID="content_check" _locAttrData="description" value="check" version="3.0" browsers="none" description="확인 표시입니다."/>
+    <entry _locID="content_circle" _locAttrData="description" value="circle" version="3.0" browsers="none" description="속이 빈 원입니다."/>
+    <entry _locID="content_diamond" _locAttrData="description" value="diamond" version="3.0" browsers="none" description="속이 찬 다이아몬드입니다. 일부 플랫폼에서는 'disc'와 유사합니다."/>
+    <entry _locID="content_disc" _locAttrData="description" value="disc" version="3.0" browsers="none" description="속이 찬 원입니다."/>
+    <entry _locID="content_hyphen" _locAttrData="description" value="hyphen" version="3.0" browsers="none" description="하이픈 글머리 기호입니다."/>
+    <entry _locID="content_square" _locAttrData="description" value="square" version="3.0" browsers="none" description="속이 찬 사각형입니다."/>
+    <entry _locID="content_attr" _locAttrData="description" value="attr()" description="attr(n) 함수는 선택기 제목에 대해 특성 n의 값을 문자열로 반환합니다."/>
+    <entry _locID="content_date" _locAttrData="description" value="date(format)" version="3.0" browsers="none" description="지정된 형식 문자열에 따라 형식이 지정된 현재 날짜 및/또는 시간입니다. 형식은 POSIX 날짜 형식 문자열을 기반으로 합니다."/>
+    <entry _locID="content_counterN" _locAttrData="description" value="counter(name)" description="카운터가 식별자로 표시됩니다. 'counter-increment' 및 'counter-reset' 속성을 참조하십시오."/>
+    <entry _locID="content_counterNSty" _locAttrData="description" value="counter(name, style)" browsers="none" description="카운터가 식별자로 표시됩니다. 'counter-increment' 및 'counter-reset' 속성을 참조하십시오."/>
+    <entry _locID="content_counterstr" _locAttrData="description" value="counters(name, string)" browsers="none" description="카운터가 식별자로 표시됩니다. 'counter-increment' 및 'counter-reset' 속성을 참조하십시오."/>
+    <entry _locID="content_countersNSS" _locAttrData="description" browsers="none" value="counters(name, string, style)" description="카운터가 식별자로 표시됩니다. 'counter-increment' 및 'counter-reset' 속성을 참조하십시오."/>
+    <entry _locID="content_string" _locAttrData="description" browsers="none" value="string(name)" description="문자열 값을 지정합니다."/>
+    <entry _locID="content_pending" _locAttrData="description" browsers="none" value="pending()" description="이렇게 하면 모든 요소와 해당 'move-to' 속성이 지정된 식별자로 계산되는 의사(pseudo) 요소가 현재 요소 또는 의사 요소의 자식 항목으로 삽입됩니다."/>
+    <entry value="url()"/>
+  </CssProperty>
+
+  <CssProperty _locID="display">
+    <entry value="normal" version="3.0"/>
+  </CssProperty>
+
+</CssModule>

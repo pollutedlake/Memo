@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Speech" standard-reference="http://www.w3.org/TR/css3-speech/" status="WD" pub-date="2012-03-20">
+
+  <CssProperty _locID="voice-volume" _locAttrData="description" version="3.0" browsers="none" restriction="volume, enum" description="음성 신시사이저에서 출력된 waveform의 진폭을 참조합니다. 'silent'의 값은 '0'에 매핑되고 'x-loud'는 '100'에 매핑됩니다. 숫자 볼륨 수준에 대한 다른 값의 매핑은 구현에 따라 다르며 특정 음성 신시사이저에서 다음 음성 신시사이저로 달라질 수 있습니다." syntax="&lt;decibel&gt; | silent | x-soft | soft | medium | loud | x-loud" standard-reference="http://www.w3.org/TR/css3-speech/#voice-volume">
+
+    <entry _locID="voice-volume_silent" _locAttrData="description" value="silent" description="볼륨 값이 0입니다."/>
+    <entry value="x-soft"/>
+    <entry value="soft"/>
+    <entry value="medium"/>
+    <entry value="loud"/>
+    <entry _locID="voice-volume_x-loud" _locAttrData="description" value="x-loud" description="볼륨 값이 100입니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="voice-balance" _locAttrData="description" version="3.0" browsers="none" restriction="number(-100-100)" description="왼쪽 채널과 오른쪽 채널 사이의 밸런스를 참조하고 소비자 오디오 기기에서 광범위하게 지원되는 두 채널(스테레오) 모델을 가정합니다." syntax="&lt;number&gt; | left | center | right | leftwards | rightwards" standard-reference="http://www.w3.org/TR/css3-speech/#voice-balance">
+
+    <entry _locID="voice-balance_left" _locAttrData="description" value="left" description="-100과 동일합니다."/>
+    <entry _locID="voice-balance_center" _locAttrData="description" value="center" description="'0'과 동일합니다."/>
+    <entry _locID="voice-balance_right" _locAttrData="description" value="right" description="'100' 또는 '+100'과 동일합니다."/>
+    <entry _locID="voice-balance_leftwards" _locAttrData="description" value="leftwards" description="상속된 음성 밸런스를 기준으로 소리를 왼쪽으로 이동합니다. 정확도를 높이려면 상속된 값에서 20을 빼고 결과 값을 '-100'에서 '100'까지의 범위로 잘라냅니다."/>
+    <entry _locID="voice-balance_rightwards" _locAttrData="description" value="rightwards" description="상속된 음성 밸런스를 기준으로 소리를 오른쪽으로 이동합니다. 정확도를 높이려면 상속된 값에 20을 더하고 결과 값을 '-100'에서 '100'까지의 범위로 잘라냅니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="speak" _locAttrData="description" version="2.0" browsers="none" restriction="enum" syntax="div { $(name): normal; }" description="텍스트를 청각적으로 렌더링할지 여부와 그럴 경우 어떤 방식으로 렌더링할지 지정합니다." standard-reference="http://www.w3.org/TR/css3-speech/#speak">
+
+    <entry _locID="speak_none" _locAttrData="description" value="none" description="요소에 렌더링할 시간이 필요 없도록 청각적 렌더링을 억제합니다."/>
+    <entry _locID="speak_normal" _locAttrData="description" value="normal" description="요소 및 요소의 자식을 렌더링하는 데 언어 종속적 발음 규칙을 사용합니다. 문장 부호는 발음하지 않지만 대신 여러 번의 일시 중지로 자연스럽게 렌더링됩니다."/>
+    <entry _locID="speak_spell-out" _locAttrData="description" value="spell-out" description="한 번에 한 자씩 텍스트의 철자를 씁니다(머리 글자어와 약어에 유용). 악센트가 거의 없는 언어에서는 악센트가 없는 대체 철자를 위해 악센트를 둘 수 있습니다."/>
+    <entry _locID="speak_digits" _locAttrData="description" value="digits" description="한 번에 한 자리씩 숫자를 읽습니다(예: '12'를 '일 이'로 읽고 '31'을 '삼 일'로 읽습니다."/>
+    <entry _locID="speak_literal-punctuation" _locAttrData="description" value="literal-punctuation" description="'normal' 값과 비슷하지만 세미콜론, 중괄호 등의 문장 부호를 문자 그대로 말합니다."/>
+    <entry _locID="speak_no-punctuation" _locAttrData="description" value="no-punctuation" description="'normal' 값과 비슷하지만 문장 부호를 말하거나 여러 번의 일시 중지로 렌더링하지 않습니다."/>
+  </CssProperty>
+
+  <CssPropertyValue type="pause-time">
+    <entry value="none"/>
+    <entry value="x-weak"/>
+    <entry value="weak"/>
+    <entry value="medium"/>
+    <entry value="strong"/>
+    <entry value="x-strong"/>
+  </CssPropertyValue>
+
+  <CssProperty _locID="pause-before" _locAttrData="description" version="2.0" browsers="none" restriction="time" description="요소 앞에 또는 'cue-before'가 지정된 경우 그 앞에 일시 중지나 운율적 경계가 오도록 지정합니다. 값은 음성 출력에서 구분선의 운율 강도를 나타냅니다." syntax="h3 { $(name): 30ms; }" standard-reference="http://www.w3.org/TR/css3-speech/#pause-before" type="pause-time"/>
+
+  <CssProperty _locID="pause-after" _locAttrData="description" ref="pause-before" version="2.0" browsers="none" description="요소 뒤에 또는 'cue-after'가 지정된 경우 그 뒤에 일시 중지나 운율적 경계가 오도록 지정합니다. 값은 음성 출력에서 구분선의 운율 강도를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-speech/#pause-after"/>
+
+  <CssProperty _locID="pause" _locAttrData="description" version="2.0" browsers="none" restriction="time, enum" type="pause-time" description="'pause-before' 및 'pause-after'를 설정하기 위한 줄임 속성입니다. 값이 두 개 제공되면 첫 번째 값은 'pause-before'이고 두 번째 값은 'pause-after'입니다. 값이 한 개만 제공되면 두 속성 모두에 적용됩니다." syntax="h2 { $(name): 30ms 40ms; }" standard-reference="http://www.w3.org/TR/css3-speech/#pause"/>
+
+  <CssProperty _locID="rest-before" _locAttrData="description" version="3.0" browsers="none" type="pause-time" restriction="time" description="휴지 또는 운율적 경계가 요소 콘텐츠 앞에 오도록 지정합니다." syntax="h3 { $(name): 4s; }" standard-reference="http://www.w3.org/TR/css3-speech/#rest-before"/>
+
+  <CssProperty _locID="rest-after" _locAttrData="description" ref="rest-before" description="휴지 또는 운율적 경계가 요소 콘텐츠 뒤에 오도록 지정합니다." standard-reference="http://www.w3.org/TR/css3-speech/#rest-after"/>
+
+  <CssProperty _locID="rest" _locAttrData="description" ref="rest-before" description="'rest-before' 및 'rest-after'를 설정하기 위한 줄임 속성입니다. 값이 두 개 제공되면 첫 번째 값은 'rest-before'이고 두 번째 값은 'rest-after'입니다. 값이 한 개만 제공되면 두 속성에 모두 적용됩니다." standard-reference="http://www.w3.org/TR/css3-speech/#rest"/>
+
+  <CssProperty _locID="cue-before" _locAttrData="description" version="2.0" browsers="none" restriction="url, volume, enum" description="청각 아이콘을 사용하여 의미 요소를 구분할 수도 있습니다. 요소 앞이나 뒤에서 소리를 재생하여 요소를 구분할 수 있습니다." syntax="h1 { $(name): url(dong.wav) -3dB;}" standard-reference="http://www.w3.org/TR/css3-speech/#cue-before">
+
+    <entry _locID="cue-before_" _locAttrData="description" value="none" description="청각 아이콘이 지정되지 않았습니다."/>
+    <entry _locID="cue-before_silent" _locAttrData="description" value="silent" description="'0' 값"/>
+    <entry value="x-soft"/>
+    <entry value="soft"/>
+    <entry value="medium"/>
+    <entry value="loud"/>
+    <entry _locID="cue-before_x-loud" _locAttrData="description" value="x-loud" description="'100' 값"/>
+    <entry value="url()"/>
+  </CssProperty>
+
+  <CssProperty _locID="cue-after" ref="cue-before" standard-reference="http://www.w3.org/TR/css3-speech/#cue-after"/>
+
+  <CssProperty _locID="cue" _locAttrData="description" ref="cue-before" description="'cue-before' 및 'cue-after'를 설정하기 위한 줄임 속성입니다. 값이 두 개 제공되면 첫 번째 값은 'cue-before'이고 두 번째 값은 'cue-after'입니다. 값이 한 개만 제공되면 두 속성에 모두 적용됩니다." standard-reference="http://www.w3.org/TR/css3-speech/#cue"/>
+
+  <CssProperty _locID="voice-family" _locAttrData="description" version="2.0" browsers="none" restriction="number, string" syntax="[[&lt;specific-voice&gt; | &lt;generic-voice&gt; ],]* [&lt;specific-voice&gt; | &lt;generic-voice&gt; ]" description="음성 패밀리('font-family'와 비교) 이름 목록으로서 쉼표로 구분되고 우선 순위가 있습니다." standard-reference="http://www.w3.org/TR/css3-speech/#voice-family">
+
+    <entry _locID="voice-family_neutral" _locAttrData="description" value="neutral" description="'generic-voice'의 중성적 음성"/>
+    <entry _locID="voice-family_male" _locAttrData="description" value="male" description="'generic-voice'의 남성 음성"/>
+    <entry _locID="voice-family_female" _locAttrData="description" value="female" description="'generic-voice'의 여성 음성"/>
+
+    <entry value="child" description="Child voice for 'age'"/>
+    <entry value="young" description="Young person voice for 'age'"/>
+    <entry value="old" description="Old person voice for 'age'"/>
+  </CssProperty>
+
+  <CssProperty _locID="voice-rate" _locAttrData="description" version="3.0" browsers="none" restriction="percentage" description="읽기 속도를 제어합니다. 음성의 기본 속도는 언어 및 음성의 개성에 따라 다릅니다." syntax="&lt;percentage&gt; | x-slow | slow | medium | fast | x-fast" standard-reference="http://www.w3.org/TR/css3-speech/#voice-rate">
+
+    <entry value="x-slow"/>
+    <entry value="slow"/>
+    <entry _locID="voice-rate_fast" _locAttrData="description" value="medium" description="100%와 같으며 이 음성의 보통 속도를 의미합니다."/>
+    <entry value="fast"/>
+    <entry value="x-fast"/>
+  </CssProperty>
+
+  <CssProperty _locID="voice-pitch" _locAttrData="description" version="3.0" browsers="none" restriction="percentage, number, frequency, semitones" syntax="h2 { $(name): absolute 30Hz; }" description="평균 음성 피치(진동수)를 지정합니다. 평균 음성 피치는 음성 패밀리에 따라 다릅니다. 예를 들어, 남성의 표준 평균 음성 피치는 약 120Hz이지만 여성의 경우 약 210Hz입니다." standard-reference="http://www.w3.org/TR/css3-speech/#voice-pitch">
+
+    <entry value="absolute"/>
+    <entry value="x-low"/>
+    <entry value="low"/>
+    <entry _locID="voice-pitch_medium" _locAttrData="description" value="medium" description="100%와 같으며 이 음성의 보통 피치를 의미합니다."/>
+    <entry value="high"/>
+    <entry value="x-high"/>
+  </CssProperty>
+
+  <CssProperty _locID="voice-range" _locAttrData="description" version="3.0" browsers="none" restriction="percentage, number, frequency, semitones" syntax="h2 { $(name): +10Hz; }" description="평균 피치로 변형을 지정합니다. 사람의 언어는 억양과 피치에 따라 다르게 들립니다. 이러한 변형을 통해 또 다른 의미와 강조를 전달합니다." standard-reference="http://www.w3.org/TR/css3-speech/#voice-props-voice-range">
+
+    <entry value="absolute"/>
+    <entry value="x-low"/>
+    <entry value="low"/>
+    <entry value="medium"/>
+    <entry value="high"/>
+    <entry value="x-high"/>
+  </CssProperty>
+
+  <CssProperty _locID="voice-stress" _locAttrData="description" version="3.0" browsers="none" restriction="enum" syntax="h2 { $(name): moderate; }" description="적용할 강조의 강도를 나타납니다. 언어에 따라 달라지는 피치 변화, 타이밍 변화, 음량 및 음향 차이를 함께 사용하여 강조를 지정합니다." standard-reference="http://www.w3.org/TR/css3-speech/#voice-stress">
+
+    <entry _locID="voice-stress_none" _locAttrData="description" value="none" description="신시사이저가 정상적으로 강조 하는 단어를 강조에서 금지 합니다."/>
+    <entry value="normal"/>
+    <entry value="moderate"/>
+    <entry value="strong"/>
+    <entry _locID="voice-stress_reduced" _locAttrData="description" value="reduced" description="단어 강조와 반대됩니다. 예를 들어, 'going to'라는 어구를 'gonna'로 줄여서 말합니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="voice-duration" _locAttrData="description" version="3.0" browsers="none" restriction="time" description="만든 이가 선택한 요소의 콘텐츠를 렌더링하는 데 걸리는 시간을 지정할 수 있도록 합니다. 이 속성은 'voice-rate' 속성을 재정의합니다." syntax="&lt;time&gt;" standard-reference="http://www.w3.org/TR/css3-speech/#voice-duration"/>
+
+  <CssProperty _locID="speak-as" _locAttrData="description" version="3.0" browsers="none" restriction="enum" syntax="div { $(name): spell-out; }" description="미리 정의된 가능한 값의 기본 목록을 기반으로 하여 청각적으로 텍스트를 렌더링할 방법을 결정합니다." standard-reference="http://www.w3.org/TR/css3-speech/#speak-as">
+
+    <entry _locID="speak-as_normal" _locAttrData="description" value="normal" description="요소 콘텐츠를 렌더링하는 데 언어 종속적 발음 규칙을 사용합니다."/>
+    <entry _locID="speak-as_spell-out" _locAttrData="description" value="spell-out" description="한 번에 한 자씩 텍스트의 철자를 씁니다(머리 글자어와 약어에 유용)."/>
+    <entry _locID="speak-as_digits" _locAttrData="description" value="digits" description="한 번에 한 자리씩 숫자를 읽습니다(예: '12'를 '일 이'로 읽고 '31'을 '삼 일'로 읽습니다."/>
+    <entry _locID="speak-as_literal-punctuation" _locAttrData="description" value="literal-punctuation" description="세미콜론, 중괄호 등의 문장 부호 이름은 여러 번의 일시 중지로 자연스럽게 렌더링하지 않고 문자 그대로 읽습니다."/>
+    <entry _locID="speak-as_no-punctuation" _locAttrData="description" value="no-punctuation" description="문장 부호가 렌더링되지 않습니다. 읽지도 않고 일시 중지로 렌더링되지도 않습니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="volume" _locAttrData="description" version="2.0" browsers="none" restriction="percentage, number" description="볼륨은 waveform의 중간 볼륨을 참조합니다. 즉, 볼륨 50인 높은 억양의 음성은 최고 정점이 그 이상으로 올라갈 수 있습니다." syntax="&lt;number&gt; | &lt;percentage&gt; | silent | x-soft | soft | medium | loud | x-loud" standard-reference="http://www.w3.org/TR/CSS2/aural.html#propdef-volume">
+
+    <entry _locID="volume_silent" _locAttrData="description" value="silent" description="전혀 소리가 나지 않습니다. 값 '0'은 'silent'와 같은 의미가 아닙니다."/>
+    <entry _locID="volume_x-soft" _locAttrData="description" value="x-soft" description="'0'과 동일합니다."/>
+    <entry _locID="volume_soft" _locAttrData="description" value="soft" description="'25'와 동일합니다."/>
+    <entry _locID="volume_medium" _locAttrData="description" value="medium" description="'50'과 동일합니다."/>
+    <entry _locID="volume_loud" _locAttrData="description" value="loud" description="'75'와 동일합니다."/>
+    <entry _locID="volume_x-loud" _locAttrData="description" value="x-loud" description="'100'과 동일합니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="play-during" _locAttrData="description" version="2.0-2.1" browsers="none" restriction="url" description="요소의 콘텐츠를 렌더링하는 동안 재생할 소리입니다." syntax="&lt;uri&gt; [ mix || repeat ]? | auto | none" standard-reference="http://www.w3.org/TR/CSS2/aural.html#propdef-play-during">
+
+    <entry _locID="play-during_mix" _locAttrData="description" value="mix" description="부모 요소의 'play-during' 속성에서 상속된 소리가 계속 재생되고 &lt;uri&gt;에 지정된 소리와 섞입니다."/>
+    <entry _locID="play-during_repeat" _locAttrData="description" value="repeat" description="소리가 너무 짧아 요소의 전체 지속 기간을 채우지 못하면 소리가 반복됩니다. 그렇지 않으면 소리가 한 번 재생되고 중지됩니다."/>
+    <entry _locID="play-during_auto" _locAttrData="description" value="auto" description="부모 요소의 소리가 계속 재생됩니다."/>
+    <entry _locID="play-during_none" _locAttrData="description" value="none" description="무음 상태입니다. 부모 요소(있을 경우)의 현재 요소가 적용되는 동안 소리가 무음이고 현재 요소 이후 계속됩니다."/>
+    <entry value="url()"/>
+  </CssProperty>
+
+  <CssProperty _locID="azimuth" _locAttrData="description" version="2.0" browsers="none" restriction="angle" syntax="&lt;angle&gt; | [[ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards" description="소리 공간 정보" standard-reference="http://www.w3.org/TR/2007/CR-CSS21-20070719/aural.html#propdef-azimuth">
+
+    <entry value="behind"/>
+    <entry _locID="azimuth_center" _locAttrData="description" value="center" description="'0deg'와 동일합니다. 'behind'를 사용하면 '180deg'입니다."/>
+    <entry _locID="azimuth_center-left" _locAttrData="description" value="center-left" description="'340deg'와 동일합니다. 'behind'를 사용하면 '200deg'입니다."/>
+    <entry _locID="azimuth_center-right" _locAttrData="description" value="center-right" description="'20deg'와 동일합니다. 'behind'를 사용하면 '160deg'입니다."/>
+    <entry _locID="azimuth_far-left" _locAttrData="description" value="far-left" description="'300deg'와 동일합니다. 'behind'를 사용하면 '240deg'입니다."/>
+    <entry _locID="azimuth_far-right" _locAttrData="description" value="far-right" description="'60deg'와 동일합니다. 'behind'를 사용하면 '120deg'입니다."/>
+    <entry _locID="azimuth_left" _locAttrData="description" value="left" description="'320deg'와 동일합니다. 'behind'를 사용하면 '220deg'입니다."/>
+    <entry _locID="azimuth_left-side" _locAttrData="description" value="left-side" description="'270deg'와 동일합니다. 'behind'를 사용하면 '270deg'입니다."/>
+    <entry _locID="azimuth_leftwards" _locAttrData="description" value="leftwards" description="현재 각도를 기준으로 소리를 왼쪽으로 이동합니다. 정확도를 높이려면 20도를 뺍니다."/>
+    <entry _locID="azimuth_right" _locAttrData="description" value="right" description="'40deg'와 동일합니다. 'behind'를 사용하면 '140deg'입니다."/>
+    <entry _locID="azimuth_right-side" _locAttrData="description" value="right-side" description="'90deg'와 동일합니다. 'behind'를 사용하면 '90deg'입니다."/>
+    <entry _locID="azimuth_rightwards" _locAttrData="description" value="rightwards" description="현재 각도를 기준으로 소리를 오른쪽으로 이동합니다. 정확도를 높이려면 20도를 더합니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="elevation" _locAttrData="description" version="2.0" browsers="none" restriction="angle" syntax="&lt;angle&gt; | below | level | above | higher | lower" description="소리 공간 정보" standard-reference="http://www.w3.org/TR/2007/CR-CSS21-20070719/aural.html#propdef-azimuth">
+
+    <entry _locID="elevation_below" _locAttrData="description" value="below" description="'-90deg'와 동일합니다."/>
+    <entry _locID="elevation_level" _locAttrData="description" value="level" description="'0Deg'와 동일합니다."/>
+    <entry _locID="elevation_above" _locAttrData="description" value="above" description="'90Deg'와 동일합니다."/>
+    <entry _locID="elevation_higher" _locAttrData="description" value="higher" description="현재 상승에 10도를 추가합니다."/>
+    <entry _locID="elevation_lower" _locAttrData="description" value="lower" description="현재 상승에서 10도를 뺍니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="richness" _locAttrData="description, syntax" version="2.0" browsers="none" restriction="number(0-100)" syntax="'0'과 '100' 사이의 값입니다. 값이 높을수록 음성이 많이 전달됩니다. 값이 낮을수록 음성이 부드러워집니다." description="음성의 풍부하거나 맑은 정도를 지정합니다. 풍부한 음성은 넓은 공간에서 '전달'되고 부드러운 음성은 그렇지 않습니다." standard-reference="http://www.w3.org/TR/CSS2/aural.html#propdef-richness"/>
+
+  <CssProperty _locID="stress" _locAttrData="description, syntax" version="2.0" browsers="none" restriction="number(0-100)" syntax="'0'과 '100' 사이의 값입니다. 값의 의미는 사용 언어에 따라 다릅니다. 예를 들어, '50'은 영어권 남성의 표준 음성(평균 피치 = 122Hz)이며 보통 정보와 강조를 말할 경우 이탈리아 음성의 '50'과는 다른 의미를 갖습니다." description="음성의 음조 곡선에서 '국부 최대치'의 높이를 지정합니다. 예를 들어, 영어는 강세가 있는 언어이며 문장의 다른 부분에 1차, 2차, 3차 강세가 있습니다." standard-reference="http://www.w3.org/TR/CSS2/aural.html#propdef-stress"/>
+
+  <CssProperty _locID="pitch" _locAttrData="description" version="2.0" browsers="none" restriction="frequency" description="평균 음성 피치(진동수)를 지정합니다. 평균 음성 피치는 음성 패밀리에 따라 다릅니다. 예를 들어, 남성의 표준 평균 음성 피치는 약 120Hz이지만 여성의 경우 약 210Hz입니다." syntax="&lt;frequency&gt; | x-low | low | medium | high | x-high" standard-reference="http://www.w3.org/TR/CSS2/aural.html#propdef-pitch">
+
+    <entry value="x-low"/>
+    <entry value="low"/>
+    <entry _locID="pitch_medium" _locAttrData="description" value="medium" description="100%와 같으며 이 음성의 보통 피치를 의미합니다."/>
+    <entry value="high"/>
+    <entry value="x-high"/>
+  </CssProperty>
+
+  <CssProperty _locID="pitch-range" _locAttrData="description" version="2.0" browsers="none" restriction="number" description="평균 피치의 변형을 지정합니다. 인식되는 인간의 음성 피치는 기본 진동수에 의해 결정되며 값은 일반적으로 남성의 경우 120Hz, 여성의 경우 210Hz입니다." syntax="&lt;number&gt;" standard-reference="http://www.w3.org/TR/CSS2/aural.html#propdef-pitch-range"/>
+
+  <CssProperty _locID="speech-rate" _locAttrData="description" version="2.0" browsers="none" restriction="number" description="읽기 속도를 제어합니다. 음성의 기본 속도는 언어 및 음성의 개성에 따라 다릅니다." syntax="&lt;number&gt; | x-slow | slow | medium | fast | x-fast | faster | slower" standard-reference="http://www.w3.org/TR/CSS2/aural.html#propdef-speech-rate">
+
+    <entry _locID="speech-rate_x-slow" _locAttrData="description" value="x-slow" description="분 당 80단어와 동일합니다."/>
+    <entry _locID="speech-rate_slow" _locAttrData="description" value="slow" description="분 당 120단어와 동일합니다."/>
+    <entry _locID="speech-rate_medium" _locAttrData="description" value="medium" description="분 당 180-200단어와 동일합니다."/>
+    <entry _locID="speech-rate_fast" _locAttrData="description" value="fast" description="분 당 300단어와 동일합니다."/>
+    <entry _locID="speech-rate_x-fast" _locAttrData="description" value="x-fast" description="분 당 500단어와 동일합니다."/>
+    <entry _locID="speech-rate_faster" _locAttrData="description" value="faster" description="현재 읽기 속도에 분 당 40단어를 추가합니다."/>
+    <entry _locID="speech-rate_slower" _locAttrData="description" value="slower" description="현재 읽기 속도에서 분 당 40단어를 뺍니다."/>
+  </CssProperty>
+
+</CssModule>

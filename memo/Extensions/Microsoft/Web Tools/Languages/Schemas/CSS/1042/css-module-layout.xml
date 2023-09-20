@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="CSS Legacy" standard-reference="http://www.w3.org/TR/CSS2/visuren.html" status="WD" pub-date="2011-11-29">
+
+    <CssProperty _locID="position" version="2.0" restriction="enum" syntax="div { $(name): absolute; }" standard-reference="http://www.w3.org/TR/CSS2/visuren.html#propdef-position">
+
+        <entry _locID="position_absolute" _locAttrData="description" value="absolute" description="상자의 위치와 크기가 'top', 'right', 'bottom' 및 'left' 속성으로 지정됩니다. 이러한 속성은 상자의 '포함하는 블록'을 고려한 오프셋을 지정합니다."/>
+        <entry _locID="position_fixed" _locAttrData="description" value="fixed" description="상자의 위치가 'absolute' 모델에 따라 계산되지만 상자가 일부 참조를 고려하여 고정되기도 합니다. 'absolute' 모델과 마찬가지로 상자의 여백이 다른 여백과 함께 축소되지 않습니다."/>
+        <entry _locID="position_relative" _locAttrData="description" value="relative" description="상자의 위치가 일반 흐름(일반 흐름에서는 위치라고 함)에 따라 계산됩니다. 그런 다음 상자가 해당 일반 위치에 상대적으로 오프셋됩니다."/>
+        <entry _locID="position_static" _locAttrData="description" value="static" description="상자가 일반 흐름에 따라 배치된 일반 상자입니다. 'top', 'right', 'bottom' 및 'left' 속성이 적용되지 않습니다."/>
+        <entry _locID="position_sticky" _locAttrData="description" value="sticky" description="상자의 위치가 일반 흐름에 따라 계산됩니다. 그런 다음 상자가 해당 흐름 루트와 포함 블록에 상대적으로 오프셋되며, 테이블 요소를 포함한 모든 경우에 다음 상자의 위치에는 영향을 주지 않습니다."/>
+        <entry _locID="position_center" _locAttrData="description" value="center" description="중심에 있는 상자는 일반 흐름에서 제거됩니다. 즉, 뒤에 있는 형제의 레이아웃에는 영향을 미치지 않습니다."/>
+        <entry _locID="position_page" _locAttrData="description" value="page" description="상자의 위치는 'absolute' 모델에 따라 계산됩니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="left" _locAttrData="description" version="2.0" restriction="length, percentage" description="절대 위치로 지정된 상자의 왼쪽 여백 가장자리가 상자의 '포함하는 블록'의 왼쪽 가장자리 오른쪽으로 오프셋되는 정도를 지정합니다." syntax="article { $(name): 50px; }" standard-reference="http://www.w3.org/TR/CSS2/visuren.html#propdef-left">
+
+        <entry _locID="left_auto" _locAttrData="description" value="auto" description="교체하지 않은 요소의 경우 이 값의 효과는 관련 속성 중 'auto' 값을 가진 속성에 따라 달라집니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="top" _locAttrData="description" ref="left" description="절대 위치로 지정된 상자의 위쪽 여백 가장자리가 상자의 '포함하는 블록'의 위쪽 가장자리 아래로 오프셋되는 정도를 지정합니다." standard-reference="http://www.w3.org/TR/CSS2/visuren.html#propdef-top"/>
+
+    <CssProperty _locID="right" _locAttrData="description" ref="left" description="절대 위치로 지정된 상자의 오른쪽 여백 가장자리가 상자의 '포함하는 블록'의 오른쪽 가장자리 왼쪽으로 오프셋되는 정도를 지정합니다." standard-reference="http://www.w3.org/TR/CSS2/visuren.html#propdef-right"/>
+
+    <CssProperty _locID="bottom" _locAttrData="description" ref="left" description="절대 위치로 지정된 상자의 아래쪽 여백 가장자리가 상자의 '포함하는 블록'의 아래쪽 가장자리 위쪽으로 오프셋되는 정도를 지정합니다." standard-reference="http://www.w3.org/TR/CSS2/visuren.html#propdef-bottom"/>
+
+    <CssProperty _locID="z-index" _locAttrData="description" version="2.0" restriction="integer" description="배치된 상자의 경우 'z-index' 속성이 현재 스택 컨텍스트에서의 상자 스택 수준을 지정하고 상자가 로컬 스택 컨텍스트를 설정하는지 여부를 지정합니다." syntax="img { $(name): 3; }" standard-reference="http://www.w3.org/TR/CSS2/visuren.html#propdef-z-index">
+
+        <entry _locID="z-index_auto" _locAttrData="description" value="auto" description="현재 스택 컨텍스트에서 생성한 상자의 스택 수준은 0입니다. 상자가 루트 요소가 아닌 경우 새 스택 컨텍스트를 만들지 않습니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="line-height" _locAttrData="description" version="1.0" restriction="number, length, percentage" description="인라인 상자에 대한 텍스트 콘텐츠 영역의 block-progression 크기를 결정합니다." syntax="#menu { $(name): 22px; }" standard-reference="http://www.w3.org/TR/css3-linebox/#line-height">
+        <entry _locID="line-height_normal" _locAttrData="description" value="normal" description="사용자 에이전트가 요소의 글꼴 크기를 기반으로 계산 값을 'reasonable' 값으로 설정하도록 합니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="line-grid" _locAttrData="description" version="3.0" restriction="enum" description="이 상자에서 하위 항목에 대해 새로운 기준 눈금을 만드는지 아니면 부모와 동일한 기준 눈금을 사용하는지를 지정합니다." syntax="div { $(name): create; }" standard-reference="http://www.w3.org/TR/css-line-grid-1/#propdef-line-grid">
+
+        <entry value="match-parent"/>
+        <entry value="create"/>
+    </CssProperty>
+
+    <CssProperty _locID="line-snap" _locAttrData="description" version="3.0" restriction="enum" description="요소에 포함된 라인 상자를 'line-grid' 속성으로 지정된 줄 눈금에 맞춥니다." syntax="div { $(name): baseline; }" standard-reference="http://www.w3.org/TR/css-line-grid-1/#propdef-line-snap">
+
+        <entry value="none"/>
+        <entry value="baseline"/>
+        <entry value="contain"/>
+    </CssProperty>
+
+    <CssProperty _locID="vertical-align" _locAttrData="description" version="1.0" restriction="percentage, length" description="라인 상자 안에서 inline-level 요소에 의해 생성된 인라인 상자의 세로 위치에 영향을 줍니다." syntax="div { $(name): middle; }" standard-reference="http://www.w3.org/TR/css3-linebox/#vertical-align">
+
+        <entry _locID="vertical-align_baseline" _locAttrData="description" value="baseline" description="요소의 'alphabetic' 기준선과 부모 요소의 'alphabetic' 기준선을 맞춥니다."/>
+        <entry _locID="vertical-align_sub" _locAttrData="description" value="sub" description="상자의 기준선을 부모 항목 상자의 아래 첨자에 적절한 위치로 낮춥니다. 이 값은 요소 텍스트의 글꼴 크기에 아무런 영향도 주지 않습니다."/>
+        <entry _locID="vertical-align_super" _locAttrData="description" value="super" description="상자의 기준선을 부모 항목 상자의 위 첨자에 적절한 위치로 높입니다. 이 값은 요소 텍스트의 글꼴 크기에 아무런 영향도 주지 않습니다."/>
+        <entry _locID="vertical-align_top" _locAttrData="description" value="top" description="확장된 인라인 상자의 before-edge와 라인 상자의 before-edge를 맞춥니다."/>
+        <entry _locID="vertical-align_text-top" _locAttrData="description" value="text-top" description="상자의 위쪽과 부모 요소 글꼴의 before-edge를 맞춥니다."/>
+        <entry _locID="vertical-align_bottom" _locAttrData="description" value="bottom" description="확장된 인라인 상자의 after-edge와 라인 상자의 after-edge를 맞춥니다."/>
+        <entry _locID="vertical-align_text-bottom" _locAttrData="description" value="text-bottom" description="상자의 아래쪽과 부모 요소 글꼴의 after-edge를 맞춥니다."/>
+        <entry _locID="vertical-align_auto" _locAttrData="description" value="auto" version="3.0" description="부모 상자의 기준선을 해당 항목 또는 경험적으로 다시 생성된 요소 인라인 상자 기준선에 맞춥니다."/>
+        <entry _locID="vertical-align_use-script" _locAttrData="description" value="use-script" version="3.0" browsers="none" description="계산된 스크립트 값으로 결정되는 요소의 스크립트 기본 설정 기준선과 부모 요소의 해당 기준선을 맞춥니다."/>
+        <entry _locID="vertical-align_central" _locAttrData="description" value="central" browsers="none" version="3.0" description="인라인 요소의 'central' 기준선과 부모의 중앙 기준선을 맞춥니다."/>
+        <entry _locID="vertical-align_middle" _locAttrData="description" value="middle" version="3.0" description="인라인 요소의 'middle' 기준선과 부모의 중간 기준선을 맞춥니다."/>
+    </CssProperty>
+
+    <!--<CssProperty _locID="chains"
+               _locAttrData="syntax"
+               version="3.0"
+               browsers="none"
+               restriction="integer"
+               syntax="Example: @page:first { chains: a b c d e f; }"
+               standard-reference="http://www.w3.org/TR/css3-layout/#chains">
+
+    <entry _locID="z-index_auto"
+           _locAttrData="description"
+           value="auto"
+           description="The stack level of the generated box in the current stacking context is the same as its parent's box. The box does not establish a new local stacking context." />
+  </CssProperty>
+
+  <CssPseudo name="::slot(b)"
+           _locID="slot-pseudo-function"
+           _locAttrData="description"
+           version="3.0"
+           browsers="none"
+           syntax="body::slot(b) { background: #FF0 }"
+           description="'::slot(X)' pseudo-element selects the slot with name X (a letter or &quot;@&quot;) of the subject of a selector. If that subject is not a template element, or if it has no such slot, the pseudo-element selects nothing."
+           standard-referece="http://www.w3.org/TR/css3-layout/#slot" />
+
+  <CssProperty _locID="break-inside">
+    <entry value="avoid-slot" />
+  </CssProperty>
+
+  <CssProperty _locID="break-before">
+    <entry value="slot" />
+    <entry value="avoid-slot" />
+  </CssProperty>
+
+  <CssProperty _locID="break-after">
+    <entry value="slot" />
+    <entry value="avoid-slot" />
+  </CssProperty>-->
+</CssModule>

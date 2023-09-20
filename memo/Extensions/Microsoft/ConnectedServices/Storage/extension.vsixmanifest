@@ -1,0 +1,22 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudio.ConnectedServices.Azure.Storage" Version="16.4.460.23317" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Microsoft Azure Storage Connected Service</DisplayName>
+    <Description xml:space="preserve">Allows developers to create and connect to Azure Storage accounts easily and with step-by-step guidance.</Description>
+    <MoreInfo>https://go.microsoft.com/fwlink/?LinkId=534855</MoreInfo>
+    <Icon>AzureStorageProviderIcon.png</Icon>
+    <Tags>ConnectedServices; Cloud; Azure; Services; Tools; Storage</Tags>
+  </Metadata>
+  <Installation AllUsers="true" SystemComponent="true">
+    <InstallationTarget Version="[15.0]" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[15.0]" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[15.0]" Id="Microsoft.VisualStudio.VWDExpress" />
+  </Installation>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.ConnectedServices.Azure.Storage.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.VisualStudio.Azure.ResourceManagement.dll" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.ConnectedServices.Core" Version="[15.0,16.0)" DisplayName="Microsoft Connected Services" />
+  </Prerequisites>
+</PackageManifest>

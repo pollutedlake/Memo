@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Basic User Interface" standard-reference="http://www.w3.org/TR/css3-ui/" status="WD" pub-date="2015-04-09">
+
+    <CssPseudo name=":default" _locID="default-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3,IE10,O10,S5" syntax="input:default { color: red; }" description=":default 선택기는 유사한 요소 집합 중에서 기본값인 하나 이상의 UI 요소에 적용됩니다. 이 선택기는 일반적으로 상황에 맞는 메뉴 항목, 단추 및 특정 목록/메뉴에 적용됩니다." standard-reference="http://www.w3.org/TR/css3-ui/#pseudo-default"/>
+
+    <CssPseudo name=":valid" _locID="valid-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF4,IE10,O10,S5" syntax="input:valid { border-color: green; }" description="요소는 다른 사양으로 정의된 데이터 유효성 의미 체계와 관련하여 올바르거나 잘못되었을 때 각각 :valid 또는 :invalid가 됩니다." standard-reference="http://www.w3.org/TR/css3-ui/"/>
+
+    <CssPseudo name=":invalid" _locID="invalid-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF4,IE10,O10,S5" syntax="input:invalid { border-color: red; }" description="요소는 다른 사양으로 정의된 데이터 유효성 의미 체계와 관련하여 올바르거나 잘못되었을 때 각각 :valid 또는 :invalid가 됩니다." standard-reference="http://www.w3.org/TR/css3-ui/"/>
+
+    <CssPseudo name=":in-range" _locID="in-range-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF10,IE10,O9.6,S5.1" syntax="input:in-range { color: green; }" description="범위 내에 있는 의사(pseudo) 클래스와 범위를 벗어난 의사 클래스는 범위 입력, 숫자 필드 또는 이러한 특성을 허용하는 기타 형식 중 어디에 있든지 min 및 max 특성과 함께 사용해야 합니다." standard-reference="http://www.w3.org/TR/css3-ui/#in-range"/>
+
+    <CssPseudo name=":out-of-range" _locID="out-of-range-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF10,IE10,O9.6,S5.1" syntax="input:out-of-range { color: red; }" description="범위 내에 있는 의사(pseudo) 클래스와 범위를 벗어난 의사 클래스는 범위 입력, 숫자 필드 또는 이러한 특성을 허용하는 기타 형식 중 어디에 있든지 min 및 max 특성과 함께 사용해야 합니다." standard-reference="http://www.w3.org/TR/css3-ui/#out-of-range"/>
+
+    <CssPseudo name=":required" _locID="required-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF4,IE10,O10,S5" syntax="input:optional { color: yellow; }" description="형식 요소는 상위 형식이 제출되기 전에 해당 값이 필수 또는 선택 사항인 경우 각각 :required 또는 :optional이 됩니다. 형식 요소가 아닌 요소는 필수 및 선택 사항이 아닙니다." standard-reference="http://www.w3.org/TR/css3-ui/"/>
+
+    <CssPseudo name=":optional" _locID="optional-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF4,IE10,O10,S5" syntax="input:optional { color: yellow; }" description="형식 요소는 상위 형식이 제출되기 전에 해당 값이 필수 또는 선택 사항인 경우 각각 :required 또는 :optional이 됩니다. 형식 요소가 아닌 요소는 필수 및 선택 사항이 아닙니다." standard-reference="http://www.w3.org/TR/css3-ui/"/>
+
+    <CssPseudo name=":read-only" _locID="read-only-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF10,IE10,O9,S4" syntax="input:read-only { margin: auto; }" description="콘텐츠를 사용자가 변경할 수 없는 요소는 :read-only입니다. 그러나 콘텐츠를 사용자가 변경할 수 있는 요소(예: 텍스트 입력 필드)는 :read-write 상태에 있는 것으로 간주됩니다. 일반적인 문서에서 대부분의 요소는 :read-only입니다." standard-reference="http://www.w3.org/TR/css3-ui/"/>
+
+    <CssPseudo name=":read-write" _locID="read-write-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF10,IE10,O9,S4" syntax="input:read-write { margin: auto 2px; }" description="콘텐츠를 사용자가 변경할 수 없는 요소는 :read-only입니다. 그러나 콘텐츠를 사용자가 변경할 수 있는 요소(예: 텍스트 입력 필드)는 :read-write 상태에 있는 것으로 간주됩니다. 일반적인 문서에서 대부분의 요소는 :read-only입니다." standard-reference="http://www.w3.org/TR/css3-ui/"/>
+
+    <CssPseudo name=":indeterminate" _locID="indeterminate-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.6,IE9,O10.6,S3" syntax="input:indeterminate { margin: auto 2px; }" description=":indeterminate 의사(pseudo) 클래스는 해당 값의 상태를 확인할 수 없는 UI 요소에 적용됩니다." standard-reference="http://www.w3.org/TR/css3-ui/#indeterminate"/>
+
+    <CssProperty _locID="outline-color" _locAttrData="description" ref="color" version="2.0" browsers="C,FF1.5,IE8,O8,S1.2" description="윤곽선의 색입니다." standard-reference="http://www.w3.org/TR/css3-ui/#outline-color0">
+
+        <entry _locID="outline-color_invert" _locAttrData="description" value="invert" description="'Invert'는 화면에 있는 픽셀의 색을 반전시킵니다. 이는 컬러 배경에 상관없이 포커스 테두리가 표시되게 만드는 일반적인 방법입니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="outline-style" _locAttrData="description" ref="border-style" version="2.0" browsers="C,FF1.5,IE8,O8,S1.2" description="윤곽선의 스타일입니다." standard-reference="http://www.w3.org/TR/css3-ui/#outline-style0">
+        <entry version="3.0" value="auto"/>
+    </CssProperty>
+
+    <CssProperty _locID="outline" _locAttrData="description" ref="border" version="2.0" browsers="C,FF1.5,IE8,O8,S1.2" description="줄임 속성으로, 'outline-style', 'outline-width' 및 'outline-color'를 모두 설정합니다." standard-reference="http://www.w3.org/TR/css3-ui/#outline0">
+
+        <entry version="3.0" value="auto"/>
+        <entry _locID="outline_invert" _locAttrData="description" value="invert" description="'Invert'는 화면에 있는 픽셀의 색을 반전시킵니다. 이는 컬러 배경에 상관없이 포커스 테두리가 표시되게 만드는 일반적인 방법입니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="outline-width" _locAttrData="description" ref="border-width" version="2.0" browsers="C,FF1.5,IE8,O8,S1.2" description="윤곽선의 너비입니다." standard-reference="http://www.w3.org/TR/css3-ui/#outline-width0"/>
+
+    <CssProperty _locID="outline-offset" _locAttrData="description" version="3.0" browsers="C,FF1.5,O9.5,S1.2" restriction="length" syntax="article { $(name): 15px; }" description="윤곽선의 너비입니다." standard-reference="http://www.w3.org/TR/css3-ui/#outline-offset0">
+    </CssProperty>
+
+    <CssProperty _locID="resize" _locAttrData="description" version="3.0" browsers="C,FF4,S3" restriction="enum" syntax="div { $(name): both; }" description="요소에 있는 크기 조정 메커니즘(예: 크기 조정 상자 또는 위젯)의 모양과 기능을 제어할 수 있습니다. 'visible'이 아니라 'overflow'가 있는 요소에 적용됩니다." standard-reference="http://www.w3.org/TR/css3-ui/#resize0">
+
+        <entry _locID="resize_none" _locAttrData="description" value="none" description="UA가 요소에 크기 조정 메커니즘을 제공하지 않으며 사용자에게 요소의 크기를 조정하기 위한 직접적인 조작 메커니즘이 제공되지 않습니다."/>
+        <entry _locID="resize_both" _locAttrData="description" value="both" description="UA가 양방향 크기 조정 메커니즘을 제공하여 사용자가 요소의 높이와 너비를 모두 조정할 수 있게 합니다."/>
+        <entry _locID="resize_horizontal" _locAttrData="description" value="horizontal" description="UA가 단방향 가로 크기 조정 메커니즘을 제공하여 사용자가 요소의 너비만 조정할 수 있게 합니다."/>
+        <entry _locID="resize_vertical" _locAttrData="description" value="vertical" description="UA가 단방향 세로 크기 조정 메커니즘을 제공하여 사용자가 요소의 높이만 조정할 수 있게 합니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="text-overflow" _locAttrData="description" version="3.0" browsers="C,FF9,IE5.5,O11.6,S2" restriction="enum, string" syntax="span { $(name): ellipsis; }" description="예를 들어 래핑할 수 없을 때 텍스트가 넘칠 수 있습니다." standard-reference="http://www.w3.org/TR/css3-ui/#text-overflow0">
+
+        <entry _locID="text-overflow_clip" _locAttrData="description" value="clip" description="범위를 벗어나는 인라인 콘텐츠를 자릅니다. 문자는 부분적으로만 렌더링될 수 있습니다."/>
+        <entry _locID="text-overflow_ellipsis" _locAttrData="description" value="ellipsis" description="잘린 인라인 콘텐츠를 나타내기 위해 줄임표 문자(U+2026)를 렌더링합니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="icon" _locAttrData="description" version="3.0" browsers="none" restriction="url" description="작성자가 임의 요소의 스타일을 해당 아이콘 요소를 사용하여 지정할 수 있게 합니다. 요소의 아이콘은 'content' 속성을 값 'icon'으로 설정해야 사용/렌더링됩니다." syntax="auto | 'uri' [, 'uri']*" standard-reference="http://www.w3.org/TR/css3-ui/#icon">
+
+        <entry _locID="icon_auto" _locAttrData="description" value="auto" description="사용자 에이전트에 의해 제공되는 기본 제네릭 아이콘을 사용합니다."/>
+        <entry value="url()"/>
+    </CssProperty>
+
+    <CssPropertyValue type="box-sizings">
+        <entry _locID="box-sizing_content-box" _locAttrData="description" value="content-box" description="CSS2.1에 지정된 너비 및 높이의 동작입니다. 지정된 너비 및 높이와 각 min/max 속성은 요소에 대한 콘텐츠 상자의 너비 및 높이에 각각 적용됩니다."/>
+        <entry _locID="box-sizing_border-box" _locAttrData="description" value="border-box" description="이 요소에 지정된 너비 및 높이와 각 min/max 속성에 따라 요소의 테두리 상자가 결정됩니다."/>
+        <entry _locID="box-sizing_padding-box" _locAttrData="description" value="padding-box" browsers="none" description="이 요소에 지정된 너비 및 높이와 각 min/max 속성에 따라 요소의 안쪽 여백 상자가 결정됩니다."/>
+    </CssPropertyValue>
+
+    <CssProperty _locID="box-sizing" _locAttrData="description" version="3.0" browsers="C,IE8,O8,S5.1" type="box-sizings" restriction="enum" description="CSS3의 상자 모델 추가 항목입니다." syntax="div { $(name): content-box; }" standard-reference="http://www.w3.org/TR/css3-ui/#box-sizing"/>
+
+    <CssProperty _locID="cursor" _locAttrData="description" version="2.0" restriction="url, number" description="요소에서 커서 모양을 제어할 수 있습니다." syntax="nav { $(name): pointer; }" standard-reference="http://www.w3.org/TR/css3-ui/#cursor0">
+
+        <entry _locID="cursor_auto" _locAttrData="description" value="auto" description="UA가 현재 컨텍스트에 따라 표시할 커서를 결정합니다."/>
+        <entry _locID="cursor_default" _locAttrData="description" value="default" description="플랫폼에 종속된 기본 커서입니다. 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_none" _locAttrData="description" value="none" version="3.0" description="요소에 대해 어떠한 커서도 렌더링되지 않습니다."/>
+        <entry _locID="cursor_context-menu" _locAttrData="description" value="context-menu" version="3.0" description="커서 아래에 있는 개체에 대해 상황에 맞는 메뉴를 사용할 수 있습니다. 메뉴 같은 작은 그래픽이 옆에 있는 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_help" _locAttrData="description" value="help" description="커서 아래에 있는 개체에 대해 도움말을 사용할 수 있습니다. 물음표 또는 풍선으로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_pointer" _locAttrData="description" value="pointer" description="커서가 링크를 나타내는 포인터입니다."/>
+        <entry _locID="cursor_progress" _locAttrData="description" value="progress" version="2.1" description="진행률 표시기입니다. 프로그램이 작업을 처리하고 있지만 사용자가 계속 프로그램과 상호 작용할 수 있다는 점에서 'wait'과 다릅니다. 회전하는 물놀이용 공이나 시계 또는 모래 시계가 있는 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_wait" _locAttrData="description" value="wait" description="프로그램이 사용 중이며 사용자가 기다려야 함을 나타냅니다. 시계 또는 모래 시계로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_cell" _locAttrData="description" value="cell" version="3.0" description="셀 또는 셀 집합을 선택할 수 있음을 나타냅니다. 중앙에 점이 있는 두꺼운 더하기 기호로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_crosshair" _locAttrData="description" value="crosshair" description="단순한 십자 기호(예: '+' 기호와 유사한 짧은 선분)입니다. 2차원 비트맵 선택 모드를 나타내는 데 많이 사용됩니다."/>
+        <entry _locID="cursor_text" _locAttrData="description" value="text" description="선택할 수 있는 텍스트를 나타냅니다. 세로 I-빔으로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_vertical-text" _locAttrData="description" value="vertical-text" version="3.0" description="선택할 수 있는 세로 텍스트를 나타냅니다. 가로 I-빔으로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_alias" _locAttrData="description" value="alias" version="3.0" description="어떤 항목의 별칭 또는 바로 가기를 만들어야 함을 나타냅니다. 구부러진 작은 화살표가 옆에 있는 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_copy" _locAttrData="description" value="copy" version="3.0" description="어떤 항목을 복사해야 함을 나타냅니다. 작은 더하기 기호가 옆에 있는 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_move" _locAttrData="description" value="move" description="어떤 항목을 이동해야 함을 나타냅니다."/>
+        <entry _locID="cursor_no-drop" _locAttrData="description" value="no-drop" version="3.0" description="끈 항목을 현재 커서 위치에 놓을 수 없음을 나타냅니다. 손 또는 줄이 그어진 작은 원이 있는 포인터로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_not-allowed" _locAttrData="description" value="not-allowed" version="3.0" description="요청된 작업이 수행되지 않을 것임을 나타냅니다. 줄이 그어진 원으로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_not-grab" _locAttrData="description" value="grab" version="3.0" description="항목을 잡을 수 있음을 나타냅니다(끌어서 이동). 펼친 손의 뒷면으로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_not-grabbing" _locAttrData="description" value="grabbing" version="3.0" description="항목을 잡고 있음을 나타냅니다(끌어서 이동). 대부분 보이지 않는 손가락이 맞닿은 손의 뒷면으로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_e-resize" _locAttrData="description" value="e-resize" description="동쪽 가장자리를 이동해야 함을 나타냅니다."/>
+        <entry _locID="cursor_n-resize" _locAttrData="description" value="n-resize" description="북쪽 가장자리를 이동해야 함을 나타냅니다."/>
+        <entry _locID="cursor_ne-resize" _locAttrData="description" value="ne-resize" description="이동이 북동쪽 모퉁이에서 시작됨을 나타냅니다."/>
+        <entry _locID="cursor_nw-resize" _locAttrData="description" value="nw-resize" description="이동이 북서쪽 모퉁이에서 시작됨을 나타냅니다."/>
+        <entry _locID="cursor_s-resize" _locAttrData="description" value="s-resize" description="남쪽 가장자리를 이동해야 함을 나타냅니다."/>
+        <entry _locID="cursor_se-resize" _locAttrData="description" value="se-resize" description="이동이 남동쪽 모퉁이에서 시작됨을 나타냅니다."/>
+        <entry _locID="cursor_sw-resize" _locAttrData="description" value="sw-resize" description="이동이 남서쪽 모퉁이에서 시작됨을 나타냅니다."/>
+        <entry _locID="cursor_w-resize" _locAttrData="description" value="w-resize" description="서쪽 가장자리를 이동해야 함을 나타냅니다."/>
+        <entry _locID="cursor_ew-resize" _locAttrData="description" value="ew-resize" version="3.0" description="양방향 동-서 크기 조정 커서를 나타냅니다."/>
+        <entry _locID="cursor_ns-resize" _locAttrData="description" value="ns-resize" version="3.0" description="양방향 북-남 커서를 나타냅니다."/>
+        <entry _locID="cursor_nesw-resize" _locAttrData="description" value="nesw-resize" version="3.0" description="양방향 북-동/남-서 커서를 나타냅니다."/>
+        <entry _locID="cursor_nwse-resize" _locAttrData="description" value="nwse-resize" version="3.0" description="양방향 북-서/남-동 커서를 나타냅니다."/>
+        <entry _locID="cursor_col-resize" _locAttrData="description" value="col-resize" version="3.0" description="항목/열의 크기를 가로로 조정할 수 있음을 나타냅니다. 세로줄로 나눠진 왼쪽과 오른쪽을 가리키는 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_row-resize" _locAttrData="description" value="row-resize" version="3.0" description="항목/열의 크기를 세로로 조정할 수 있음을 나타냅니다. 가로줄로 나눠진 위쪽과 아래쪽을 가리키는 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_all-scroll" _locAttrData="description" value="all-scroll" version="3.0" description="어떤 항목을 모든 방향으로 스크롤할 수 있음을 나타냅니다. 중앙에 점이 있는 위쪽, 아래쪽, 왼쪽, 오른쪽을 가리키는 화살표로 렌더링되는 경우가 많습니다."/>
+        <entry _locID="cursor_zoom-in" _locAttrData="description" value="zoom-in" version="3.0" browsers="none" description="항목을 확대 또는 축소할 수 있으며 돋보기 가운데에서 '+' 또는 '-'를 사용하여 '확대' 및 '축소' 각각에 대해 돋보기로 렌더링할 수 있음을 나타냅니다."/>
+        <entry _locID="cursor_zoom-out" _locAttrData="description" value="zoom-out" version="3.0" browsers="none" description="항목을 확대 또는 축소할 수 있으며 돋보기 가운데에서 '+' 또는 '-'를 사용하여 '확대' 및 '축소' 각각에 대해 돋보기로 렌더링할 수 있음을 나타냅니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="nav-index" _locAttrData="description" version="3.0" browsers="O9.5" restriction="number" description="순차적인 탐색 순서('탭 이동 순서'라고도 함)를 지정하는 입력 방법에 중립적인 방법을 제공합니다." syntax="auto | 'number'" standard-reference="http://www.w3.org/TR/css3-ui/#nav-index0">
+
+        <entry value="auto" description="The element's sequential navigation order is assigned automatically by the user agent."/>
+    </CssProperty>
+
+    <CssProperty _locID="nav-up" _locAttrData="description" version="3.0" browsers="O9.5" restriction="enum, identifier, string" description="방향 포커스 탐색을 제어하는 방법을 제공합니다." syntax="auto | 'id' [ current | root | 'target-name' ]?" standard-reference="http://www.w3.org/TR/css3-ui/#nav-up">
+
+        <entry value="auto" description="The user agent automatically determines which element to navigate the focus to in response to directional navigational input."/>
+        <entry value="current"/>
+        <entry value="root"/>
+    </CssProperty>
+
+    <CssProperty _locID="nav-left" ref="nav-up" browsers="O9.5"/>
+    <CssProperty _locID="nav-right" ref="nav-up" browsers="O9.5"/>
+    <CssProperty _locID="nav-down" ref="nav-up" browsers="O9.5"/>
+
+    <CssProperty name="content">
+        <entry value="icon" description="The (pseudo-)element is replaced in its entirety by the resource referenced by its 'icon' property, and treated as a replaced element."/>
+    </CssProperty>
+
+    <CssPropertyValue type="imemodes">
+        <entry value="auto" description="No change is made to the current input method editor state. This is the default."/>
+        <entry value="normal" description="The IME state should be normal; this value can be used in a user style sheet to override the page setting."/>
+        <entry value="active" description="The input method editor is initially active; text entry is performed using it unless the user specifically dismisses it."/>
+        <entry value="inactive" description="The input method editor is initially inactive, but the user may activate it if they wish."/>
+        <entry value="disabled" description="The input method editor is disabled and may not be activated by the user."/>
+    </CssPropertyValue>
+
+    <CssProperty _locID="ime-mode" _locAttrData="description" version="3.0" browsers="FF3,IE5" type="imemodes" restriction="enum" syntax="body { $(name): active; }" description="텍스트 필드에 대한 입력기의 상태를 제어합니다." standard-reference="http://www.w3.org/TR/css3-ui/#ime-mode"/>
+
+    <CssProperty _locID="user-select" _locAttrData="description" version="3.0" browsers="none" restriction="enum" syntax="div { $(name): text; }" description="선택 항목 모양을 제어합니다." standard-reference="http://css-infos.net/property/-webkit-user-select">
+
+        <entry value="none"/>
+        <entry value="text"/>
+        <entry value="toggle"/>
+        <entry value="element"/>
+        <entry value="elements"/>
+        <entry value="all"/>
+    </CssProperty>
+
+</CssModule>

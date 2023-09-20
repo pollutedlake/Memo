@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Webkit Extensions" standard-reference="http://css-infos.net/properties/webkit.php" pub-date="2012-02-23">
+
+    <CssAtDirective name="-webkit-viewport" version="3.0" browsers="C,S" include-root-properties="false" include-root-directives="false" syntax="@$(name) { width: device-width; }" standard-reference="http://msdn.microsoft.com/en-us/library/windows/apps/hh868813.aspx">
+
+        <CssProperty ref="width">
+            <entry value="device-width"/>
+            <entry value="device-height"/>
+        </CssProperty>
+
+        <CssProperty ref="height">
+            <entry value="device-width"/>
+            <entry value="device-height"/>
+        </CssProperty>
+
+        <CssProperty ref="max-width">
+            <entry value="device-width"/>
+            <entry value="device-height"/>
+        </CssProperty>
+
+        <CssProperty ref="min-width">
+            <entry value="device-width"/>
+            <entry value="device-height"/>
+        </CssProperty>
+
+        <CssProperty name="zoom" restriction="number, percentage">
+            <entry value="auto"/>
+        </CssProperty>
+
+        <CssProperty name="max-zoom" restriction="number, percentage">
+        </CssProperty>
+
+        <CssProperty name="min-zoom" restriction="number, percentage">
+        </CssProperty>
+
+        <CssProperty name="user-zoom">
+            <entry value="zoom"/>
+            <entry value="fixed"/>
+        </CssProperty>
+
+        <CssProperty name="orientation">
+            <entry value="auto"/>
+            <entry value="landscape"/>
+            <entry value="portrait"/>
+        </CssProperty>
+    </CssAtDirective>
+
+    <CssAtDirective name="-webkit-keyframes" _locID="webkit-keyframes-rule" _locAttrData="description" version="3.0" browsers="C,S4" syntax="@-webkit-keyframes animation-name" description="애니메이션 키 프레임 집합을 정의합니다." standard-reference="http://www.w3.org/TR/css3-animations/#keyframes"/>
+
+    <CssPseudo name="::-webkit-scrollbar" version="3.0" browsers="C,S5"/>
+    <CssPseudo name="::-webkit-scrollbar-button" version="3.0" browsers="C,S5"/>
+    <CssPseudo name="::-webkit-scrollbar-track" version="3.0" browsers="C,S5"/>
+    <CssPseudo name="::-webkit-scrollbar-track-piece" version="3.0" browsers="C,S5"/>
+    <CssPseudo name="::-webkit-scrollbar-thumb" version="3.0" browsers="C,S5"/>
+    <CssPseudo name="::-webkit-scrollbar-corner" version="3.0" browsers="C,S5"/>
+    <CssPseudo name="::-webkit-resizer" version="3.0" browsers="C,S5"/>
+    <CssPseudo name="::-webkit-input-placeholder" version="3.0" browsers="C,S4"/>
+    <CssPseudo name="::-webkit-search-decoration" version="3.0" browsers="C,S4"/>
+    <CssPseudo name="::-webkit-search-cancel-button" version="3.0" browsers="C,S4"/>
+    <CssPseudo name="::-webkit-search-results-button" version="3.0" browsers="C,S4"/>
+    <CssPseudo name="::-webkit-search-results-decoration" version="3.0" browsers="C,S4"/>
+    <CssPseudo name="::-webkit-progress-bar" version="3.0" browsers="C,S3"/>
+    <CssPseudo name="::-webkit-progress-value" version="3.0" browsers="C,S3"/>
+    <CssPseudo name="::-webkit-progress-inner-element" version="3.0" browsers="C,S3"/>
+    <CssPseudo name="::-webkit-file-upload-button" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-textfield-decoration-container" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-inner-spin-button" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-outer-spin-button" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-slider-runnable-track" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-slider-thumb" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-keygen-select" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-meter-bar" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-meter-even-less-good-value" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-meter-optimum-value" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-meter-suboptimal-value" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-validation-bubble" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-validation-bubble-arrow" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-validation-bubble-arrow-clipper" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-validation-bubble-heading" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-validation-bubble-message" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-validation-bubble-text-block" version="3.0" browsers="C,O,S6"/>
+    <CssPseudo name="::-webkit-color-swatch" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-color-swatch-wrapper" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-color-datetime-edit" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-color-datetime-edit-fields-wrapper" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-color-datetime-edit-text" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-color-datetime-edit-month-field" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-color-datetime-edit-day-field" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-color-datetime-edit-year-field" version="3.0" browsers="C"/>
+    <CssPseudo name="::-webkit-calendar-picker-indicator" version="3.0" browsers="C"/>
+    <CssPseudo name=":-webkit-full-screen" version="3.0" browsers="C,S6"/>
+    <CssPseudo name=":horizontal" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":vertical" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":decrement" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":increment" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":start" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":end" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":double-button" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":single-button" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":no-button" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":corner-present" version="3.0" browsers="C,S5"/>
+    <CssPseudo name=":window-inactive" version="3.0" browsers="C,S3"/>
+    <CssPseudo name=":-webkit-any" version="3.0" browsers="C,S5"/>
+
+
+    <CssProperty _locID="-webkit-appearance" _locAttrData="description" version="3.0" browsers="C,S3" restriction="enum" syntax="h3 { $(name): button; }" description="단추 및 다른 컨트롤의 모양을 기본 컨트롤과 유사하게 변경합니다." standard-reference="http://css-infos.net/property/-webkit-appearance">
+
+        <entry value="caps-lock-indicator"/>
+        <entry value="button"/>
+        <entry value="button-bevel"/>
+        <entry value="caret"/>
+        <entry value="checkbox"/>
+        <entry value="default-button"/>
+        <entry value="listbox"/>
+        <entry value="listitem"/>
+        <entry value="media-fullscreen-button"/>
+        <entry value="media-mute-button"/>
+        <entry value="media-play-button"/>
+        <entry value="media-seek-back-button"/>
+        <entry value="media-seek-forward-button"/>
+        <entry value="media-slider"/>
+        <entry value="media-sliderthumb"/>
+        <entry value="menulist"/>
+        <entry value="menulist-button"/>
+        <entry value="menulist-text"/>
+        <entry value="menulist-textfield"/>
+        <entry value="none"/>
+        <entry value="push-button"/>
+        <entry value="radio"/>
+        <entry value="scrollbarbutton-down"/>
+        <entry value="scrollbarbutton-left"/>
+        <entry value="scrollbarbutton-right"/>
+        <entry value="scrollbarbutton-up"/>
+        <entry value="scrollbargripper-horizontal"/>
+        <entry value="scrollbargripper-vertical"/>
+        <entry value="scrollbarthumb-horizontal"/>
+        <entry value="scrollbarthumb-vertical"/>
+        <entry value="scrollbartrack-horizontal"/>
+        <entry value="scrollbartrack-vertical"/>
+
+        <entry value="searchfield"/>
+        <entry value="searchfield-cancel-button"/>
+        <entry value="searchfield-decoration"/>
+        <entry value="searchfield-results-button"/>
+        <entry value="searchfield-results-decoration"/>
+        <entry value="slider-horizontal"/>
+        <entry value="slider-vertical"/>
+        <entry value="sliderthumb-horizontal"/>
+        <entry value="sliderthumb-vertical"/>
+        <entry value="square-button"/>
+        <entry value="textarea"/>
+        <entry value="textfield"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-background-composite" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): padding; }">
+
+        <entry value="border"/>
+        <entry value="padding"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-background-clip" ref="background-clip" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-background-origin" ref="background-origin" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-border-image" ref="border-image" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-box-sizing" ref="box-sizing" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-columns" ref="columns" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-width" ref="column-width" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-count" ref="column-count" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-gap" ref="column-gap" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-rule" ref="column-rule" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-rule-color" ref="column-rule-color" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-rule-style" ref="column-rule-style" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-rule-width" ref="column-rule-width" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-span" ref="column-span" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-break-inside" ref="break-inside" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-break-before" ref="break-before" browsers="C,S3"/>
+
+    <CssProperty name="-webkit-column-break-after" ref="break-after" browsers="C,S3"/>
+
+    <CssProperty _locID="-webkit-user-select" _locAttrData="description" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): text; }" description="선택 항목 모양을 제어합니다." standard-reference="http://css-infos.net/property/-webkit-user-select">
+
+        <entry value="none"/>
+        <entry value="text"/>
+        <entry value="auto"/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-user-modify" _locAttrData="description" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): read-only; }" description="사용자가 요소의 콘텐츠를 편집할 수 있는지 여부를 결정합니다." standard-reference="http://css-infos.net/property/-webkit-user-modify">
+
+        <entry value="read-only"/>
+        <entry value="read-write"/>
+        <entry value="read-write-plaintext-only"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-margin-collapse" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): collapse; }">
+
+        <entry value="discard"/>
+        <entry value="separate"/>
+        <entry value="collapse"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-margin-bottom-collapse" ref="-webkit-margin-collapse"/>
+    <CssProperty name="-webkit-margin-top-collapse" ref="-webkit-margin-collapse"/>
+
+    <CssProperty name="-webkit-margin-start" version="3.0" browsers="C,S3" restriction="percentage, length" syntax="div { $(name): 5px; }">
+
+        <entry value="auto"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-padding-start" version="3.0" browsers="C,S3" restriction="percentage, length" syntax="div { $(name): 5px; }"/>
+
+    <CssProperty name="-webkit-touch-callout" version="3.0" browsers="S3" restriction="enum" syntax="a { $(name): none; }">
+
+        <entry value="none"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-user-drag" version="3.0" browsers="S3" restriction="enum" syntax="div { $(name): element; }">
+
+        <entry value="auto"/>
+        <entry value="none"/>
+        <entry value="element"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-text-stroke-color" version="3.0" browsers="S3" restriction="color" type="color" syntax="div { $(name): red; }"/>
+
+    <CssProperty name="-webkit-text-stroke-width" version="3.0" browsers="S3" restriction="length, percentage" syntax="div { $(name): 2px; }">
+
+        <entry value="medium"/>
+        <entry value="thick"/>
+        <entry value="thin"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-text-stroke" ref="-webkit-text-stroke-width" restriction="color, length, percentage" syntax="div { $(name): red 2x; }"/>
+
+    <CssProperty name="-webkit-text-fill-color" version="3.0" browsers="S3" restriction="color" type="color" syntax="div { $(name): red; }"/>
+
+    <CssProperty name="-webkit-text-size-adjust" ref="text-size-adjust" browsers="S"/>
+
+    <CssProperty name="-webkit-transform" ref="transform" browsers="C,O12,S3.1"/>
+
+    <CssProperty name="-webkit-transform-origin" ref="transform-origin" browsers="C,O12,S3.1"/>
+
+    <CssProperty _locID="-webkit-transform-origin-x" _locAttrData="description" version="3.0" browsers="C,S3.1" restriction="length, percentage" syntax="img { $(name): 5px}" description="테두리 상자를 고려하여 요소에 적용되는 변환을 위한 원점의 X 좌표입니다." standard-reference="http://www.w3.org/TR/css3-3d-transforms/#transform-origin"/>
+
+    <CssProperty _locID="-webkit-transform-origin-y" _locAttrData="description" version="3.0" browsers="C,S3.1" syntax="img { $(name): 5px}" restriction="length, percentage" description="테두리 상자를 고려하여 요소에 적용되는 변환을 위한 원점의 Y 좌표입니다." standard-reference="http://www.w3.org/TR/css3-3d-transforms/#transform-origin"/>
+
+    <CssProperty _locID="-webkit-transform-origin-z" _locAttrData="description" version="3.0" browsers="C,S4" restriction="length, percentage" syntax="img { $(name): 5px}" description="테두리 상자를 고려하여 요소에 적용되는 변환을 위한 원점의 Z 좌표입니다." standard-reference="http://www.w3.org/TR/css3-3d-transforms/#transform-origin"/>
+
+    <CssProperty name="-webkit-transition-property" ref="transition-property" browsers="C,O12,S5"/>
+
+    <CssProperty name="-webkit-transition-duration" ref="transition-duration" browsers="C,O12,S5"/>
+
+    <CssProperty name="-webkit-transition-timing-function" ref="transition-timing-function" browsers="C,O12,S5"/>
+
+    <CssProperty name="-webkit-transition-delay" ref="transition-delay" browsers="C,O12,S5"/>
+
+    <CssProperty name="-webkit-transition" ref="transition" browsers="C,O12,S5"/>
+
+    <CssProperty _locID="-webkit-box-orient" _locAttrData="description" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): vertical; }" description="webkit 응용 프로그램에서 -webkit-box-orient는 상자 내용이 가로로 배치될지 세로로 배치될지 지정합니다." standard-reference="http://css-infos.net/property/-webkit-box-orient">
+
+        <entry _locID="-webkit-box-orient_horizontal" _locAttrData="description" value="horizontal" description="가로 줄의 왼쪽에서 오른쪽으로 상자에 자식이 표시됩니다."/>
+        <entry _locID="-webkit-box-orient_vertical" _locAttrData="description" value="vertical" description="위에서 아래를 향해 세로로 누적되어 상자에 자식이 표시됩니다."/>
+        <entry _locID="-webkit-box-orient_block-axis" _locAttrData="description" value="block-axis" description="요소 방향이 상자의 축에 따라 지정됩니다."/>
+        <entry _locID="-webkit-box-orient_inline-axis" _locAttrData="description" value="inline-axis" description="요소 방향이 세로로 지정됩니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-box-direction" _locAttrData="description" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): reverse; }" description="webkit 응용 프로그램에서 -webkit-box-direction은 상자에 내용이 일반적으로 배치되는지(위쪽 또는 왼쪽 가장자리에서) 아니면 반대로 배치되는지(아래쪽 또는 오른쪽 가장자리에서) 지정합니다." standard-reference="http://css-infos.net/property/-webkit-box-direction">
+
+        <entry _locID="-webkit-box-direction_normal" _locAttrData="description" value="normal" description="box-orient의 가로 계산 값이 있는 상자는 왼쪽에서 오른쪽으로 자식을 표시하고, 세로 계산 값이 있는 상자는 위쪽에서 아래쪽으로 자식을 표시합니다."/>
+        <entry _locID="-webkit-box-direction_reverse" _locAttrData="description" value="reverse" description="box-orient의 가로 계산 값이 있는 상자는 오른쪽에서 왼쪽으로 자식을 표시하고, 세로 계산 값이 있는 상자는 아래에서 위쪽으로 자식을 표시합니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-box-ordinal-group" _locAttrData="description" version="3.0" browsers="C,S3" restriction="integer" syntax="div { $(name): 3; }" description="요소가 속해 있는 서수 그룹을 나타냅니다. 낮은 서수 그룹이 있는 요소는 높은 서수 그룹이 있는 요소 앞에 표시됩니다." standard-reference="http://css-infos.net/property/-webkit-box-ordinal-group"/>
+
+    <CssProperty _locID="-webkit-box-align" _locAttrData="description" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): end; }" description="바깥쪽 유연한 상자 요소 안에 중첩된 요소의 맞춤을 지정합니다." standard-reference="http://css-infos.net/property/-webkit-box-align">
+
+        <entry _locID="-webkit-box-align_start" _locAttrData="description" value="start" description="표준 방향 상자의 경우 자식 항목의 위쪽 가장자리가 상자의 위쪽에 배치되고 추가 공간이 요소 아래에 배치됩니다. 역방향 상자의 경우에는 각 자식 항목의 아래쪽 가장자리가 상자의 아래쪽에 배치되고 추가 공간은 요소 위에 배치됩니다."/>
+        <entry _locID="-webkit-box-align_end" _locAttrData="description" value="end" description="표준 방향 상자의 경우 각 자식 항목의 아래쪽 가장자리가 상자의 아래쪽에 배치되고 추가 공간이 요소 위에 배치됩니다. 역방향 상자의 경우에는 각 자식 항목의 위쪽 가장자리가 상자의 위쪽에 배치되고 추각 공간은 요소 아래에 배치됩니다."/>
+        <entry _locID="-webkit-box-align_center" _locAttrData="description" value="center" description="추가 공간이 균등하게 나뉘어 반은 자식 항목 위에 배치되고 나머지 반은 자식 항목 다음에 배치됩니다."/>
+        <entry _locID="-webkit-box-align_baseline" _locAttrData="description" value="baseline" description="이 상자 방향이 인라인 축이거나 가로일 경우 모든 자식 항목이 정렬된 기준선을 따라 배치되고 추가 공간은 필요에 따라 앞이나 뒤에 배치됩니다. 블록 흐름에는 요소 안에 있는 비어 있지 않은 첫 번째 라인 상자의 기준선이 사용되고, 표에는 첫 번째 셀의 기준선이 사용됩니다."/>
+        <entry _locID="-webkit-box-align_stretch" _locAttrData="description" value="stretch" description="각 자식 항목의 높이는 포함 블록의 높이로 조정됩니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-box-pack" _locAttrData="description" version="3.0" browsers="C,S3" restriction="enum" syntax="div { $(name): end; }" description="방향에 따라 현재 요소 안에서 자식 요소의 맞춤을 지정합니다." standard-reference="http://css-infos.net/property/-webkit-box-pack">
+
+        <entry _locID="-webkit-box-pack_start" _locAttrData="description" value="start" description="표준 방향 상자의 경우 첫 번째 자식 항목의 왼쪽 가장자리가 왼쪽에 배치되고 모든 추가 공간이 마지막 자식 항목 다음에 배치됩니다. 역방향 상자의 경우에는 마지막 자식 항목의 오른쪽 가장자리가 오른쪽에 배치되고 모든 추가 공간이 첫 번째 자식 항목 전에 배치됩니다."/>
+        <entry _locID="-webkit-box-pack_end" _locAttrData="description" value="end" description="표준 방향 상자의 경우 마지막 자식 항목의 오른쪽 가장자리가 오른쪽에 배치되고 모든 추가 공간이 첫 번째 자식 항목 전에 배치됩니다. 역방향 상자의 경우에는 첫 번째 자식 항목의 왼쪽 가장자리가 왼쪽에 배치되고 모든 추가 공간이 마지막 자식 항목 다음에 배치됩니다."/>
+        <entry _locID="-webkit-box-pack_center" _locAttrData="description" value="center" description="추가 공간이 균등하게 나뉩니다. 이때 반은 첫 번째 자식 항목 전에 배치되고 나머지 반은 마지막 자식 항목 다음에 배치됩니다."/>
+        <entry _locID="-webkit-box-pack_justify" _locAttrData="description" value="justify" description="공간이 각 자식 항목 간에 균등하게 나뉩니다. 이때 추가 공간이 첫 번째 자식 항목 전이나 마지막 자식 항목 다음에 배치되지 않습니다. 자식 항목이 하나뿐인 경우에는 압축 값을 start인 것처럼 처리합니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-box-reflect" _locAttrData="description" version="3.0" browsers="C,S4" syntax="div { $(name): below 5px; }" description="테두리 상자의 반사를 정의합니다." standard-reference="http://css-infos.net/property/-webkit-box-reflect">
+
+        <entry _locID="-webkit-box-reflect_above" _locAttrData="description" value="above" description="테두리 상자 위에 반사가 나타납니다."/>
+        <entry _locID="-webkit-box-reflect_below" _locAttrData="description" value="below" description="테두리 상자 아래에 반사가 나타납니다."/>
+        <entry _locID="-webkit-box-reflect_left" _locAttrData="description" value="left" description="테두리 상자 왼쪽에 반사가 나타납니다."/>
+        <entry _locID="-webkit-box-reflect_right" _locAttrData="description" value="right" description="테두리 상자 오른쪽에 반사가 나타납니다."/>
+    </CssProperty>
+
+    <!-- Flex box-->
+
+    <CssProperty _locID="-webkit-flex" _locAttrData="description" version="3.0" browsers="S7" restriction="length, number, percentage" syntax="p { $(name): 1 auto; }" description="유연한 길이의 매개 변수인 양의 유연성과 음의 유연성 및 기본 설정 크기를 지정합니다." standard-reference="http://www.w3.org/TR/css3-flexbox/#flex">
+
+        <entry value="auto"/>
+        <entry value="none"/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-flex-align" _locAttrData="description" version="3.0" browsers="S7" type="flexaligns" restriction="enum" syntax="div { $(name): center; }" description="'flex-align' 속성은 길이 축에서 사용 가능한 공간이 할당되는 방법을 변경합니다." standard-reference="http://www.w3.org/TR/css3-flexbox/#flex-align0"/>
+
+    <CssProperty _locID="-webkit-flex-direction" _locAttrData="description" version="3.0" browsers="S7" type="flexdirections" restriction="enum" syntax="div { $(name): column; }" description="flexbox에서 flexbox 항목이 배치되는 방법을 지정합니다." standard-reference="http://www.w3.org/TR/css3-flexbox/#flex-direction0"/>
+
+    <CssProperty _locID="-webkit-flex-flow" ref="flex-flow" browsers="S7"/>
+
+    <CssProperty _locID="-webkit-flex-wrap" ref="flex-wrap" browsers="S7"/>
+
+    <CssProperty _locID="-webkit-flex-item-align" _locAttrData="description" version="3.0" browsers="S7" type="flexaligns" restriction="enum" syntax="div { $(name): center; }" description="'flex-align' 속성은 길이 축에서 사용 가능한 공간이 할당되는 방법을 변경합니다." standard-reference="http://www.w3.org/TR/css3-flexbox/#flex-item-align">
+
+        <entry value="auto"/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-flex-line-pack" _locAttrData="description" version="3.0" browsers="S7" type="flexpacks" restriction="enum" syntax="div { $(name): justify; }" description="'flex-line-pack' 속성은 교차 축에 추가 공간이 있을 때 flexbox 내에서 flexbox의 줄을 맞춥니다. 이는 'flex-pack'이 주 축 내에서 개별 항목을 맞추는 방법과 유사합니다." standard-reference="http://www.w3.org/TR/css3-flexbox/#flex-line-pack0">
+
+        <entry _locID="flex-line-pack_stretch" _locAttrData="description" value="stretch" description="나머지 공간을 차지하도록 줄이 늘어납니다. 남은 사용 가능한 공간이 음수인 경우 이 값은 'start'와 동일합니다."/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-flex-order" _locAttrData="description" version="3.0" browsers="S7" restriction="integer" syntax="p { $(name): 1; }" description="이 속성은 초기 값이 1인 정수입니다." standard-reference="http://www.w3.org/TR/css3-flexbox/#flex-order0"/>
+
+    <CssProperty _locID="-webkit-flex-pack" _locAttrData="description" version="3.0" browsers="S7" type="flexpacks" restriction="enum" syntax="div { $(name): justify; }" description="'flex-pack' 속성은 이러한 압축 공간의 유연성을 정의합니다." standard-reference="http://www.w3.org/TR/css3-flexbox/#flex-pack0"/>
+
+    <CssProperty _locID="-webkit-box-flex" _locAttrData="description" version="3.0" browsers="C,S3" restriction="number" syntax="div { $(name): 1; }" description="요소의 유연성을 지정합니다." standard-reference="http://css-infos.net/property/-webkit-box-flex"/>
+
+    <CssProperty _locID="-webkit-box-flex-group" _locAttrData="description" version="3.0" browsers="C,S3" restriction="integer" syntax="div { $(name): 4; }" description="'box-flex-group' 속성을 사용하여 flex 그룹에 유연한 요소를 지정할 수 있습니다." standard-reference="http://css-infos.net/property/-webkit-box-flex-group"/>
+
+    <CssProperty _locID="-webkit-text-size-adjust" _locAttrData="description" version="3.0" browsers="C,S3" restriction="percentage" syntax="div { $(name): 60%; }" description="iPhone에서 Safari에 텍스트 콘텐츠를 표시하기 위한 크기 조정을 지정합니다." standard-reference="http://css-infos.net/property/-webkit-text-size-adjust">
+
+        <entry _locID="-webkit-text-size-adjust_none" _locAttrData="description" value="none" description="텍스트 크기가 조정되지 않습니다."/>
+        <entry _locID="-webkit-text-size-adjust_auto" _locAttrData="description" value="auto" description="iPhone에서 Safari에 맞게 텍스트 크기가 자동으로 조정됩니다."/>
+    </CssProperty>
+
+    <CssProperty name="vertical-align">
+        <entry value="-webkit-baseline-middle" version="2.0" browsers="C,S1"/>
+    </CssProperty>
+
+    <!-- Animation -->
+
+    <CssProperty name="-webkit-animation-name" ref="animation-name" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation-duration" ref="animation-duration" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation-timing-function" ref="animation-timing-function" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation-iteration-count" ref="animation-iteration-count" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation-direction" ref="animation-direction" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation-play-state" ref="animation-play-state" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation-delay" ref="animation-delay" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation-fill-mode" ref="animation-fill-mode" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-animation" ref="animation" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-backface-visibility" ref="backface-visibility" browsers="C,S5"/>
+
+    <CssProperty name="-webkit-perspective" ref="perspective" browsers="C,S4"/>
+
+    <CssProperty name="-webkit-perspective-origin" ref="perspective-origin" browsers="C,S4"/>
+
+    <CssProperty name="-webkit-transform-style" ref="transform-style" browsers="C,S4"/>
+
+    <CssProperty name="-webkit-hyphens" ref="hyphens" browsers="S5.1"/>
+
+    <CssProperty name="-webkit-tap-highlight-color" version="3" browsers="C,S3.1" type="color" restriction="color" standard-reference="http://css-infos.net/property/-webkit-tap-highlight-color"/>
+
+    <CssProperty _locID="-webkit-line-break" _locAttrData="description" version="3.0" browsers="C,S3" syntax="p { $(name): normal; }" description="CJK(중국어, 일본어 및 한국어) 텍스트의 줄 바꿈 규칙을 지정합니다." standard-reference="http://css-infos.net/property/-webkit-line-break">
+
+        <entry value="after-white-space"/>
+        <entry value="normal"/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-nbsp-mode" _locAttrData="description" version="3.0" browsers="C,S3" syntax="p { $(name): space; }" description="텍스트 내에서 줄 바꿈하지 않는 공백의 동작을 정의합니다." standard-reference="http://css-infos.net/property/-webkit-nbsp-mode">
+
+        <entry value="space"/>
+        <entry value="normal"/>
+    </CssProperty>
+
+    <CssProperty _locID="-webkit-overflow-scrolling" _locAttrData="description" version="3.0" browsers="C,S5" syntax="div { $(name): touch; }" description="overflow:scroll 요소에서 네이티브 스타일 스크롤을 사용할지 여부를 지정합니다." standard-reference="http://css-infos.net/property/-webkit-nbsp-mode">
+
+        <entry value="auto"/>
+        <entry value="touch"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-filter" version="3.0" browsers="S6" restriction="enum" syntax="img { $(name): blur(3px); }">
+
+        <entry value="none"/>
+        <entry value="grayscale()"/>
+        <entry value="sepia()"/>
+        <entry value="invert()"/>
+        <entry value="hue-rotate(180deg)"/>
+        <entry value="blur(3px)"/>
+        <entry value="brightness(2)"/>
+        <entry value="contrast(2)"/>
+        <entry value="saturate(3)"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-break-after" ref="break-after" browsers="S7"/>
+
+    <CssProperty name="-webkit-break-before" ref="break-before" browsers="S7"/>
+
+    <CssProperty name="-webkit-break-inside" ref="break-inside" browsers="S7"/>
+
+    <CssProperty name="-webkit-flow-from" ref="flow-from" browsers="C,S5.2"/>
+
+    <CssProperty name="-webkit-flow-into" ref="flow-into" browsers="C,S5.2"/>
+
+    <CssProperty name="-webkit-font-feature-settings" ref="font-feature-settings" browsers="C,S5.2"/>
+
+    <CssProperty name="-webkit-region-fragment" ref="region-fragment" browsers="S7"/>
+
+    <CssProperty name="-webkit-font-smoothing" version="1.0" browsers="S3" syntax="img { $(name): blur(3px); }">
+
+        <entry value="auto"/>
+        <entry value="never"/>
+        <entry value="always"/>
+        <entry value="none"/>
+        <entry value="antialiased"/>
+        <entry value="subpixel-antialiased"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask" version="3.0" browsers="C,S4" syntax=".class { $(name): url('mask.png') no-repeat fixed 20px 20px padding padding; }">
+
+        <entry value="repeat"/>
+        <entry value="repeat-x"/>
+        <entry value="repeat-y"/>
+        <entry value="no-repeat"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask-image" version="3.0" browsers="C,S" restriction="length, percentage" syntax=".class { $(name): url('images/mymask.png'); }">
+
+        <entry value="none"/>
+        <entry value="url()"/>
+        <entry value="-webkit-gradient()"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask-box-image" version="3.0" browsers="C,S" restriction="length, percentage" syntax=".class { $(name): url('logo.png') 100 100 0 0 round round; }">
+
+        <entry value="none"/>
+        <entry value="repeat"/>
+        <entry value="stretch"/>
+        <entry value="round"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask-origin" version="3.0" browsers="C,S" syntax=".class { $(name): content; }">
+
+        <entry value="content"/>
+        <entry value="border"/>
+        <entry value="padding"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask-attachment" version="3.0" browsers="S4" syntax=".class { $(name): fixed; }">
+
+        <entry value="fixed"/>
+        <entry value="scroll"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask-clip" version="3.0" browsers="C,S4" syntax=".class { $(name): content; }">
+
+        <entry value="content"/>
+        <entry value="border"/>
+        <entry value="padding"/>
+        <entry value="text"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask-repeat" version="3.0" browsers="C,S4" syntax=".class { $(name): repeat-x; }">
+
+        <entry value="repeat"/>
+        <entry value="repeat-x"/>
+        <entry value="repeat-y"/>
+        <entry value="no-repeat"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-mask-composite" version="3.0" browsers="C,S4" syntax=".class { $(name): content; }">
+
+        <entry value="clear"/>
+        <entry value="copy"/>
+        <entry value="source-over"/>
+        <entry value="source-in"/>
+        <entry value="source-out"/>
+        <entry value="source-atop"/>
+        <entry value="destination-over"/>
+        <entry value="destination-in "/>
+        <entry value="destination-out "/>
+        <entry value="destination-atop "/>
+        <entry value="xor"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-line-clamp" version="3.0" browsers="C,S4" restriction="integer" syntax=".class { $(name): content; }"/>
+
+    <CssProperty name="-webkit-align-content" ref="align-content" browsers="C,O12.10" syntax="div { $(name): center; }"/>
+
+    <CssProperty name="background">
+        <entry value="-webkit-gradient()" version="3.0" browsers="C,S4"/>
+        <entry value="-webkit-linear-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-radial-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-repeating-linear-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-repeating-radial-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-image-set()" version="3.0" browsers="C,S6"/>
+    </CssProperty>
+
+    <CssProperty name="background-image">
+        <entry value="-webkit-gradient()" version="3.0" browsers="C,S4"/>
+        <entry value="-webkit-linear-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-radial-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-repeating-linear-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-repeating-radial-gradient()" version="3.0" browsers="C,S5.1"/>
+        <entry value="-webkit-image-set()" version="3.0" browsers="C,S6"/>
+    </CssProperty>
+
+    <CssProperty name="display">
+        <entry value="-webkit-box" browsers="C,S1"/>
+        <entry value="-webkit-flex" browsers="C,S1"/>
+        <entry value="-webkit-inline-box" browsers="C,S1"/>
+    </CssProperty>
+
+    <CssProperty name="cursor">
+        <entry value="-webkit-zoom-in" browsers="C,S1.2"/>
+        <entry value="-webkit-zoom-out" browsers="C,S1.2"/>
+        <entry value="-webkit-grabbing" browsers="C,S1.2"/>
+        <entry value="-webkit-grab" browsers="C,S1.2"/>
+    </CssProperty>
+
+    <CssPropertyValue type="color">
+        <entry value="-webkit-activelink" browsers="C,S1"/>
+        <entry value="-webkit-focus-ring-color" browsers="C,S1"/>
+        <entry value="-webkit-link" browsers="C,S1"/>
+        <entry value="-webkit-text" browsers="C,S1"/>
+    </CssPropertyValue>
+
+    <CssProperty name="position">
+        <entry value="-webkit-sticky" browsers="C"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-border-radius" ref="border-radius" browsers="C,S" obsolete="Use &quot;border-radius&quot; instead"/>
+
+    <CssProperty name="-webkit-border-bottom-left-radius" ref="border-bottom-left-radius" browsers="C,S" obsolete="Use &quot;border-bottom-left-radius&quot; instead"/>
+
+    <CssProperty name="-webkit-border-bottom-right-radius" ref="border-bottom-right-radius" browsers="C,S" obsolete="Use &quot;border-bottom-right-radius&quot; instead"/>
+
+    <CssProperty name="-webkit-border-top-left-radius" ref="border-top-left-radius" browsers="C,S" obsolete="Use &quot;border-top-left-radius&quot; instead"/>
+
+    <CssProperty name="-webkit-border-top-right-radius" ref="border-top-right-radius" browsers="C,S" obsolete="Use &quot;border-top-right-radius&quot; instead"/>
+
+    <CssProperty name="-webkit-box-shadow" ref="box-shadow" browsers="FF" obsolete="Use &quot;box-shadow&quot; instead"/>
+
+    <CssProperty name="-webkit-print-color-adjust" version="3.0" browsers="C,S6" syntax=".class { $(name): exact; }">
+
+        <entry value="economy"/>
+        <entry value="exact"/>
+    </CssProperty>
+
+    <CssProperty name="-webkit-justify-content" ref="justify-content" browsers="C,S"/>
+
+    <CssProperty name="-webkit-align-items" ref="align-items" browsers="C,S"/>
+
+    <CssProperty name="-webkit-flex-grow" ref="flex-grow" browsers="C,S"/>
+
+</CssModule>

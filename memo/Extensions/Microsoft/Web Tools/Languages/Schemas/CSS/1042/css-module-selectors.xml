@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium,
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University),
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="Selectors" standard-reference="http://www.w3.org/TR/selectors4/" status="WD" pub-date="2012-08-23">
+
+  <CssAtDirective name="viewport" version="3.0" browsers="none" include-root-properties="false" include-root-directives="false" syntax="@$(name) { width: device-width; }" standard-reference="http://msdn.microsoft.com/en-us/library/windows/apps/hh868813.aspx">
+
+    <CssProperty ref="width">
+      <entry value="device-width"/>
+      <entry value="device-height"/>
+    </CssProperty>
+
+    <CssProperty ref="height">
+      <entry value="device-width"/>
+      <entry value="device-height"/>
+    </CssProperty>
+
+    <CssProperty ref="max-width">
+      <entry value="device-width"/>
+      <entry value="device-height"/>
+    </CssProperty>
+
+    <CssProperty ref="min-width">
+      <entry value="device-width"/>
+      <entry value="device-height"/>
+    </CssProperty>
+
+    <CssProperty name="zoom" restriction="number, percentage">
+      <entry value="auto"/>
+    </CssProperty>
+
+    <CssProperty name="max-lines" restriction="integer, enum">
+        <entry value="none"/>
+    </CssProperty>
+
+    <CssProperty name="user-zoom">
+      <entry value="zoom"/>
+      <entry value="fixed"/>
+    </CssProperty>
+
+    <CssProperty name="orientation">
+      <entry value="auto"/>
+      <entry value="landscape"/>
+      <entry value="portrait"/>
+    </CssProperty>
+  </CssAtDirective>
+
+  <CssPseudo name=":before" _locID="before-pseudo-class" _locAttrData="description" version="2.0" browsers="C,FF1,IE8,O8,S1" syntax="div:before { content: 'abc'; }" description="의사(pseudo) 요소는 요소 또는 다른 의사(pseudo) 요소의 콘텐츠 바로 앞에 콘텐츠를 삽입하기 위해 사용됩니다. 'content' 속성은 삽입할 콘텐츠를 지정하기 위해 사용됩니다." standard-reference="http://www.w3.org/TR/css3-content/#inserting"/>
+
+  <CssPseudo name=":after" _locID="after-pseudo-class" _locAttrData="description" version="2.0" browsers="C,FF1,IE8,O8,S1" syntax="div:after { content: 'abc'; }" description="의사(pseudo) 요소는 요소 또는 다른 의사(pseudo) 요소의 콘텐츠 바로 뒤에 콘텐츠를 삽입하기 위해 사용됩니다. 'content' 속성은 삽입할 콘텐츠를 지정하기 위해 사용됩니다." standard-reference="http://www.w3.org/TR/css3-content/#inserting"/>
+
+  <CssPseudo name=":link" _locID="link-pseudo-element" _locAttrData="description" version="2.0" syntax="a:link { text-decoration: none; }" description=":link 의사(pseudo) 클래스는 아직 방문하지 않은 링크에 적용됩니다." standard-reference="http://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited"/>
+
+  <CssPseudo name=":any-link" version="3.0" syntax="a:any-link { text-decoration: none; }" standard-reference="http://www.w3.org/TR/selectors4/#the-any-link-pseudo"/>
+
+  <CssPseudo name=":local-link" version="3.0" syntax="a:local-link { text-decoration: none; }" standard-reference="http://www.w3.org/TR/selectors4/#local-pseudo"/>
+
+  <CssPseudo name=":local-link(0)" version="3.0" syntax="a:local-link(0) { text-decoration: none; }" standard-reference="http://www.w3.org/TR/selectors4/#local-pseudo"/>
+
+  <CssPseudo name=":current" version="3.0" syntax=":current { text-decoration: none; }" standard-reference="http://www.w3.org/TR/selectors4/#current-pseudo"/>
+
+  <CssPseudo name=":current(div)" version="3.0" syntax=":current(div, p) { color: blue; }" standard-reference="http://www.w3.org/TR/selectors4/#current-pseudo"/>
+
+  <CssPseudo name=":visited" _locID="visited-pseudo-element" _locAttrData="description" version="2.0" syntax="a:visited { color: purple; }" description=":visited 의사(pseudo) 클래스는 사용자가 링크를 방문한 후에 적용됩니다." standard-reference="http://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited"/>
+
+  <CssPseudo name=":active" _locID="active-pseudo-element" _locAttrData="description" version="2.0" syntax="a:active { color: red; }" description=":active 의사(pseudo) 클래스는 사용자가 요소를 활성화한 동안 적용됩니다. 예를 들어, 사용자가 마우스 단추를 눌렀다가 놓는 시간 사이의 시간입니다." standard-reference="http://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act"/>
+
+  <CssPseudo name=":hover" _locID="hover-pseudo-element" _locAttrData="description" version="2.0" syntax="a:hover { text-decoration: none; }" description=":hover 의사(pseudo) 클래스는 사용자가 포인팅 장치로 요소를 지정하되 반드시 활성화하지는 않는 동안 적용됩니다. 예를 들어, 커서(마우스 포인터)로 요소가 생성한 상자를 가리킬 때 시각적 사용자 에이전트가 이 의사(pseudo) 클래스를 적용할 수 있습니다." standard-reference="http://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act"/>
+
+  <CssPseudo name=":focus" _locID="focus-pseudo-element" _locAttrData="description" version="2.0" syntax="a:focus { color: yellow; }" description="요소에 포커스가 있는 동안(키보드나 마우스 이벤트 또는 다른 형태의 입력을 수락) :focus 의사(pseudo) 클래스가 적용됩니다." standard-reference="http://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act"/>
+
+  <CssPseudo name=":first-child" _locID="first-child-pseudo-class" _locAttrData="description" version="2.0" browsers="C,FF3,IE7,O9.5,S3.1" syntax="li:first-child { font-size: 1.2em; }" description=":nth-child(1)과 같습니다. :first-child 의사(pseudo) 클래스는 다른 요소의 첫 번째 자식 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#first-child-pseudo"/>
+
+  <CssPseudo name=":first-line" _locID="first-line-pseudo-class" _locAttrData="description" version="2.0" syntax="p:first-line { color: green; }" description=":first-line 의사(pseudo) 요소는 요소 첫째 줄(서식 지정됨)의 콘텐츠를 설명합니다." standard-reference="http://www.w3.org/TR/css3-selectors/#first-line"/>
+
+  <CssPseudo name=":first-letter" _locID="first-letter-pseudo-class" _locAttrData="description" version="2.0" syntax="p:first-letter { font-size: 200%; }" description=":first-letter 의사(pseudo) 요소는 줄에서 이미지나 인라인 테이블과 같은 다른 콘텐츠가 앞에 오지 않는 요소의 첫 문자를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#first-letter"/>
+
+  <CssPseudo name=":lang(en)" _locID="lang-pseudo-function" _locAttrData="description" version="2.0" browsers="C,FF1,IE8,O8,S3" syntax="html:lang(en) { color: blue; }" description="의사(pseudo) 클래스 :lang(C)는 C 언어로 된 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#lang-pseudo"/>
+
+  <CssPseudo name=":checked" _locID="checked-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1,IE9,O9,S3.13" syntax="input:checked { color: red; }" description="라디오 및 확인란 요소는 사용자가 선택하거나 취소할 수 있습니다. 일부 메뉴 항목은 사용자가 선택하면 '선택'됩니다. :checked 의사(pseudo) 클래스를 적용하면 이러한 요소는 '선택된' 상태가 됩니다." standard-reference="http://www.w3.org/TR/css3-selectors/#checked"/>
+
+  <CssPseudo name=":empty" _locID="empty-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE9,O9,S3.1" syntax="div:empty { background-color: red; }" description=":empty 의사(pseudo) 클래스는 자식이 없는 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#empty-pseudo"/>
+
+  <CssPseudo name=":enabled" _locID="enabled-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE9,O9,S3.1" syntax="input:enabled { background-color: green; }" description=":enabled 의사(pseudo) 클래스는 활성화 상태인 사용자 인터페이스 요소를 나타냅니다. 이러한 요소는 비활성화 상태가 되기도 합니다." standard-reference="http://www.w3.org/TR/css3-selectors/#enableddisabled"/>
+
+  <CssPseudo name=":disabled" _locID="disabled-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE9,O9,S3.1" syntax="input:disabled { background-color: silver; }" description=":disabled 의사(pseudo) 클래스는 비활성화 상태인 사용자 인터페이스를 나타냅니다. 이러한 요소는 활성화 상태가 되기도 합니다." standard-reference="http://www.w3.org/TR/css3-selectors/#enableddisabled"/>
+
+  <CssPseudo name=":first-of-type" _locID="first-of-type-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.5,IE9,O9.5,S3.2" syntax="dl dt:first-of-type { font-size: 200%; }" description=":nth-of-type(1)과 같습니다. :first-of-type 의사(pseudo) 클래스는 부모 요소의 자식 목록에서 해당 형식의 첫 번째 형제인 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#first-of-type-pseudo"/>
+
+  <CssPseudo name=":last-child" _locID="last-child-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1,IE9,O9.5,S3.1" syntax="li:last-child { font-size: 1.2em; }" description=":nth-last-child(1)과 같습니다. :last-child 의사(pseudo) 클래스는 다른 요소의 마지막 자식인 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#last-child-pseudo"/>
+
+  <CssPseudo name=":last-of-type" _locID="last-of-type-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.5,IE9,O9.5,S3.1" syntax="dl dt:last-of-type { font-size: 200%; }" description=":nth-last-of-type(1)과 같습니다. :last-of-type 의사(pseudo) 클래스는 부모 요소의 자식 목록에서 해당 형식의 마지막 형제인 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#last-of-type-pseudo"/>
+
+  <CssPseudo name=":not(:empty)" _locID="not-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1,IE9,O9.5,S2" syntax="div:not(:empty) { border-color: pink; }" description="부정 의사(pseudo) 클래스 :not(X)는 부정 의사(pseudo) 클래스 자신을 제외한 간단한 선택기를 인수로 사용하는 기능적 부정입니다. 인수가 나타내지 않는 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#negation"/>
+
+  <CssPseudo name=":matches(:hover)" _locID="matches-pseudo-class" _locAttrData="description" version="3.0" browsers="none" syntax="div:matches(:hover) { border-color: pink; }" description="선택기 목록을 인수로 사용하는 기능적 표기법입니다. 인수로 표현되는 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/selectors4/#matches"/>
+
+  <CssPseudo name=":dir(ltr)" _locID="dir-pseudo-class" _locAttrData="description" version="3.0" browsers="none" syntax="section:dir(ltr) { border-color: pink; }" description=":dir() pseudo-class를 사용하면 작성자가 문서 언어에 의해 결정된 대로 방향을 기반으로 요소를 나타내는 선택기를 작성할 수 있습니다." standard-reference="http://www.w3.org/TR/selectors4/#dir-pseudo"/>
+
+  <CssPseudo name=":scope" _locID="scope-pseudo-class" _locAttrData="description" version="3.0" browsers="none" syntax=":scope { border-color: pink; }" description=":scope pseudo-class는 문맥 참조 요소 세트에 포함되어 있는 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/selectors4/#scope-pseudo"/>
+
+  <CssPseudo name=":nth-child(2n+1)" _locID="nth-child-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.5,IE9,O9.5,S3.1" syntax="tr:nth-child(2n+1) { border-color: pink; }" description=":nth-child(an+b) 의사(pseudo) 클래스 표기는 문서 트리에서 n의 값이 양의 정수나 0인 an+b-1 형제가 앞에 있고 부모 요소를 가진 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#nth-child-pseudo"/>
+
+  <CssPseudo name=":nth-last-child(-n+2)" _locID="nth-last-child-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.5,IE9,O9.5,S3.1" syntax="tr:nth-last-child(-n+2) { border-color: pink; }" description=":nth-last-child(an+b) 의사(pseudo) 클래스 표기는 문서 트리에서 n의 값이 양의 정수나 0인 an+b-1 형제가 뒤에 있고 부모 요소를 가진 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#nth-last-child-pseudo"/>
+
+  <CssPseudo name=":nth-last-of-type(n+2)" _locID="nth-last-of-type-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.5,IE9,O9.5,S3.1" syntax="tr:nth-last-of-type(n+2) { border-color: pink; }" description=":nth-last-of-type(an+b) 의사(pseudo) 클래스 표기는 문서 트리에서 확장된 요소 이름이 동일하고 n의 값이 0이나 양의 정수인 an+b-1 형제가 뒤에 있으며 부모 요소를 가진 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#nth-of-type-pseudo"/>
+
+  <CssPseudo name=":nth-of-type(2n+1)" _locID="nth-of-type-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.5,IE9,O9.5,S3.1" syntax="tr:nth-of-type(2n) { border-color: pink; }" description=":nth-of-type(an+b) 의사(pseudo) 클래스 표기는 문서 트리에서 확장된 요소 이름이 동일하고 n의 값이 0이나 양의 정수인 an+b-1 형제가 앞에 있으며 부모 요소를 가진 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#nth-of-type-pseudo"/>
+
+  <CssPseudo name=":nth-match(div)" _locID="nth-match-pseudo-class" _locAttrData="description" version="3.0" browsers="none" syntax="div:nth-match(p) { border-color: pink; }" description="문서 트리에서 요소 앞에 지정된 선택기 목록과 일치하는 An+B-1 형제가 있는 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/selectors4/#the-nth-match-pseudo"/>
+
+  <CssPseudo name=":nth-last-match(div)" _locID="nth-last-match-pseudo-class" _locAttrData="description" version="3.0" browsers="none" syntax="div:nth-last-match(p) { border-color: pink; }" description="문서 트리에서 요소 뒤에 지정된 선택기 목록과 일치하는 An+B-1 형제가 있는 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/selectors4/#nth-last-match-pseudo"/>
+
+  <CssPseudo name=":only-child" _locID="only-child-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE9,O9.5,S3.1" syntax="p:only-child { color: #f00; }" description="부모 요소가 있으며 부모 요소에 다른 자식 요소가 없는 요소를 나타냅니다. :first-child:last-child 또는 :nth-child(1):nth-last-child(1)과 동일하지만 특정성은 낮습니다." standard-reference="http://www.w3.org/TR/css3-selectors/#only-child-pseudo"/>
+
+  <CssPseudo name=":only-of-type" _locID="only-of-type-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF3.5,IE9,O9.5,S3.2" syntax="p:only-of-type { color: #f00; }" description=":only-of-type 선택기가 해당 형식을 가졌으며 부모의 유일한 자식인 모든 요소와 일치합니다. :first-of-type:last-of-type 또는 :nth-of-type(1):nth-last-of-type(1)과 동일하지만 특정성은 낮습니다." standard-reference="http://www.w3.org/TR/css3-selectors/#only-of-type-pseudo"/>
+
+  <CssPseudo name=":root" _locID="root-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1,IE9,O9.5,S1" syntax=":root { padding: auto 3em; }" description=":root 의사(pseudo) 클래스는 문서의 루트인 요소를 나타냅니다. HTML 4에서는 항상 HTML 요소를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#root-pseudo"/>
+
+  <CssPseudo name=":target" _locID="target-pseudo-class" _locAttrData="description" version="3.0" browsers="C,FF1,IE9,O9.5,S1" syntax="h2:target { background-color: yellow; }" description="일부 URI가 리소스 내의 위치를 참조합니다. 이런 종류의 URI는 '숫자 기호'(#)와 앵커 식별자(조각 식별자)로 끝납니다." standard-reference="http://www.w3.org/TR/css3-selectors/#root-pseudo"/>
+
+  <CssPseudo name="::selection" _locID="selection-pseudo-element" _locAttrData="description" version="3.0" browsers="C,FF4,IE9,O9.5,S1.1" syntax="p::selection { color: red; }" description="::selection 선택기는 사용자가 선택한 요소의 일부분과 일치합니다. 몇몇 CSS 속성만 ::selection: 색상, 배경, 커서 및 윤곽선에 적용할 수 있습니다." standard-reference="http://www.w3.org/TR/css3-selectors/#selection"/>
+
+  <CssPseudo name="::before" _locID="before-pseudo-element" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE10,O8,S1" syntax="div::before { content: 'abc'; }" description="의사(pseudo) 요소는 요소 또는 다른 의사(pseudo) 요소의 콘텐츠 바로 앞에 콘텐츠를 삽입하기 위해 사용됩니다. 'content' 속성은 삽입할 콘텐츠를 지정하기 위해 사용됩니다." standard-reference="http://www.w3.org/TR/css3-content/#inserting"/>
+
+  <CssPseudo name="::after" _locID="after-pseudo-element" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE10,O7,S4" syntax="div::after { content: 'abc'; }" description="의사(pseudo) 요소는 요소 또는 다른 의사(pseudo) 요소의 콘텐츠 바로 뒤에 콘텐츠를 삽입하기 위해 사용됩니다. 'content' 속성은 삽입할 콘텐츠를 지정하기 위해 사용됩니다." standard-reference="http://www.w3.org/TR/css3-content/#inserting"/>
+
+  <CssPseudo name="::first-line" _locID="first-line-pseudo-element" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE10,O7,S1" syntax="p::first-line { color: green; }" description="::first-line 의사(pseudo) 요소는 요소 첫째 줄(서식 지정됨)의 콘텐츠를 설명합니다." standard-reference="http://www.w3.org/TR/css3-selectors/#first-line"/>
+
+  <CssPseudo name="::first-letter" _locID="first-letter-pseudo-element" _locAttrData="description" version="3.0" browsers="C,FF1.5,IE10,O7,S1" syntax="p::first-letter { font-size: 200%; }" description="::first-letter 의사(pseudo) 요소는 줄에서 이미지나 인라인 테이블과 같은 다른 콘텐츠가 앞에 오지 않는 요소의 첫 문자를 나타냅니다." standard-reference="http://www.w3.org/TR/css3-selectors/#first-letter"/>
+
+  <CssPseudo name="::backdrop" version="3.0" browsers="none" syntax="*|*:fullscreen::backdrop { position: fixed; }" standard-reference="http://www.w3.org/TR/fullscreen/#::backdrop-pseudo-element"/>
+
+  <CssPseudo name=":fullscreen" version="3.0" browsers="none" syntax="iframe:fullscreen { border: none; }" standard-reference="http://www.w3.org/TR/fullscreen/#:fullscreen-pseudo-class"/>
+
+  <!-- Begin <track> element subtitle -->
+  <CssPseudo name="::cue" version="3.0" browsers="C,O16,S6" syntax="::cue { color: red; }" standard-reference="https://dvcs.w3.org/hg/text-tracks/raw-file/default/webvtt/Overview.html#the-cue-pseudo-element"/>
+
+  <CssPseudo name="::cue()" version="3.0" browsers="C,O16,S6" syntax="::cue(v(voice=woman)) { color: red; }" standard-reference="https://dvcs.w3.org/hg/text-tracks/raw-file/default/webvtt/Overview.html#the-cue-pseudo-element"/>
+
+  <CssPseudo name="::cue-region()" version="3.0" browsers="C,O16,S6" syntax="::cue-region { border: none; }" standard-reference="https://dvcs.w3.org/hg/text-tracks/raw-file/default/webvtt/Overview.html#the-cue-region-pseudo-element"/>
+
+  <CssPseudo name="::cue-region" version="3.0" browsers="C,O16,S6" syntax="::cue-region(v(voice=woman)) { color: red; }" standard-reference="https://dvcs.w3.org/hg/text-tracks/raw-file/default/webvtt/Overview.html#the-cue-region-pseudo-element"/>
+
+  <CssPseudo name=":past" version="3.0" browsers="C,O16,S6" syntax=":past { color: green; }" standard-reference="https://dvcs.w3.org/hg/text-tracks/raw-file/default/webvtt/Overview.html#dfn-past-pseudo-class"/>
+
+  <CssPseudo name=":future" version="3.0" browsers="C,O16,S6" syntax=":future { color: yellow; }" standard-reference="https://dvcs.w3.org/hg/text-tracks/raw-file/default/webvtt/Overview.html#dfn-future-pseudo-class"/>
+
+  <!-- End <track> element subtitle -->
+
+  <!-- Begin Shadow DOM selectors -->
+
+  <CssPseudo name="::content" version="3.0" browsers="C,FF,O" syntax="::content &gt; span { color: yellow; }" standard-reference="http://w3c.github.io/webcomponents/spec/shadow/#content-pseudo-element"/>
+
+  <!-- End Shadow DOM selectors -->
+
+  <!-- Begin Polymer selectors -->
+
+  <CssPseudo name=":host" version="3.0" browsers="C,FF,O" syntax=":host { display: block; }"/>
+
+  <CssPseudo name=":host()" version="3.0" browsers="C,FF,O" syntax=":host(.myclass) { color: blue; }"/>
+
+  <!-- End Polymer selectors -->
+
+  <!-- Begin Grid selectors -->
+
+  <CssPseudo name=":nth-column(2n+1)" version="3.0" browsers="none" syntax=":nth-column(2n+1) &gt; span { color: yellow; }" standard-reference="http://www.w3.org/TR/selectors4/#nth-column-pseudo"/>
+
+  <CssPseudo name=":nth-last-column(2n+1)" version="3.0" browsers="none" syntax=":nth-last-column(2n+1) &gt; span { color: yellow; }" standard-reference="http://www.w3.org/TR/selectors4/#nth-column-pseudo"/>
+
+  <!-- End Grid selectors -->
+</CssModule>

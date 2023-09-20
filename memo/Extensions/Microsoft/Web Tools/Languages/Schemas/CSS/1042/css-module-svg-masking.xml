@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Visual Studio 2012: http://microsoft.com/visualstudio
+Some portions are "Copyright© 2012 World Wide Web Consortium, 
+(Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University), 
+All Rights Reserved" and are included "AS IS" under the W3C® Software License [http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231].
+-->
+<CssModule name="SVG Masking" standard-reference="http://www.w3.org/TR/SVG/masking.html" status="REC" pub-date="2011-08-16">
+
+  <CssProperty _locID="clip-path" _locAttrData="description" version="3.0" type="url" restriction="url, enum" description="특정 그래픽 요소가 마우스 이벤트의 대상이 될 수 있는 환경(있을 경우)을 작성자가 제어할 수 있도록 허용합니다." standard-reference="http://www.w3.org/TR/SVG/masking.html#ClipPathElement">
+
+    <entry value="none"/>
+    <entry value="inset()"/>
+    <entry value="circle()"/>
+    <entry value="ellipse()"/>
+    <entry value="polygon()"/>
+  </CssProperty>
+
+  <CssProperty _locID="clip-rule" _locAttrData="description" version="3.0" restriction="enum" description="특정 그래픽 요소가 마우스 이벤트의 대상이 될 수 있는 환경(있을 경우)을 작성자가 제어할 수 있도록 허용합니다." standard-reference="http://www.w3.org/TR/SVG/masking.html#ClipPathElement">
+
+    <entry _locID="clip-rule_nonzero" _locAttrData="description" value="nonzero" description="이 규칙은 해당 점에서 모든 방향으로 무한대로 광선을 그린 다음 도형의 세그먼트가 광선과 교차하는 위치를 검사하여 캔버스에 있는 점의 'insideness'를 결정합니다."/>
+    <entry _locID="clip-rule_evenodd" _locAttrData="description" value="evenodd" description="이 규칙은 해당 점에서 모든 방향으로 무한대로 광선을 그린 다음 광선이 교차하는 지정된 도형에서 경로 세그먼트 수를 계산하여 캔버스에 있는 점의 'insideness'를 결정합니다."/>
+  </CssProperty>
+
+  <CssProperty _locID="mask" _locAttrData="description" version="3.0" browsers="FF3.5,IE10,O9" type="url" restriction="url, enum" description="특정 그래픽 요소가 마우스 이벤트의 대상이 될 수 있는 환경(있을 경우)을 작성자가 제어할 수 있도록 허용합니다." standard-reference="http://www.w3.org/TR/SVG/masking.html#ClipPathElement">
+
+    <entry value="none"/>
+  </CssProperty>
+
+</CssModule>
