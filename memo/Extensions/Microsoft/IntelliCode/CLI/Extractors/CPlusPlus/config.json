@@ -1,7 +1,0 @@
-{
-  "config": {
-    "includeFreeFunctions": true,
-    "includeSourceDecls": true,
-    "excludePrivateMethods": false
-  }
-}

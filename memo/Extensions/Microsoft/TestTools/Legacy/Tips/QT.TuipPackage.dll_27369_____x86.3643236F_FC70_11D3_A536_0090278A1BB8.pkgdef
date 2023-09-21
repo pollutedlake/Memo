@@ -1,8 +1,0 @@
-[$RootKey$\EnterpriseTools\QualityTools\TestTypes]
-@="TestTypes"
-
-// [$RootKey$\ShellFileAssociations\.accessor]
-// @="VisualStudio.accessor.15.0"
-
-[$RootKey$\ShellFileAssociations\.orderedtest]
-"DefaultIconMoniker"="KnownMonikers.OrderedTest"

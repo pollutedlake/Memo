@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<VsixLanguagePack Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema-lp/2010">
-  <LocalizedName>Microsoft WCF Web Service Reference Provider</LocalizedName>
-  <LocalizedDescription>Visual Studio 2017 の .NET Core プロジェクトに WCF Web サービス参照を追加する Visual Studio 接続済みサービス。</LocalizedDescription>
-</VsixLanguagePack>

@@ -1,7 +1,0 @@
-[$RootKey$\RuntimeConfiguration\dependentAssembly\bindingRedirection\{1F35D34F-3E36-4A33-B4A5-239849960041}]
-"name"="Microsoft.VisualStudio.LiveShare"
-"publicKeyToken"="b03f5f7f11d50a3a"
-"culture"="neutral"
-"oldVersion"="0.0.0.0-1.6.0.0"
-"newVersion"="1.6.0.0"
-"codeBase"="$RootFolder$\Common7\IDE\Extensions\Microsoft\LiveShareApi\Microsoft.VisualStudio.LiveShare.dll"

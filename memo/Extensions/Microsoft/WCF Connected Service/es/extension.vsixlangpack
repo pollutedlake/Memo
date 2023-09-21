@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<VsixLanguagePack Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema-lp/2010">
-  <LocalizedName>Microsoft WCF Web Service Reference Provider</LocalizedName>
-  <LocalizedDescription>Extensión Connected Service de Visual Studio para agregar referencias de servicios web WCF a los proyectos de .NET Core en Visual Studio 2017.</LocalizedDescription>
-</VsixLanguagePack>

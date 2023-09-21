@@ -1,8 +1,0 @@
-{
-    "language" : "csharp",
-    "regex" : "^.*\\.(cs|CS)$",
-    "extractor" : "Extractor.exe",
-	"type" : "exe",
-    "OS" : ["Windows"],
-	"requirements" : { "Framework" : ["378389"]}
-}

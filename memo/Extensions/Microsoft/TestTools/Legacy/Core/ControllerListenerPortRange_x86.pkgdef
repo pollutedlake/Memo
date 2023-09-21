@@ -1,3 +1,0 @@
-[$RootKey$\EnterpriseTools\QualityTools\ListenPortRange]
-"DefaultDevenvPortRangeEnd"=dword:00001B08
-"DefaultDevenvPortRangeStart"=dword:00001B03
